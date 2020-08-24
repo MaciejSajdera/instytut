@@ -1,0 +1,180 @@
+.black-button {
+    background-color: #000;
+    border: 2px solid black;
+    padding: .65rem 5rem;
+    color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+
+.green-button {
+    background-color: $my-light-green;
+    border: 2px solid $my-light-green;
+    padding: .65rem 5rem;
+    color: $black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $my-light-green;
+    }
+}
+
+
+.button-for-science {
+    background-color: transparent;
+    border: 2px solid $my-light-green;
+        padding: .2rem 3rem;
+    color: $my-light-green;
+    font-size: 1rem;
+    &:hover {
+        background-color: $my-light-green;
+        color: $black;
+
+    }
+}
+
+.button-for-bussiness {
+    background-color: $my-light-green;
+    border: 2px solid $my-light-green;
+    padding: .2rem 3rem;
+    color: $black;
+    font-size: 1rem;
+    &:hover {
+        background-color: transparent;
+        color: $my-light-green;
+    }
+}
+
+
+//buttons
+.my-button {
+    display: inline-block;
+    @include short-transition;
+    text-align: center;
+    border-radius: 100rem;
+    &:hover {
+        transform: scale(1.05);
+        @include short-transition;
+        text-decoration: none;
+    }
+}
+
+.my-outline-button {
+    display: inline-block;
+    padding: .6rem 2.6rem;
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    @include short-transition;
+    text-align: center;
+    &:hover {
+        transform: scale(1.05);
+        @include short-transition;
+        text-decoration: none;
+        color: $white;
+    }
+}
+.my-read-more-button {
+    padding: .6rem 2.6rem;
+    background-color: white;
+    color: $grey;
+    @include short-transition;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+    outline: none;
+    @include short-transition;
+    @media #{$md} {
+        display: inline-block;
+        width: 100%;
+    }
+    span:after {
+        content: '\f078';
+        color: $red;
+        float: right;
+        font-family: "FontAwesome";
+        @include basic-transition;
+    }
+}
+.my-read-more-button[aria-expanded=false] .text-expanded {
+    display: none;
+    @include short-transition;
+}
+.my-read-more-button[aria-expanded=true] .text-collapsed {
+    display: none;
+}
+.my-read-more-button[aria-expanded=true] {
+    background-color: $red;
+    span {
+        color: $white;
+    }
+    span:after {
+        color: $white;
+    }
+    span:after {
+        transform: rotate(180deg);
+    }
+}
+
+.my-read-more-button-red {
+    padding: .6rem 2.6rem;
+    background-color: $red;
+    color: $white;
+    @include short-transition;
+    text-align: center;
+    width: 300px;
+    margin: 1rem auto;
+    display: block;
+    outline: none;
+    @include short-transition;
+    @media #{$md} {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: initial;
+    }
+    span:after {
+        content: '\f078';
+        color: $white;
+        float: right;
+        font-family: "FontAwesome";
+        @include basic-transition;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+.my-read-more-button-red[aria-expanded=false] .text-expanded {
+    display: none;
+    @include short-transition;
+}
+.my-read-more-button-red[aria-expanded=true] .text-collapsed {
+    display: none;
+}
+.my-read-more-button-red[aria-expanded=true] {
+    background-color: $white;
+    border: 1px solid $red;
+    span {
+        color: $red;
+    }
+    span:after {
+        color: $red;
+    }
+    span:after {
+        transform: rotate(180deg);
+    }
+}

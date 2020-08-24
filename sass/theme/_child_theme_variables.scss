@@ -1,0 +1,61 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+//
+// Color system
+//
+
+$red: #AF1A33;
+$darkred: #831326;
+$navy: #222D4E;
+$blue: #2699FB;
+$white: #fff;
+$grey: #4B4F54;
+$darkgrey: #2F3438;
+$lightgrey: #959CB0;
+$vlightgrey: #F8F8F8;
+$vlightgrey-2: #D1D1D1;
+
+//
+// New Theme color system
+//
+
+$my-light-green: #30D530;
+$my-darker-green: #4ECB1B;
+
+
+$primary-font: TTSupermolot;
+$secondary-font: 'Open Sans', sans-serif;
+
+@font-face {
+    font-family: TTSupermolot;
+    src: url(../../../../../wp-content/themes/understrap-child/fonts/TT-Supermolot-Bold.ttf)
+}
+
+$xs: "only screen and (min-width: 480px)";
+$sm: "only screen and (min-width: 576px)";
+$md: "only screen and (min-width: 768px)";
+$lg: "only screen and (min-width: 992px)";
+$xl: "only screen and (min-width: 1200px)";
+$xxl: "only screen and (min-width: 1440px)";
+
+
+@mixin short-transition {
+    transition: all .2s ease-in-out;
+}
+@mixin basic-transition {
+    transition: all .5s ease-in-out;
+}
+@mixin long-transition {
+    transition: all .8s ease-in-out;
+}
+@mixin box-shadow {
+    -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,1);
+}
