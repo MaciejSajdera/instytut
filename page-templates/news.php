@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="notice-container">
 						<p class="notice-title"><?php the_sub_field('statement_title'); ?></p>
 						<div>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 						<span class="notice-date"><?php the_sub_field('statement_date'); ?></span>
 						</div>
 						<div class="background-icon"></div>
@@ -97,8 +97,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h2 class="text-center text-md-left pt-4 pb-md-3"><?php the_field('header_auctions', 773); ?></h2>
 				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="my-button not-on-mobile">Pokaż wszystkie przetargi</a>
 				<ul class="nav nav-tabs" role="tablist">
-					<li><a class="active" href="#auctions_without_statute" role="tab" data-toggle="tab">Zamówienia realizowane bez stosowania przepisów ustawy PZP <i class="fas fa-arrow-right"></i></a></li>
-					<li><a href="#auctions_with_statute" role="tab" data-toggle="tab">Zamówienia realizowane zgodnie z przepisami ustawy PZP <i class="fas fa-arrow-right"></i></a></li>
+					<li><a class="active" href="#auctions_without_statute" role="tab" data-toggle="tab">Zamówienia realizowane bez stosowania przepisów ustawy PZP <i class="fas fa-long-arrow-alt-right"></i></a></li>
+					<li><a href="#auctions_with_statute" role="tab" data-toggle="tab">Zamówienia realizowane zgodnie z przepisami ustawy PZP <i class="fas fa-long-arrow-alt-right"></i></a></li>
 				</ul>
 			</div>
 			<div class="col-12 col-md-8">
@@ -112,7 +112,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<div class="notice-container">
 											<p class="notice-title"><?php the_sub_field('auction_title'); ?></p>
 											<div>
-											<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+											<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 											<span class="notice-date"><?php the_sub_field('auction_date'); ?></span>
 											</div>
 											<div class="background-icon"></div>
@@ -131,7 +131,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<div class="notice-container">
 											<p class="notice-title"><?php the_sub_field('auction_title'); ?></p>
 											<div>
-											<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+											<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 											<span class="notice-date"><?php the_sub_field('auction_date'); ?></span>
 											</div>
 											<div class="background-icon"></div>

@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-recycling" role="button" data-slide="next">
-						<i class="fas fa-arrow-right"></i>
+						<i class="fas fa-long-arrow-alt-right"></i>
 					<span class="sr-only">Next</span>
 					</a>
 				</div>
@@ -276,7 +276,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-plastic" role="button" data-slide="next">
-						<i class="fas fa-arrow-right"></i>
+						<i class="fas fa-long-arrow-alt-right"></i>
 					<span class="sr-only">Next</span>
 					</a>
 				</div>
@@ -466,7 +466,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-elastomers" role="button" data-slide="next">
-						<i class="fas fa-arrow-right"></i>
+						<i class="fas fa-long-arrow-alt-right"></i>
 					<span class="sr-only">Next</span>
 					</a>
 				</div>
@@ -656,7 +656,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-paints" role="button" data-slide="next">
-						<i class="fas fa-arrow-right"></i>
+						<i class="fas fa-long-arrow-alt-right"></i>
 					<span class="sr-only">Next</span>
 					</a>
 				</div>

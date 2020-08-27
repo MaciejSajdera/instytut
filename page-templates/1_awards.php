@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<span class="sr-only">Previous</span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-torun" role="button" data-slide="next">
-				<i class="fas fa-arrow-right"></i>
+				<i class="fas fa-long-arrow-alt-right"></i>
 				<span class="sr-only">Next</span>
 			</a>
 			</div><!-- end of carousel-->
@@ -95,7 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<span class="sr-only">Previous</span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-gliwice" role="button" data-slide="next">
-				<i class="fas fa-arrow-right"></i>
+				<i class="fas fa-long-arrow-alt-right"></i>
 				<span class="sr-only">Next</span>
 			</a>
 			</div><!-- end of carousel-->
@@ -129,7 +129,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<span class="sr-only">Previous</span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-piastow" role="button" data-slide="next">
-				<i class="fas fa-arrow-right"></i>
+				<i class="fas fa-long-arrow-alt-right"></i>
 				<span class="sr-only">Next</span>
 			</a>
 			</div><!-- end of carousel-->

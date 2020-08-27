@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="carousel-arrows">
 					<div class="carousel-arrows-inner">
 						<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-						<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+						<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
 					</div>
 				</div>
 			</div>
@@ -131,7 +131,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="single-science-container single-science-container-research position-relative">
 								<div class="gradient-bg-section-inner"></div>
 								<p class="science-title text-left"><?php the_field('science_1_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 							</div>
 						</a>
 					</div>
@@ -140,7 +140,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="single-science-container single-science-container-lab position-relative">
 								<div class="gradient-bg-section-inner"></div>
 								<p class="science-title text-left"><?php the_field('science_2_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 							</div>
 						</a>
 					</div>
@@ -214,7 +214,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="carousel-arrows">
 				<div class="carousel-arrows-inner">
 					<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-					<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+					<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
 				</div>
 			</div>
 		</div>
@@ -256,7 +256,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="carousel-arrows">
 							<div class="carousel-arrows-inner">
 								<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-								<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+								<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
 							</div>
 						</div>
 					</div>

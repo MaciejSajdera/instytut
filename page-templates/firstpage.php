@@ -15,12 +15,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="container-fluid first-page-container">
-	<!-- <div class="row logo-container">
-		<div class="col logo">
-			<?php the_custom_logo(); ?>
-		</div>
-	</div> -->
+<div class="container-fluid my-navigation-conatiner">
 	<div class="row science-bussiness-photo">
 	
 		<div class="col-md-6 bussiness-photo">

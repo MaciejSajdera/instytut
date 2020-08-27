@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="carousel-arrows">
 					<div class="carousel-arrows-inner">
 						<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-						<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+						<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
 					</div>
 				</div>
 			</div>
@@ -129,7 +129,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-przetworstwa-tworzyw-sztucznych/">
 							<div class="single-branch-container">
 								<p class="branch-title text-left"><?php the_field('branch_1_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 								<div class="background-icon background-icon-1"></div>
 							</div>
 						</a>
@@ -139,7 +139,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-przetworstwa-gumy-i-elastomerow/">
 							<div class="single-branch-container">
 								<p class="branch-title text-left"><?php the_field('branch_2_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 								<div class="background-icon background-icon-2"></div>
 							</div>
 						</a>
@@ -149,7 +149,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-mechaniczna-dla-przemyslu-przetworstwa-tworzyw-sztucznych-i-gumy/">
 							<div class="single-branch-container">
 								<p class="branch-title text-left"><?php the_field('branch_3_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 								<div class="background-icon background-icon-3"></div>
 							</div>
 						</a>
@@ -159,7 +159,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-farb-i-lakierow-dla-przemyslu-budowlanego-i-chemicznego/">
 							<div class="single-branch-container">
 								<p class="branch-title text-left"><?php the_field('branch_4_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 								<div class="background-icon background-icon-4"></div>
 							</div>
 						</a>
@@ -179,7 +179,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="http://instytutimpib.dev.cube360.pl/oferta/ekologia-i-gospodarka-obiegu-zamknietego/">
 							<div class="single-branch-container">
 								<p class="branch-title text-left"><?php the_field('branch_5_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-arrow-right"></i></div>
+								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
 								<div class="background-icon background-icon-5"></div>
 							</div>
 						</a>

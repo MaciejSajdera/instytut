@@ -52,17 +52,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="col-12 col-lg-4">
 				<a href="#" class="kt">
-					<p>KT nr 140 ds. Rur, Kształtek i Armatury z Tworzyw Sztucznych<i class="fas fa-arrow-right"></i></p>
+					<p>KT nr 140 ds. Rur, Kształtek i Armatury z Tworzyw Sztucznych<i class="fas fa-long-arrow-alt-right"></i></p>
 				</a>
 			</div>
 			<div class="col-12 col-lg-4">
 				<a href="#" class="kt">
-					<p>KT nr 168 ds. Wyrobów z Tworzyw Sztucznych<i class="fas fa-arrow-right"></i></p>
+					<p>KT nr 168 ds. Wyrobów z Tworzyw Sztucznych<i class="fas fa-long-arrow-alt-right"></i></p>
 				</a>
 			</div>
 			<div class="col-12 col-lg-4">
 				<a href="#" class="kt">
-					<p>KT nr 175 ds. Farb i Lakierów<i class="fas fa-arrow-right"></i></p>
+					<p>KT nr 175 ds. Farb i Lakierów<i class="fas fa-long-arrow-alt-right"></i></p>
 				</a>
 			</div>
 		</div>
