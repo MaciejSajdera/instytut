@@ -27,14 +27,21 @@ $vlightgrey-2: #D1D1D1;
 
 $my-light-green: #30D530;
 $my-dark-green: #4ECB1B;
+$my-light-green-transparent: rgba(48, 213, 48, 0.6);
 
 
-$primary-font: TTSupermolot;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: TTSupermolotBold;
+$secondary-font: TTSupermolotRegular;
+
 
 @font-face {
-    font-family: TTSupermolot;
+    font-family: TTSupermolotBold;
     src: url(../../../../../wp-content/themes/understrap-child/fonts/TT-Supermolot-Bold.ttf)
+}
+
+@font-face {
+    font-family: TTSupermolotRegular;
+    src: url(../../../../../wp-content/themes/understrap-child/fonts/TT-Supermolot-Regular.ttf)
 }
 
 $xs: "only screen and (min-width: 480px)";

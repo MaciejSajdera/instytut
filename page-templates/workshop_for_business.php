@@ -32,13 +32,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="date-workshop"><?php the_sub_field('date_workshop'); ?></div>
 				</div>
 				<div class="col-md-6 mt-3">
-					<a class="my-read-more-button" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
+					<a class="my-read-more-button-black" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
 					<span class="text-collapsed">Czytaj więcej</span>
 					<span class="text-expanded">Czytaj mnniej</span>
 					</a>
 				</div>
 				<div class="col-md-6 only-on-md-and-up mt-3">
-					<a href="mailto:sekretariat@impib.pl" class="my-button">Zapisz się</a>
+					<a href="mailto:sekretariat@impib.pl" class="green-button">Zapisz się</a>
 				</div>
 				<div class="col-12">
 					<div class="collapse" id="number<?php echo $count; ?>">
@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 				<div class="col-12 only-on-mobile px-0 mt-3 text-center">
-					<a href="mailto:sekretariat@impib.pl" class="my-button">Zapisz się</a>
+					<a href="mailto:sekretariat@impib.pl" class="green-button">Zapisz się</a>
 				</div>
 			</div>
 		</div>

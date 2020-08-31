@@ -12,9 +12,9 @@ p {
 }
 a {
     text-decoration: none;
-    // color: $red;
+    font-family: $secondary-font;
     &:hover {
-        // color: $red;
+        color: $my-light-green;
         text-decoration: none;
     } 
 }
@@ -32,7 +32,7 @@ li:before {
     content: "\f138";
     padding-right: 10px;
     font-family: 'FontAwesome';
-    color: $red;
+    color: $my-light-green;
 }
 .carousel-indicators, .publishing-info-nav {
     li:before {
@@ -248,7 +248,7 @@ li.menu-item:before, li.research-option:before {
         margin-bottom: 3rem;
     }
     @media #{$xl} {
-        margin-top: 10rem;
+        // margin-top: 10rem;
         margin-bottom: 4rem;
     }
 }
@@ -283,10 +283,10 @@ li.menu-item:before, li.research-option:before {
         margin: auto;
     }
     @media #{$xl} {
-        max-width: 1140px;
+        max-width: 1000px;
     }
     @media #{$xxl} {
-        max-width: 1300px;
+        max-width: 1100px;
     }
 }
 
@@ -933,7 +933,7 @@ li.menu-item:before, li.research-option:before {
                     top: 20px !important;
                     border: none;
                     border-radius: 0;
-                    width: 100%;
+                    // width: 100%;
                   
                     li {
                         a {
@@ -961,7 +961,7 @@ li.menu-item:before, li.research-option:before {
     }
     .my-collapse-container.show {
         position: absolute;
-        width: 100%;
+        // width: 100%;
         height: 600px;
         top: 0;
         left: 0;
@@ -989,7 +989,7 @@ li.menu-item:before, li.research-option:before {
 
     .navbar-collapse {
         ul {
-            width: 100%;
+            // width: 100%;
             li {
                 // @include short-transition;
                 margin: auto 1em;
@@ -1009,22 +1009,23 @@ li.menu-item:before, li.research-option:before {
                         // @include short-transition;
                         // color: $red;
                         // font-weight: 700;
-                        text-shadow: 1px 0 black;
+                        // text-shadow: 1px 0 black;
                     }
                 }
                 ul {
                     background-color: $vlightgrey;
-                    border-radius: 0;
+                    border-radius: 10px;
                     border: none;
                     a {
-                        color: $navy;
+                        color: $black;
                         @include short-transition;
                         &:hover, &:active {
-                            background-color: $white;
+                            // background-color: $white;
                             // @include short-transition;
                             border: none;
                             outline: none;
                             border-radius: 0;
+                            color: $my-dark-green;
                         }
                     }
                 }
@@ -1034,118 +1035,142 @@ li.menu-item:before, li.research-option:before {
 }
 .header-title-container {
 
-    background: url('/wp-content/uploads/2020/08/baner@2x-1.png') no-repeat center center;
+    background: url('/wp-content/uploads/2020/08/baner@2x-1.png') no-repeat;
 
     @media #{$lg} {
-        background: url('/wp-content/uploads/2020/08/baner@2x.png') no-repeat center center;
+        background: url('/wp-content/uploads/2020/08/baner@2x.png') no-repeat;
     }
 
 }
 .page-template-1_about_institute {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-2.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-2.jpg') no-repeat;
     }
 }
 .page-template-1_institute_structure, .page-template-1_products_normalization, .page-template-grants, .search {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-1.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-1.jpg') no-repeat;
     }
 }
 .page-template-news, .blog, .single, .archive {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-3.jpg') no-repeat center center;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-3.jpg') no-repeat;
     }
 }
 .page-template-branches, .page-template-offer {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-4.jpg') no-repeat center center;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-4.jpg') no-repeat;
     }
 }
 .page-template-1_awards {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-5.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-5.jpg') no-repeat;
     }
 }
 .page-template-1_patents {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-6.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-6.jpg') no-repeat;
     }
 }
 .page-template-1_projects, .page-template-lab_accredited {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-8.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-8.jpg') no-repeat;
     }
 }
 .page-template-contact {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-9.jpg') no-repeat center center;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-9.jpg') no-repeat;
     }
 }
 .page-template-1_certifications, .page-template-research_areas {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat;
     }
 }
 .page-template-lab_tech, .page-template-workshop_for_business, .page-template-workshop_for_science {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-7.jpg') no-repeat center center;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-7.jpg') no-repeat;
     }
 }
 .page-template-publishing {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-11.jpg') no-repeat center center;
+        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-11.jpg') no-repeat;
     }
 }
-.my-entry-header {
-    height:100%;
-}
+
+
+
 
 .header-title-container {
-
     background-size: cover;
     background-position: 100%;
-    height: 14em;
+    height: 8em;
 
-    @media screen and (min-width: 340px) {
-        height: 16em;
-    }
-
+    // @media screen and (min-width: 340px) {
+    //     height: 8em;
+    // }
 
     @media #{$md} {
         width: 100%; 
         margin: auto;
         position: relative;
         // top: -10px;
-        height: 20em;
+        height: 12em;
     }
 
     @media #{$xxl} {
-        height: 25em;
+        height: 10em;
     }
 
-    h1 {
-        line-height: 1.8rem;
-        color: $my-light-green;
-        font-size: 1.5rem;
-        // padding-top: 2.5rem;
-        // padding-bottom: 2.5rem;
-        // padding-left: 1rem;
-        // position: absolute;
-        text-align: center;
-        bottom: 0;
-        right: 50%;
-        @media #{$md} {
-            font-size: 2.5rem;
-            line-height: 2.8rem;
-            padding-left: 5rem;
-        }
-        @media #{$xl} {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            padding-left: 8rem;
-            right: 51%;
+    .my-entry-header {
+        height:100%;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            line-height: 1.8rem;
+            color: $white;
+            font-size: 1.5rem;
+            text-align: left;
+            margin-left: 1em;
+            @media #{$md} {
+                font-size: 2.5rem;
+                margin-left: 7em;
+            }
+            @media #{$xl} {
+                font-size: 2.5rem;
+            }
         }
     }
+
+}
+
+.page-template-mainpage_business, .page-template-mainpage_science {
+    
+    .header-title-container {
+        height: 14em;
+
+        @media screen and (min-width: 340px) {
+            height: 16em;
+        }
+    
+        @media #{$md} {
+            width: 100%; 
+            margin: auto;
+            position: relative;
+            // top: -10px;
+            height: 20em;
+        }
+    
+        @media #{$xxl} {
+            height: 25em;
+        }
+        h1 {
+            color: $my-light-green;
+            text-align: center;
+        }
+    }
+
 }
 
 .search {
@@ -1215,12 +1240,12 @@ li.menu-item:before, li.research-option:before {
             @media #{$lg} {
                 max-width: 40%;
                 -ms-flex: 0 0 40%;
-                flex: 0 0 40%;
+                flex: 0 0 40%
             }
         }
         .footer-social-media {
             a {
-                color: $lightgrey;
+                color: #dadada;
                 @include short-transition;
                 i {
                     padding: .5rem;
@@ -1228,7 +1253,7 @@ li.menu-item:before, li.research-option:before {
                     padding-right: 1rem;
                 }
                 &:hover {
-                    color: $red;
+                    color: $my-light-green;
                 }
             }
         }
@@ -1249,7 +1274,7 @@ li.menu-item:before, li.research-option:before {
                         @include short-transition;
                         &:hover {
                             text-decoration: none;
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                 }
@@ -1257,24 +1282,27 @@ li.menu-item:before, li.research-option:before {
        
         }
         .footer-widget {
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
             @media #{xs} {
                 margin-left: 20rem;
             }
             .widget-title {
                 text-transform: uppercase;
                 font-size: .7rem;
-                font-family: $secondary-font;
+                font-family: $primary-font;
                 color: $navy;
                 font-weight: 900;
             }
             p {
-                color: $navy;
+                color: $black;
                 font-size: .7rem;
+                font-weight: $primary-font;
+                line-height: 2;
             }
             .footer-form-left, .footer-form-right {
                 margin-bottom: 1.4rem;
                 width: 80%;
+                margin: auto;
                 @media #{$xs} {
                     width: 60%;
                 }
@@ -1283,47 +1311,62 @@ li.menu-item:before, li.research-option:before {
                 }
                 @media #{$lg} {
                     float: left;
-                    width: 65%;
+                    width: 60%;
                     margin-right: 2%;
                 }
             }
             .footer-form-right  {
+                margin-top: 1em;
                 @media #{$lg} {
-                    width: 30%;
+                    width: 35%;
+                    margin-top: 0;
                 }
             }
+
+            @media screen and (max-width: 768px) {
+                .footer-form-left {
+                    width: 80%;
+                } 
+            }
+
             .wpcf7 input[type=submit] {
-                background-color: $my-light-green;
-                border: 2px solid $my-light-green;
-                padding: .65rem 5rem;
+                display: inline-block;
+                background-color: transparent;
+                border: 2px solid $black;
+                border-radius: 100rem;
                 color: $black;
-                font-family: "Open Sans", sans-serif;
-                font-weight: 700;
-                font-size: 0.8rem;
-            
                 @include short-transition;
+                text-align: center;
+                font-weight: 700;
+                font-size: 0.85rem;
+                line-height: 1;
                 &:hover {
-                    background-color: transparent;
-                    color: $my-light-green;
+                    transform: scale(1.05);
+                    text-decoration: none;
+                    color: $black;
                 }
             }
             .wpcf7 input[type=email] {
-                background-color: transparent;
-                border: 1px solid $lightgrey;
-                border-radius: 0;
+                background-color: #fdfdfd;
+                border: 1px solid #dadada;
+                border-radius: 100rem;
                 padding: 0.3rem 1.4rem;
                 @include short-transition;
-                color: $lightgrey;
+                color: #dadada;
             }
             .wpcf7 input[type=email] {
                 &:hover, &:active, &:focus {
                     border: 1px solid $lightgrey;
-                    color: $navy;
+                    color: #dadada;
                     outline: none;
                     -webkit-box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1);
                     -moz-box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1);
                     box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1);
                 }
+            }
+
+            .footer-social-media {
+                text-align: center;
             }
         }
     }
@@ -1400,7 +1443,7 @@ li.menu-item:before, li.research-option:before {
         padding-left: 3rem;
         border: 1px solid $darkgrey;
         border-radius: 100rem;
-        width: 20em;
+        // width: 20em;
         &:active, &:focus {
             outline: none;
             -webkit-box-shadow: 0px 0px 0px 1px rgba($darkgrey,1);
@@ -1410,10 +1453,10 @@ li.menu-item:before, li.research-option:before {
         }
     }
 
-    .wpcf7 input[type="select your-recipient"] {
+    // .wpcf7 input[type="select your-recipient"] {
 
         
-    }
+    // }
 
     // .wpcf7 select {
 
@@ -1434,7 +1477,7 @@ li.menu-item:before, li.research-option:before {
         font-size: 0.8rem;
         width: 50%;
         margin: 1em auto 0 auto;
-        height: 3em;
+        height: 3.5em;
         border-radius: 100rem;
         line-height: 1em;
         text-align: center;
@@ -1450,6 +1493,7 @@ li.menu-item:before, li.research-option:before {
         .wpcf7-form {
             p {
                 display: flex;
+                flex-flow: column;
             }
         }
     }
@@ -1510,7 +1554,11 @@ li.menu-item:before, li.research-option:before {
             flex-flow:column;
 
             input {
+                margin: auto;
+                @media #{$md} {
+                margin-right: inherit;
                 margin-left: auto;
+                }
             }
         }
     }
@@ -1520,10 +1568,15 @@ li.menu-item:before, li.research-option:before {
         max-width: 400px;
         height: 50px;
         display: block;
-        margin-right: inherit;
-        margin-left: auto;
+        margin: auto;
         border-radius: 100rem;
         padding: 0.5em 1.5em;
+
+        @media #{$md} {
+            margin-right: inherit;
+            margin-left: auto;
+            }
+
         &:active, &:focus {
             outline: none;
             -webkit-box-shadow: inset 0px 0px 1px 1px rgba($navy,.7);
@@ -1721,7 +1774,10 @@ li.menu-item:before, li.research-option:before {
     margin-bottom: 1.3rem;
     @include short-transition;
     padding: 0;
-    margin: 15px;
+
+    @media #{$xl} {
+        margin: 15px;
+    }
     &:hover {
         box-shadow: -1px 10px 37px -13px rgba(48,213,48,1);
     }
@@ -1898,6 +1954,12 @@ li.menu-item:before, li.research-option:before {
 //first posts on news
 .my-posts-container {
     // height: 70%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
     .my-post-container:first-child {
         @media #{$md} {
             max-width: 100%;
@@ -1993,7 +2055,7 @@ li.menu-item:before, li.research-option:before {
             }
         }
         .branches-container {
-            background: $navy;
+            background: $black;
             padding-bottom: 2rem;
             @media #{$md} {
                 background: transparent;
@@ -2760,7 +2822,7 @@ li.menu-item:before, li.research-option:before {
                     content: "\f138";
                     padding-right: 10px;
                     font-family: 'FontAwesome';
-                    color: $red;
+                    color: $my-light-green;
                 }
             }
             .photo-normalization {
@@ -2782,7 +2844,7 @@ li.menu-item:before, li.research-option:before {
                     content: "\f138";
                     padding-right: 10px;
                     font-family: 'FontAwesome';
-                    color: $red;
+                    color: $my-light-green;
                 }
             }
             .kt {
@@ -3062,7 +3124,7 @@ li.menu-item:before, li.research-option:before {
 .page-template-offer {
     .offer {
         .branches-text {
-            padding: 2rem 1rem 4rem 1rem;
+            padding: 2rem 19em 4rem 19em;
         }
         .branches-text-2 {
             padding: 4rem 1rem 2rem 1rem;
@@ -3073,6 +3135,15 @@ li.menu-item:before, li.research-option:before {
         .branches-links {
             background-color: $vlightgrey;
             padding: 2rem .5rem;
+
+            .row {
+                margin: auto;
+
+                .col-lg-3 {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                }
+            } 
             .single-branch-container {
                 background: $white;
                 padding: 1.4rem;
@@ -3727,7 +3798,7 @@ li.menu-item:before, li.research-option:before {
                             content: "\f138";
                             padding-right: 10px;
                             font-family: 'FontAwesome';
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                 }
@@ -3796,7 +3867,7 @@ li.menu-item:before, li.research-option:before {
                             content: "\f138";
                             padding-right: 10px;
                             font-family: 'FontAwesome';
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                 }
@@ -3901,10 +3972,15 @@ li.menu-item:before, li.research-option:before {
                             content: "\f138";
                             padding-right: 10px;
                             font-family: 'FontAwesome';
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                 }
+
+                .col-12 {
+                    margin-top: 2em;
+                }
+
                 .my-button {
                     width: 100%;
                     &:hover {

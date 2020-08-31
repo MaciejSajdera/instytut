@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- offer -->
 <div class="section-container offer">
 
-	<div class="container branches-text">
+	<div class="upper-section-container branches-text">
 		<div class="row">
 			<div class="col-md-4 col-lg-3">
 				<h2><?php the_field('header_branches'); ?></h2>
@@ -104,7 +104,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="text-justify"><?php the_field('offer_short_text_2'); ?></div>
 			</div>
 			<div class="col-12 text-center">
-				<a href="http://instytutimpib.dev.cube360.pl/kontakt" class="my-button">Skontaktuj się z nami</a>
+				<a href="http://instytutimpib.dev.cube360.pl/kontakt" class="my-button green-button">Skontaktuj się z nami</a>
 			</div>
 			
 		</div>

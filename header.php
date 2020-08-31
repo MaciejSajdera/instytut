@@ -134,6 +134,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 	</div><!-- .conatiner end -->
 </div><!-- #wrapper-navbar end -->
+
 <div class="container-fluid header-title-container position-relative">
 	<!-- <div class="gradient-bg-section-inner"></div> -->
 	<?php if ( is_front_page()) : ?>
@@ -150,6 +151,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	<?php endif; ?>	
 </div>
+
 	
 
 

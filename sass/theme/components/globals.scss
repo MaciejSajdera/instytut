@@ -9,3 +9,11 @@
         color: black!important;
     }
 }
+
+input:focus::placeholder {
+    color: transparent!important;
+  }
+
+// select {
+    
+// }

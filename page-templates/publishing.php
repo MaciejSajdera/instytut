@@ -373,7 +373,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="publishing-house">
 							<?php the_sub_field('publishing_house'); ?>
 						</div>
-						<a class="my-read-more-button publishing-content-collapse" data-toggle="collapse" href="#publishing-content<?php echo $publishing; ?>" role="button" aria-expanded="false" aria-controls="publishing-content<?php echo $publishing; ?>">
+						<a class="publishing-content-collapse green button" data-toggle="collapse" href="#publishing-content<?php echo $publishing; ?>" role="button" aria-expanded="false" aria-controls="publishing-content<?php echo $publishing; ?>">
 							<span class="text-collapsed">Spis treści</span>
 							<span class="text-expanded">Spis treści</span>
 						</a>

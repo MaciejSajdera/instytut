@@ -17,6 +17,7 @@
 .green-button {
     background-color: $my-light-green;
     border: 2px solid $my-light-green;
+    border-radius: 100rem;
     padding: .65rem 5rem;
     color: $black;
     font-family: "Open Sans", sans-serif;
@@ -85,6 +86,7 @@
         color: $white;
     }
 }
+
 .my-read-more-button {
     padding: .6rem 2.6rem;
     background-color: white;
@@ -111,6 +113,7 @@
         @include basic-transition;
     }
 }
+
 .my-read-more-button[aria-expanded=false] .text-expanded {
     display: none;
     @include short-transition;
@@ -119,9 +122,10 @@
     display: none;
 }
 .my-read-more-button[aria-expanded=true] {
-    background-color: $red;
+    background-color: transparent;
+    color: $my-light-green;
     span {
-        color: $white;
+        color: $my-light-green;
     }
     span:after {
         color: $white;
@@ -130,6 +134,64 @@
         transform: rotate(180deg);
     }
 }
+
+.my-read-more-button-green {
+    background-color: $my-light-green;
+    border: 2px solid $my-light-green;
+    border-radius: 100rem;
+    padding: .65rem 5rem;
+    color: $black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $my-light-green;
+    }
+}
+
+.my-read-more-button-black {
+    background-color: #000;
+    border: 2px solid black;
+    border-radius: 100rem;
+    padding: .65rem 5rem;
+    color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+
+.my-read-more-button-black[aria-expanded=false] .text-expanded {
+    display: none;
+    @include short-transition;
+}
+.my-read-more-button-black[aria-expanded=true] .text-collapsed {
+    display: none;
+}
+.my-read-more-button-black[aria-expanded=true] {
+    background-color: transparent;
+    color: $black;
+    span {
+        color: $black;
+    }
+    span:after {
+        color: $white;
+    }
+    span:after {
+        transform: rotate(180deg);
+    }
+}
+
+
+
 
 .my-read-more-button-red {
     padding: .6rem 2.6rem;
