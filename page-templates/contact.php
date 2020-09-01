@@ -26,10 +26,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-12">
 				<?php the_field('adress_torun', 289); ?>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 extra-padding">
 				<?php the_field('nip', 289); ?>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 extra-padding">
 				<?php the_field('bank_account', 289); ?>
 			</div>
 			<?php if( have_rows('data_left_torun', 289) ); ?>

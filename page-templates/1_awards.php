@@ -22,9 +22,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col">
 				<ul class="nav nav-tabs" role="tablist">
 					<li><a class="active" href="#torun" role="tab" data-toggle="tab">Toruń</a></li>
-					<li>/</li>
+					<!-- <li>/</li> -->
 					<li><a href="#gliwice" role="tab" data-toggle="tab">Gliwice</a></li>
-					<li>/</li>
+					<!-- <li>/</li> -->
 					<li><a href="#piastow" role="tab" data-toggle="tab">Piastów</a></li>
 				</ul>
 			</div>
@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<span class="sr-only">Previous</span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-torun" role="button" data-slide="next">
-				<i class="fas fa-long-arrow-alt-right"></i>
+				<i class="fas fa-arrow-right"></i>
 				<span class="sr-only">Next</span>
 			</a>
 			</div><!-- end of carousel-->
@@ -144,9 +144,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col">
 				<ul class="nav nav-tabs" role="tablist">
 					<li><a class="active" href="#torun-desktop" role="tab" data-toggle="tab">Toruń</a></li>
-					<li>/</li>
+					<!-- <li>/</li> -->
 					<li><a href="#gliwice-desktop" role="tab" data-toggle="tab">Gliwice</a></li>
-					<li>/</li>
+					<!-- <li>/</li> -->
 					<li><a href="#piastow-desktop" role="tab" data-toggle="tab">Piastów</a></li>
 				</ul>
 			</div>
@@ -165,7 +165,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							<p class="award-place"><?php the_sub_field('place_award'); ?></p>
 							<p class="competition-name"><?php the_sub_field('competition_name'); ?></p>
-							<div class="thin-red-line"></div>
+							<!-- <div class="thin-red-line"></div> -->
 							<p class="competition-place"><?php the_sub_field('competition_place'); ?></p>
 						</div>
 					</div>

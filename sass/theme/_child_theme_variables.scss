@@ -10,7 +10,7 @@
 // Color system
 //
 
-$red: #AF1A33;
+$my-light-green: #AF1A33;
 $darkred: #831326;
 $navy: #222D4E;
 $blue: #2699FB;
@@ -29,10 +29,13 @@ $my-light-green: #30D530;
 $my-dark-green: #4ECB1B;
 $my-light-green-transparent: rgba(48, 213, 48, 0.6);
 
+$my-dark-transparent: rgba(0, 0, 0, 0.6);
 
-$primary-font: TTSupermolotBold;
-$secondary-font: TTSupermolotRegular;
 
+$primary-font: TTSupermolotRegular;
+$primary-font-bold: TTSupermolotBold;
+
+$secondary-font: "Open Sans", sans-serif;
 
 @font-face {
     font-family: TTSupermolotBold;

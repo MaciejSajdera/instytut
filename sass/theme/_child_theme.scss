@@ -1,18 +1,18 @@
 //general
 //text
 h1, h2, h3, h4, h5, h6 {
-    font-family: $primary-font;
-    color: $navy;
+    font-family: $primary-font-bold;
+    color: $black;
 }
 p {
-    font-family: $secondary-font;
+    font-family: $primary-font;
     color: $navy;
     font-size: 15px;
     line-height: 30px;
 }
 a {
     text-decoration: none;
-    font-family: $secondary-font;
+    font-family: $primary-font;
     &:hover {
         color: $my-light-green;
         text-decoration: none;
@@ -55,7 +55,7 @@ li.menu-item:before, li.research-option:before {
     @media #{$md} {
         width: 80px;
         height: 3px;
-        background: $red;
+        background: $my-light-green;
         padding-right: 10px;
         display: inline-block;
         margin-left: 10px
@@ -65,7 +65,7 @@ li.menu-item:before, li.research-option:before {
     width: 60%;
     height: 1px;
     margin: auto;
-    background: $red;
+    background: $my-light-green;
 }
 .card {
     img {
@@ -78,12 +78,12 @@ li.menu-item:before, li.research-option:before {
 // .my-button {
 //     display: inline-block;
 //     padding: .6rem 2.6rem;
-//     background-color: $red;
+//     background-color: $my-light-green;
 //     color: $white;
 //     @include short-transition;
 //     text-align: center;
 //     &:hover {
-//         background-color: darken($red, 10%);
+//         background-color: darken($my-light-green, 10%);
 //         transform: scale(1.05);
 //         @include short-transition;
 //         text-decoration: none;
@@ -125,7 +125,7 @@ li.menu-item:before, li.research-option:before {
 //     }
 //     span:after {
 //         content: '\f078';
-//         color: $red;
+//         color: $my-light-green;
 //         float: right;
 //         font-family: "FontAwesome";
 //         @include basic-transition;
@@ -139,7 +139,7 @@ li.menu-item:before, li.research-option:before {
 //     display: none;
 // }
 // .my-read-more-button[aria-expanded=true] {
-//     background-color: $red;
+//     background-color: $my-light-green;
 //     span {
 //         color: $white;
 //     }
@@ -153,7 +153,7 @@ li.menu-item:before, li.research-option:before {
 
 // .my-read-more-button-red {
 //     padding: .6rem 2.6rem;
-//     background-color: $red;
+//     background-color: $my-light-green;
 //     color: $white;
 //     @include short-transition;
 //     text-align: center;
@@ -187,12 +187,12 @@ li.menu-item:before, li.research-option:before {
 // }
 // .my-read-more-button-red[aria-expanded=true] {
 //     background-color: $white;
-//     border: 1px solid $red;
+//     border: 1px solid $my-light-green;
 //     span {
-//         color: $red;
+//         color: $my-light-green;
 //     }
 //     span:after {
-//         color: $red;
+//         color: $my-light-green;
 //     }
 //     span:after {
 //         transform: rotate(180deg);
@@ -234,6 +234,8 @@ li.menu-item:before, li.research-option:before {
     }
 }
 .only-on-mobile {
+    display: flex;
+    flex-flow: column;
     @media #{$md} {
         display: none;
     }
@@ -261,6 +263,8 @@ li.menu-item:before, li.research-option:before {
 }
 .my-half-container {
     margin: auto;
+    display: flex;
+    flex-flow: column;
     @media #{$sm} {
         max-width: 540px;
     }
@@ -272,6 +276,7 @@ li.menu-item:before, li.research-option:before {
     }
     @media #{$lg} {
         max-width: 480px;
+        display: block;
     }
     @media #{$xl} {
         max-width: 570px;
@@ -306,6 +311,22 @@ li.menu-item:before, li.research-option:before {
         background: -ms-linear-gradient(left, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 85%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
         background: linear-gradient(to right, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 85%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
     }
+}
+.bg-black-85-left {
+    background: black;
+    // background-position: 50%;
+    @media #{$xxl} {
+        background: $vlightgrey;
+        background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+        // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,248,248,1)), color-stop(85%, rgba(248,248,248,1)), color-stop(85%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+        background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+        background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+    }
+}
+.bg-green-85-left {
+    background: $my-light-green;
 }
 .bg-vlg-60-left {
     background: $vlightgrey;
@@ -387,7 +408,7 @@ li.menu-item:before, li.research-option:before {
         margin-right: 17px;
     }
     .active {
-        background-color: $red;
+        background-color: $my-light-green;
     }
 }
 .swiper-pagination {
@@ -434,7 +455,7 @@ li.menu-item:before, li.research-option:before {
         width: 25px;
         margin: 0;
         i {
-            color: $vlightgrey-2;
+            color: $my-light-green;
             font-size: 1.2rem;
             &:hover {
                 cursor: pointer;
@@ -451,7 +472,7 @@ li.menu-item:before, li.research-option:before {
 }
 //liders collapse
 .liders-collapse, .read-more-collapse {
-    color: $red;
+    color: $my-light-green;
     text-align: center;
     width: 90%;
     margin: 1rem auto;
@@ -459,7 +480,7 @@ li.menu-item:before, li.research-option:before {
     outline: none;
     span:after {
         content: '\f078';
-        color: $red;
+        color: $my-light-green;
         padding-left: 10px;
         font-family: "FontAwesome";
         @include basic-transition;
@@ -475,7 +496,7 @@ li.menu-item:before, li.research-option:before {
 .liders-collapse[aria-expanded=true], .read-more-collapse[aria-expanded=true] {
     span:after {
         content: '\f077';
-        color: $red;
+        color: $my-light-green;
         padding-left: 10px;
         font-family: "FontAwesome";
         @include basic-transition;
@@ -607,7 +628,7 @@ li.menu-item:before, li.research-option:before {
             }
             h3 {
                 color: $white;
-                font-family: $primary-font;
+                font-family: $primary-font-bold;
                 font-size: 3rem;
             }
             p {
@@ -626,11 +647,11 @@ li.menu-item:before, li.research-option:before {
             // a {
             //     display: inline-block;
             //     padding: .6rem 2.6rem;
-            //     background-color: $red;
+            //     background-color: $my-light-green;
             //     color: $white;
             //     @include short-transition;
             //     &:hover {
-            //         background-color: $navy;
+            //         background-color: $black;
             //         transform: scale(1.05);
             //         @include short-transition;
             //         text-decoration: none;
@@ -792,14 +813,14 @@ li.menu-item:before, li.research-option:before {
             line-height: 40px
         }
         .button-for-bussiness {
-            background-color: $red;
+            background-color: $my-light-green;
             &:hover {
-                background-color: darken($red, 10%);
+                background-color: darken($my-light-green, 10%);
                 color: $white;
             }
         }
         .button-for-science {
-            background-color: $navy;
+            background-color: $black;
             &:hover {
                 background-color: darken($navy, 10%);
                 color: $white;
@@ -828,7 +849,7 @@ li.menu-item:before, li.research-option:before {
                 color: $navy;
                 @include short-transition;
                 &:hover {
-                    color: $red;
+                    color: $my-light-green;
                 }
             }
         }
@@ -1007,7 +1028,7 @@ li.menu-item:before, li.research-option:before {
                     }
                     &:hover {
                         // @include short-transition;
-                        // color: $red;
+                        // color: $my-light-green;
                         // font-weight: 700;
                         // text-shadow: 1px 0 black;
                     }
@@ -1040,16 +1061,16 @@ li.menu-item:before, li.research-option:before {
     @media #{$lg} {
         background: url('/wp-content/uploads/2020/08/baner@2x.png') no-repeat;
     }
-
 }
+
 .page-template-1_about_institute {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-2.jpg') no-repeat;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-2.jpg') no-repeat;
     }
 }
 .page-template-1_institute_structure, .page-template-1_products_normalization, .page-template-grants, .search {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-1.jpg') no-repeat;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-1.jpg') no-repeat;
     }
 }
 .page-template-news, .blog, .single, .archive {
@@ -1069,12 +1090,12 @@ li.menu-item:before, li.research-option:before {
 }
 .page-template-1_patents {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-6.jpg') no-repeat;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-6.jpg') no-repeat;
     }
 }
 .page-template-1_projects, .page-template-lab_accredited {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-8.jpg') no-repeat;
+        background: linear-gradient($my-dark-transparent, $my-dark-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-8.jpg') no-repeat;
     }
 }
 .page-template-contact {
@@ -1084,7 +1105,7 @@ li.menu-item:before, li.research-option:before {
 }
 .page-template-1_certifications, .page-template-research_areas {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat;
+        background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat;
     }
 }
 .page-template-lab_tech, .page-template-workshop_for_business, .page-template-workshop_for_science {
@@ -1097,7 +1118,6 @@ li.menu-item:before, li.research-option:before {
         background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-11.jpg') no-repeat;
     }
 }
-
 
 
 
@@ -1165,9 +1185,12 @@ li.menu-item:before, li.research-option:before {
         @media #{$xxl} {
             height: 25em;
         }
+        
         h1 {
             color: $my-light-green;
             text-align: center;
+            width: 100%;
+            height: 55%;
         }
     }
 
@@ -1289,14 +1312,14 @@ li.menu-item:before, li.research-option:before {
             .widget-title {
                 text-transform: uppercase;
                 font-size: .7rem;
-                font-family: $primary-font;
+                font-family: $primary-font-bold;
                 color: $navy;
                 font-weight: 900;
             }
             p {
                 color: $black;
                 font-size: .7rem;
-                font-weight: $primary-font;
+                font-weight: $primary-font-bold;
                 line-height: 2;
             }
             .footer-form-left, .footer-form-right {
@@ -1654,7 +1677,7 @@ li.menu-item:before, li.research-option:before {
                 font-weight: 700;
                 text-transform: uppercase;
                 font-size: 1.7rem;
-                font-family: $secondary-font;
+                font-family: $primary-font;
             }
         }
         .my-search-results {
@@ -1667,7 +1690,7 @@ li.menu-item:before, li.research-option:before {
                 a {
                     color: $grey;
                     i {
-                        color: $red;
+                        color: $my-light-green;
                         padding-left: 10px;
                     }
                 }
@@ -1690,16 +1713,16 @@ li.menu-item:before, li.research-option:before {
                 .page-item {
                     display: inline-block;
                     a, span {
-                        color: $red;
+                        color: $my-light-green;
                         background: $white;
-                        border: 1px solid $red;
+                        border: 1px solid $my-light-green;
                         @include short-transition;
                     }
                 }
                 .page-item.active {
                     span {
                         color: $white;
-                        background: $red;
+                        background: $my-light-green;
                         border: 1px solid $white;
                     }
                 }
@@ -1770,7 +1793,7 @@ li.menu-item:before, li.research-option:before {
 
 //post conatainer on news and main page
 .my-post-container {
-    height:70%;
+    // height:70%;
     margin-bottom: 1.3rem;
     @include short-transition;
     padding: 0;
@@ -1811,13 +1834,13 @@ li.menu-item:before, li.research-option:before {
             font-weight: 700;
             padding: 1rem;
             color: $navy;
-            font-family: $secondary-font;
+            font-family: $primary-font;
         }
         .my-post-text {
             padding: 1rem;
             padding-top: 0;
             p {
-                font-family: $secondary-font;
+                font-family: $primary-font;
                 color: $navy;
                 font-size: .8rem;
                 line-height: 1.2rem;
@@ -1836,9 +1859,9 @@ li.menu-item:before, li.research-option:before {
                 }
                 &:hover, &:active, &:focus {
                     @include short-transition;
-                    color: $red;
+                    color: $my-light-green;
                     i {
-                        color: $red;
+                        color: $my-light-green;
                         @include short-transition;
                     }
                 }
@@ -1884,13 +1907,10 @@ li.menu-item:before, li.research-option:before {
             float: left;
             font-size: 0.9rem;
             i {
-                color: $red;
                 padding-left: 7px;
             }
-            &:hover {
-                color: $red;
-            }
         }
+
         .notice-date {
            float: right;
            font-size: .9rem;
@@ -1899,8 +1919,12 @@ li.menu-item:before, li.research-option:before {
            color: $navy;
         }
         &:hover, &:active, &:focus {
-            transform: scale(1.01);
+            box-shadow: -1px 5px 30px -13px #30d530;
             @include short-transition;
+
+            i {
+                color: $my-light-green;
+            }
         }
         .background-icon {
             background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/aktualnosci.png') no-repeat right bottom;
@@ -1927,7 +1951,7 @@ li.menu-item:before, li.research-option:before {
                     color: $darkgrey;
                 }
                 a.active {
-                    color: $red;
+                    color: $my-light-green;
                 }
                 i {
                     padding-left: 7px;
@@ -1943,17 +1967,24 @@ li.menu-item:before, li.research-option:before {
     }
     .only-on-mobile {
         margin-top: 3rem;
-        .my-button {
-            display: block;
-            max-width: 300px;
-            margin: auto;
-        }
+    }
+}
+
+.blog-grid {
+
+    display: flex;
+    flex-flow: column;
+
+    @media #{$xl} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 //first posts on news
 .my-posts-container {
-    // height: 70%;
+    height: auto;
+    align-self: start;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -1963,18 +1994,28 @@ li.menu-item:before, li.research-option:before {
     .my-post-container:first-child {
         @media #{$md} {
             max-width: 100%;
-            -ms-flex: 0 0 100%;
+            // -ms-flex: 0 0 100%;
             flex: 0 0 100%;
         }
         @media #{$xl} {
-            max-width: 66%;
-            -ms-flex: 0 0 66%;
-            flex: 0 0 66%;
+            grid-column: auto / span 2;
         }
+
         .my-post-container-outer {
             position: relative;
-            max-width: 790px;
+            max-width: 100%;
+            width: 100%;
             margin: auto;
+
+            .my-post-photo {
+                img {
+                    object-fit: cover;
+                    object-position: top;
+                    height: 100%;
+                    max-height: none;
+                }
+            }
+
             .my-post-container-inner {
                 position: absolute;
                 width: 100%;
@@ -2018,7 +2059,26 @@ li.menu-item:before, li.research-option:before {
                 }
             }
         }
-       
+    }
+
+    .my-post-photo {
+        img {
+            object-fit: cover;
+            object-position: top;
+
+            min-height: 12em;
+            max-height: 12em;
+
+            @media #{$xl} {
+            min-height: 10em;
+            max-height: 10em;
+            }
+        }
+    }
+
+    .text-center {
+        grid-column-start: 2;
+        margin-top: 3em;
     }
 }
 
@@ -2083,7 +2143,7 @@ li.menu-item:before, li.research-option:before {
                         @include short-transition;
                         color: $darkgrey;
                         i {
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                     &:hover, &:active, &:focus {
@@ -2294,12 +2354,12 @@ li.menu-item:before, li.research-option:before {
                         color: $white;
                         position: relative;
                         i {
-                            color: $red;
+                            color: $my-light-green;
                             padding-left: 15px;
                         }
                     }
                     &:hover, &:active, &:focus {
-                        transform: scale(1.01);
+                        box-shadow: -1px 5px 30px -13px #30d530;
                         @include short-transition;
                     }
                     .science-title {
@@ -2339,7 +2399,7 @@ li.menu-item:before, li.research-option:before {
                     margin-top: .5rem;
                 }
                 .card-body {
-                    background-color: $red;
+                    background-color: $my-light-green;
                     min-height: 80px;
                     padding: .3rem;
                     padding-top: 1.5rem;
@@ -2357,8 +2417,8 @@ li.menu-item:before, li.research-option:before {
                     bottom: 0;
                     left: 0;
                     opacity: 0;
-                    background-color: $navy;
-                    border-top: 1px solid $red;
+                    background-color: $black;
+                    border-top: 1px solid $my-light-green;
                     @include short-transition;
                     width: 100%;
                     padding-top: 1rem;
@@ -2377,7 +2437,7 @@ li.menu-item:before, li.research-option:before {
                     @include short-transition;
                     z-index: 100;
                     .card-body {
-                        background-color: $navy;
+                        background-color: $black;
                     }
                     .read-more {
                         bottom: -47px;
@@ -2507,8 +2567,31 @@ li.menu-item:before, li.research-option:before {
     .about-institute-1 {
         .row {
             .col-md-5 {
-                margin-bottom: 2rem;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column;
+                }
+
             }
+
+            .text-justify {
+                margin-bottom: 2em;
+            }
+
+            .col-md-7 {
+                margin-top: 3em;
+            }
+        }
+
+        .green-button {
+
+            @media screen and (max-width: 768px) {
+                width: 80%;
+            }
+            font-family: $primary-font-bold;
+            margin-top: 1em;
+            margin-left: auto;
         }
     }
     //history
@@ -2530,21 +2613,21 @@ li.menu-item:before, li.research-option:before {
                 .history-container-single {
                     .history-year {
                         font-size: 1.2rem;
-                        color: $red;
+                        color: $my-light-green;
                     }
                     .history-line-container {
                         position: relative;
                         .history-line {
                             width: 100%;
                             height: 2px;
-                            background: $red;
+                            background: $my-light-green;
                             display: inline-block;
                         }
                         .history-circle {
                             width: 20px;
                             height: 20px;
                             background: $white;
-                            border: 1px solid $red;
+                            border: 1px solid $my-light-green;
                             border-radius: 50%;
                             display: inline-block;
                             position: absolute;
@@ -2559,6 +2642,7 @@ li.menu-item:before, li.research-option:before {
                     .history-line-container {
                         .history-line {
                             width: 50%;
+                            background: transparent;
                         }
                     }
                 }
@@ -2588,7 +2672,7 @@ li.menu-item:before, li.research-option:before {
                 display: inline-block;
                 i {
                     font-size: 2rem;
-                    color: $red;
+                    color: $my-light-green;
                     text-align: center;
                 }
             } 
@@ -2611,6 +2695,26 @@ li.menu-item:before, li.research-option:before {
         .text-about-institute-3 {
             margin-top: 2rem;
         }
+
+        .row {
+            .text-about-institute-2 {
+                @media screen and (min-width: 992px) {
+                    flex: 0 0 60%;
+                    max-width: 60%;
+                }
+
+            }
+            .text-center {
+                @media screen and (min-width: 992px) {
+                flex: 0 0 40%;
+                max-width: 40%;
+                }
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
     }
     .partners-about-institute {
         padding-top: 2rem;
@@ -2627,14 +2731,19 @@ li.menu-item:before, li.research-option:before {
                 margin-top: 0;
             }
         }
+
+        span {
+        font-family: $primary-font;
+        }
+
         .my-button {
             background-color: $white;
-            border: 1px solid $red;
-            color: $red;
+            border: 1px solid $my-light-green;
+            color: $my-light-green;
             &:hover {
                 background-color: $white;
-                border: 1px solid $red;
-                color: $red;
+                border: 1px solid $my-light-green;
+                color: $my-light-green;
             }
         }
     }
@@ -2651,7 +2760,7 @@ li.menu-item:before, li.research-option:before {
                 max-width: 390px;
                 margin: auto;
                 .card-body {
-                    background-color: $navy;
+                    background-color: $black;
                     min-height: 120px;
                     padding: .3rem;
                     padding-top: 1.5rem;
@@ -2674,7 +2783,7 @@ li.menu-item:before, li.research-option:before {
                     bottom: 0;
                     left: 0;
                     opacity: 0;
-                    background-color: rgba($red, .95);
+                    background-color: rgba($my-light-green, .95);
                     @include short-transition;
                     width: 100%;  
                     padding-top: 1rem;
@@ -2683,6 +2792,14 @@ li.menu-item:before, li.research-option:before {
                         color: $white;
                         line-height: 1.2rem;
                         margin-bottom: 0;
+
+                        a {
+                            color: $white;
+
+                            &:hover {
+                                color: black;
+                            }
+                        }
                     }
                 }
                 &:hover, &:focus, &:active {
@@ -2690,7 +2807,7 @@ li.menu-item:before, li.research-option:before {
                     @include short-transition;
                     z-index: 100;
                     .card-body {
-                        background-color: $red;
+                        background-color: $my-light-green;
                     }
                     .contact-info {
                         bottom: 120px;
@@ -2704,26 +2821,43 @@ li.menu-item:before, li.research-option:before {
 
 //institute structure
 .page-template-1_institute_structure {
+    .section-container {
+         margin-top: 0;
+    }
     //management
     .departments {
-        background-color: $vlightgrey;
+        background-color: $black;
         padding: 1.5rem;
         @media #{$md} {
             padding: 3rem;
             margin-bottom: 0;
         }
+
+        .container-fluid {
+            max-width: 90%;
+
+            .col-md-12 {
+                display: flex;
+
+                h2.py-5 {
+                    align-self: center;
+                    color: $white;
+                }
+            }
+        }
+
         .card {
             border-radius: 0;
-            max-width: 300px;
+            max-width: 500px;
             margin: auto;
             margin-bottom: 1.3rem;
             .card-body {
-                background-color: $navy;
+                background-color: $my-light-green;
                 @media #{$md} {
                     min-height: 140px;
                 }
                 p {
-                    color: $white;
+                    color: $black;
                     font-size: 1rem;
                     line-height: 1.4rem;
                     font-weight: 700;
@@ -2776,6 +2910,11 @@ li.menu-item:before, li.research-option:before {
     .certifications {
         .container {
             .row {
+                .col-md-6 {
+                    display: flex;
+                    flex-flow: column;
+                }
+
                 min-height: 62px;
                 .title-certification {
                     font-size: 1.6rem;
@@ -2788,8 +2927,8 @@ li.menu-item:before, li.research-option:before {
                     font-size: 1.1rem;
                     margin-bottom: 1.4rem;
                 }
-                .my-read-more-button {
-                    width: 100%;
+                .my-read-more-button-green {
+                    width: 90%;
                     margin-top: 2rem;
                 }
             }
@@ -2801,6 +2940,8 @@ li.menu-item:before, li.research-option:before {
                 margin-top: 1rem;
                 i {
                     padding-left: 10px;
+                    color: $my-light-green;
+                    font-size: 2rem;
                 }
             }
         
@@ -2865,7 +3006,7 @@ li.menu-item:before, li.research-option:before {
                     text-align: center;
                 }
                 i {
-                    color: $red;
+                    color: $my-light-green;
                     position: absolute;
                     bottom: 10px;
                     right: 10px;
@@ -2881,17 +3022,20 @@ li.menu-item:before, li.research-option:before {
         .nav-tabs {
             border-bottom: none;
             padding-bottom: 2rem;
-            width: 280px;
+            text-align: center;
             margin: auto;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-around;
+
             li {
                 padding-right: .5rem;
                 a {
                     color: $grey;
                     text-transform: uppercase;
-                    font-size: 1.1rem;
                 }
                 a.active {
-                    color: $red;
+                    color: $my-light-green;
                 }
             }
         }
@@ -2902,7 +3046,7 @@ li.menu-item:before, li.research-option:before {
                 }
                 .carousel-control-next, .carousel-control-prev {
                     top: 100%;
-                    color: $red;
+                    color: $my-light-green;
                     opacity: 1;
                 }
                 .carousel-control-next {
@@ -2969,6 +3113,15 @@ li.menu-item:before, li.research-option:before {
 //patents 
 .page-template-1_patents {
     .patents {
+
+        .col-md-3 {
+            word-wrap: break-word;
+        }
+
+        .container {
+            max-width: 80%;
+        }
+
         .patents-container {
             position: relative;
           }
@@ -2976,8 +3129,8 @@ li.menu-item:before, li.research-option:before {
             content: '';
             position: absolute;
             width: 1px;
-            background-color: $red;
-            top: 0;
+            background-color: $my-light-green;
+            top: 2%;
             bottom: 0;
             left: 0%;
             margin-left: 20px;
@@ -2987,7 +3140,7 @@ li.menu-item:before, li.research-option:before {
             padding: 10px 1rem;
             .year {
                 margin-left: .4rem;
-                color: $red;
+                color: $my-light-green;
                 font-weight: 700;
                 font-size: 1.2rem;
                 span {
@@ -2997,6 +3150,10 @@ li.menu-item:before, li.research-option:before {
             }
             .patents-collapse {
                 color: $darkgrey;
+
+                i {
+                    font-size: 0.7rem;
+                }
             }
             ul {
                 list-style-type: none;
@@ -3015,7 +3172,7 @@ li.menu-item:before, li.research-option:before {
             height: 20px;
             left: -5px;
             background-color: white;
-            border: 1px solid $red;
+            border: 1px solid $my-light-green;
             top: 15px;
             border-radius: 50%;
             z-index: 100;
@@ -3026,18 +3183,71 @@ li.menu-item:before, li.research-option:before {
 //projects
 .page-template-1_projects {
     .projects {
+        background-color: $my-light-green;
+        margin-top: 0;
         .container-fluid {
-            .bg-vlg-85-left {
-                &:nth-child(2n+1) {
-                    background: $white;
+            margin-left: 0;
+            padding-left: 0;
+            .bg-green-85-left {
+                width: 85%;
+                min-height: 350px;
+                display: flex;
+                &:nth-child(even) {
+                    background: black;
+                    background-position: 50%;
+                    @media #{$xxl} {
+                        background: $vlightgrey;
+                        background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+                        // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,248,248,1)), color-stop(85%, rgba(248,248,248,1)), color-stop(85%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+                        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+                        background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+                        background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+                        background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+                    }
+
+                        .col-md-6 {
+                            p, h3 {
+                                color: $white;
+                            }
+                        }
+
+                        .col {
+                            p {
+                                color: $white;
+                            }
+                        }
+
                 }
             }
             .row {
                 padding: 1rem;
+                margin-left: auto;
+                max-width: 100%;
                 @media #{$sm} {
                     padding: 3rem;
                 }
-               
+                .my-read-more-button-green[aria-expanded=true] {
+                    span {
+                        color: $my-light-green;
+                    }
+
+                    span:after {
+                        color: $my-light-green;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .my-read-more-button-green[aria-expanded=true] {
+                    span {
+                        color: $my-light-green;
+                    }
+
+                    span:after {
+                        color: $my-light-green;
+                        transform: rotate(180deg);
+                    }
+                }
+
                 .title-project {
                     font-size: 1.6rem;
                     @media #{$xs} {
@@ -3050,6 +3260,7 @@ li.menu-item:before, li.research-option:before {
                 }
                 .finance-project {
                     font-size: 1.1rem;
+                    margin-bottom: 4em;
                 }
                 .subtitle-project {
                     font-weight: 700;
@@ -3071,6 +3282,26 @@ li.menu-item:before, li.research-option:before {
         .contact-department-section {
             padding: 2rem 2rem;
             @include basic-transition;
+
+            .col-md-8 {
+                padding-left: 15px;
+
+                h2.contact-section-title {
+                    padding-left: 1.4rem;
+                }
+            }
+
+            .col-12 {
+                p {
+                    padding-left: 1.4rem;
+                }
+            }
+
+            .extra-padding {
+                p {
+                    padding-left: 1.4rem;
+                }
+            }
         }
         .contact-section-title {
             margin-bottom: 1.6rem;
@@ -3079,9 +3310,12 @@ li.menu-item:before, li.research-option:before {
             position: relative;
         }
         .single-contact-container {
+            display: flex;
+            flex-flow: column;
             position: relative;
-            padding: .3rem 1.4rem 2rem 1.4rem;
+            padding: 0.5rem 1.4rem 0.5rem 1.4rem;
             @include short-transition;
+
             a {
                 color: $grey;
             }
@@ -3089,8 +3323,14 @@ li.menu-item:before, li.research-option:before {
                 margin-bottom: 0;
             }
             .my-button {
-                display: none;
-                color: $white;
+                display: inline-block;
+                color: transparent;
+                padding: 0.6rem 1rem; 
+                margin: 1em auto;
+                width: 90%;
+                font-family: $secondary-font;
+                font-weight: bold;
+                font-size: 0.75rem;
             }
         }
         .single-contact-container {
@@ -3101,19 +3341,16 @@ li.menu-item:before, li.research-option:before {
                 background-color: $white;
                 cursor: pointer;
                 transform: scale(1.02);
-                padding-bottom: 3.4rem;
+                // padding-bottom: 3.4rem;
                 @include short-transition;
                 .my-button {
-                    display: inline-block;
+                    color: $black;
                     transform: none;
                     @include basic-transition;
-                    position: absolute;
-                    bottom: 1rem;
-                    left: 1.4rem;
-                    padding: 0.3rem 1rem; 
-                    &:hover {
-                        background-color: darken($red, 10%);
-                    }
+
+
+                    background-color: $my-light-green;
+
                 }
             }
         }
@@ -3162,11 +3399,11 @@ li.menu-item:before, li.research-option:before {
                     @include short-transition;
                     color: $darkgrey;
                     i {
-                        color: $red;
+                        color: $my-light-green;
                     }
                 }
                 &:hover, &:active, &:focus {
-                    transform: scale(1.01);
+                    box-shadow: -1px 5px 30px -13px #30d530;
                     @include short-transition;
                     .read-more-text {
                         @include short-transition;
@@ -3314,10 +3551,10 @@ li.menu-item:before, li.research-option:before {
             }
             .my-button-white {
                 background-color:$white;
-                color: $red;
+                color: $my-light-green;
                 &:hover {
                     background-color: darken($white, 5%);
-                    color: $red;
+                    color: $my-light-green;
                 }
             }
         }
@@ -3415,7 +3652,7 @@ li.menu-item:before, li.research-option:before {
             position: relative;
             @include short-transition;
                 .job-city {
-                    color: $red;
+                    color: $my-light-green;
                     font-size: .8rem
                     }
                 .position {
@@ -3425,7 +3662,7 @@ li.menu-item:before, li.research-option:before {
                 }
                 .position:after {
                     content: '\f078';
-                    color: $red;
+                    color: $my-light-green;
                     position: absolute;
                     right: 20px;
                     font-family: "FontAwesome";
@@ -3442,7 +3679,7 @@ li.menu-item:before, li.research-option:before {
                 }
                 &:hover {
                     @include short-transition;
-                    background-color: $red;
+                    background-color: $my-light-green;
                     .position, .job-city {
                         color: $white;
                     }
@@ -3455,7 +3692,7 @@ li.menu-item:before, li.research-option:before {
                 }
             }
             .job-collapse[aria-expanded="true"] {
-                background-color: $red;
+                background-color: $my-light-green;
                     .position, .job-city {
                         color: $white;
                     }
@@ -3483,7 +3720,7 @@ li.menu-item:before, li.research-option:before {
                     }
                     li:before {
                         content: '\f138';
-                        color: $red;
+                        color: $my-light-green;
                         padding-right: 10px;
                         font-family: "FontAwesome";
                     }
@@ -3666,7 +3903,7 @@ li.menu-item:before, li.research-option:before {
                         box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
                         display: table;
                         p {
-                            color: $red;
+                            color: $my-light-green;
                             display: table-cell;
                             vertical-align: middle;
                             text-align: center;
@@ -3675,7 +3912,7 @@ li.menu-item:before, li.research-option:before {
                   
                     .carousel-control-next, .carousel-control-prev {
                         top: 0;
-                        color: $red;
+                        color: $my-light-green;
                         opacity: 1;
                         i {
                             position: absolute;
@@ -3730,7 +3967,7 @@ li.menu-item:before, li.research-option:before {
                             box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
                             @include short-transition;
                             p {
-                                color: $red;
+                                color: $my-light-green;
                             }
                         }
                     }
@@ -3740,7 +3977,7 @@ li.menu-item:before, li.research-option:before {
                         box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
                         @include short-transition;
                         p {
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                 }
@@ -3774,19 +4011,19 @@ li.menu-item:before, li.research-option:before {
                     &:hover {
                         @include short-transition;
                         p {
-                            color: $red;
+                            color: $my-light-green;
                         }
                         p:after {
-                            color: $red;
+                            color: $my-light-green;
                         }
                     }
                 }
                 .publishing-info-collapse[aria-expanded="true"] {
                         p {
-                            color: $red;
+                            color: $my-light-green;
                         }
                         p:after {
-                            color: $red;
+                            color: $my-light-green;
                         }
                     p:after {
                         transform: rotate(180deg);
@@ -3808,9 +4045,9 @@ li.menu-item:before, li.research-option:before {
                     margin: 2rem auto;
                 }
                 .my-button-link {
-                    border: 1px solid $red;
+                    border: 1px solid $my-light-green;
                     background-color: $white;
-                    color: $red;
+                    color: $my-light-green;
                     margin-top: 0;
                 }
             }
@@ -3834,18 +4071,18 @@ li.menu-item:before, li.research-option:before {
                             color: $grey;
                         }
                         a.active {
-                            color: $red;
+                            color: $my-light-green;
                         }
                         a.active:after {
-                            color: $red;
+                            color: $my-light-green;
                         }
                         &:hover {
                             cursor: pointer;
                             a {
-                                color: $red;
+                                color: $my-light-green;
                             }
                             a:after {
-                                color: $red;
+                                color: $my-light-green;
                             }
                         }
                     }
@@ -3857,9 +4094,9 @@ li.menu-item:before, li.research-option:before {
                     padding: 1rem 0;
                 }
                 .my-button-link{
-                    border: 1px solid $red;
+                    border: 1px solid $my-light-green;
                     background-color: $white;
-                    color: $red;
+                    color: $my-light-green;
                 }
                 .tab-pane  {
                     ul {
@@ -4004,7 +4241,7 @@ li.menu-item:before, li.research-option:before {
 
 //404 page
 .my-page-404 {
-    background-color: $navy;
+    background-color: $black;
     width: 100vw;
     height: 100vh;
     display: table;

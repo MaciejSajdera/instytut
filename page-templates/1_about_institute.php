@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-5">
 				<h2><?php the_field('header_institute_section', 141); ?></h2>
 				<div class="text-justify"><?php the_field('text_about_institute_1', 141); ?></div>
-				<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+				<a href="#" class="green-button">Jak rozpocząć współpracę</a>
 			</div>
 			<div class="col-md-7">
 				<img src="<?php the_field('photo_about_institute_1', 141); ?>">
@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="carousel-arrows">
 							<div class="carousel-arrows-inner">
 								<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-								<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
+								<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
 							</div>
 						</div>
 					</div>
@@ -165,7 +165,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="my-half-container">
 					<h2 class="text-center"><?php the_field('header_partners', 141); ?></h2>
 					<div class="text-justify"><?php the_field('text_partners', 141); ?></div>
-					<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+					<a href="#" class="my-outline-button-navy">Jak rozpocząć współpracę</a>
 				</div>
 			</div>
 			<div class="col-md-6 map-container">

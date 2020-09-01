@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- department-->
 <div class="section-container departments">
-	<div class="container-fluid my-container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 col-xl-3">
 				<h2 class="py-5"><?php the_field('header_our_departments', 186); ?></h2>

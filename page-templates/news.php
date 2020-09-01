@@ -18,14 +18,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!--blog posts-->
 <div class="section-container my-blog-posts">
 	<div class="container my-posts-container">
-		<div class="row">
+		<div class="blog-grid">
 		<?php
 		global $post;
 		$args = array( 'posts_per_page' => 5, 'order'=> 'DESC', 'orderby' => 'date' );
 		$postslist = get_posts( $args );
 		foreach ( $postslist as $post ) :
 		setup_postdata( $post ); ?> 
-			<div class="col-12 col-md-6 col-xl-4 my-post-container">
+			<div class="my-post-container">
 				<a href="<?php echo get_permalink(); ?>">
 					<div class="my-post-container-outer">
 						<div class="my-post-photo"><?php echo get_the_post_thumbnail( $page->ID, 'img-horizontal-large' ); ?></div>
@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="my-post-data">
 								<div class="my-post-title"><?php the_title(); ?></div>
 								<div class="my-post-text">
-									<?php the_excerpt(); ?>
+								<?php the_excerpt(); ?>
 								</div>
 								<div class="my-post-date"><?php echo get_the_date(); ?></div>
 								<div class="my-clearfix"></div>
@@ -47,8 +47,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		endforeach; 
 		wp_reset_postdata();
 		?>
-		<div class="col-12 mt-5 mb-2 text-center">
-			<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="my-button">Pokaż wszystkie aktualności</a>
+		<div class="text-center">
+			<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="green-button">Pokaż wszystkie aktualności</a>
 		</div>
 		</div>
 	</div>
@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row my-container ">
 			<div class="col-12 col-md-4 order-md-3">
 				<h2 class="text-center text-md-left py-4"><?php the_field('header_statements', 775); ?></h2>
-				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="my-button not-on-mobile">Pokaż wszystkie komunikaty</a>
+				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button not-on-mobile">Pokaż wszystkie komunikaty</a>
 			</div>
 			<?php if (have_rows('statements', 775)); ?>
 			<?php while (have_rows('statements', 775)) : the_row(); ?>
@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 	<div class="only-on-mobile">
-		<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="my-button">Pokaż wszystkie komunikaty</a>
+		<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button">Pokaż wszystkie komunikaty</a>
 	</div>
 	<!-- end of statements-->
 
@@ -95,11 +95,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row my-container ">
 			<div class="col-12 col-md-4">
 				<h2 class="text-center text-md-left pt-4 pb-md-3"><?php the_field('header_auctions', 773); ?></h2>
-				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="my-button not-on-mobile">Pokaż wszystkie przetargi</a>
 				<ul class="nav nav-tabs" role="tablist">
 					<li><a class="active" href="#auctions_without_statute" role="tab" data-toggle="tab">Zamówienia realizowane bez stosowania przepisów ustawy PZP <i class="fas fa-long-arrow-alt-right"></i></a></li>
 					<li><a href="#auctions_with_statute" role="tab" data-toggle="tab">Zamówienia realizowane zgodnie z przepisami ustawy PZP <i class="fas fa-long-arrow-alt-right"></i></a></li>
 				</ul>
+				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button not-on-mobile">Pokaż wszystkie przetargi</a>
 			</div>
 			<div class="col-12 col-md-8">
 				<div class="tab-content">
@@ -146,7 +146,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 	<div class="only-on-mobile">
-		<a href="http://www.bip.impib.pl/aktualnosci/zamowienia-bez-stosowania-przepisow-ustawy-pzp" target="_blank" class="my-button">Pokaż wszystkie przetargi</a>
+		<a href="http://www.bip.impib.pl/aktualnosci/zamowienia-bez-stosowania-przepisow-ustawy-pzp" target="_blank" class="green-button">Pokaż wszystkie przetargi</a>
 	</div>
 	<!--end of auctions-->
 </div>

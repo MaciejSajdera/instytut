@@ -18,16 +18,24 @@
     background-color: $my-light-green;
     border: 2px solid $my-light-green;
     border-radius: 100rem;
-    padding: .65rem 5rem;
+    padding: .65rem 3rem;
     color: $black;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
+    text-align: center;
+    margin: auto;
 
     @include short-transition;
     &:hover {
         background-color: transparent;
         color: $my-light-green;
+    }
+}
+
+.page-template-firstpage {
+    .green-button {
+        padding: .65rem 5rem;
     }
 }
 
@@ -87,6 +95,21 @@
     }
 }
 
+.my-outline-button-navy {
+    display: inline-block;
+    padding: .6rem 2.6rem;
+    background-color: transparent;
+    border: 2px solid $navy;
+    color: $navy;
+    @include short-transition;
+    text-align: center;
+    &:hover {
+        text-decoration: none;
+        color: $white;
+        background-color: $navy;
+    }
+}
+
 .my-read-more-button {
     padding: .6rem 2.6rem;
     background-color: white;
@@ -107,7 +130,7 @@
     }
     span:after {
         content: '\f078';
-        color: $red;
+        color: $my-light-green;
         float: right;
         font-family: "FontAwesome";
         @include basic-transition;
@@ -144,11 +167,43 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
+    position: relative;
 
     @include short-transition;
     &:hover {
         background-color: transparent;
         color: $my-light-green;
+    }
+
+    span:after {
+        content: '\f078';
+        color: $black;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-family: "FontAwesome";
+        @include basic-transition;
+    }
+}
+
+.my-read-more-button-green[aria-expanded=false] .text-expanded {
+    display: none;
+    @include short-transition;
+}
+.my-read-more-button-green[aria-expanded=true] .text-collapsed {
+    display: none;
+}
+.my-read-more-button-green[aria-expanded=true] {
+    background-color: transparent;
+    color: $black;
+    span {
+        color: $black;
+    }
+    span:after {
+        color: $black;
+    }
+    span:after {
+        transform: rotate(180deg);
     }
 }
 
@@ -161,11 +216,26 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
+    position: relative;
 
     @include short-transition;
     &:hover {
         background-color: transparent;
         color: $black;
+        
+        span:after {
+            color: $black;
+        }
+    }
+
+    span:after {
+        content: '\f078';
+        color: $white;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-family: "FontAwesome";
+        @include basic-transition;
     }
 }
 
@@ -183,7 +253,7 @@
         color: $black;
     }
     span:after {
-        color: $white;
+        color: $black;
     }
     span:after {
         transform: rotate(180deg);
@@ -195,7 +265,7 @@
 
 .my-read-more-button-red {
     padding: .6rem 2.6rem;
-    background-color: $red;
+    background-color: $my-light-green;
     color: $white;
     @include short-transition;
     text-align: center;
@@ -229,12 +299,12 @@
 }
 .my-read-more-button-red[aria-expanded=true] {
     background-color: $white;
-    border: 1px solid $red;
+    border: 1px solid $my-light-green;
     span {
-        color: $red;
+        color: $my-light-green;
     }
     span:after {
-        color: $red;
+        color: $my-light-green;
     }
     span:after {
         transform: rotate(180deg);

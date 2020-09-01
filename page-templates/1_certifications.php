@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-md-6">
 					<p class="subtitle-certification"><?php the_sub_field('subtitle_certification'); ?></p>
-					<a class="my-read-more-button" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
+					<a class="my-read-more-button-green" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
 					<span class="text-collapsed">Czytaj więcej</span>
 					<span class="text-expanded">Czytaj mniej</span>
 				</a>
