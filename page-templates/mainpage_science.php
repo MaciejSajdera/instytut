@@ -12,103 +12,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-get_header('main');
+get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!--blog posts-->
-<div class="section-container my-blog-posts bg-abstract">
-	<div class="container my-posts-container">
-		<div class="row">
-			<div class="col-12 mb-4">
-				<h2><?php the_field('header_news_section'); ?> </h2>
-			</div>
-		</div>
-
-		<!--news on mobile-->
-		<div class="only-on-mobile">
-			<div class="swiper-container news-carousel" id="news-carousel">
-				<div class="swiper-wrapper">
-					<?php
-					global $post;
-					$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
-					$postslist = get_posts( $args );
-					foreach ( $postslist as $post ) :
-					setup_postdata( $post ); ?> 
-						<div class="swiper-slide my-post-container">
-							<a href="<?php echo get_permalink(); ?>">
-								<div class="my-post-container-outer">
-									<div class="my-post-photo"><?php echo get_the_post_thumbnail( $page->ID, 'img-horizontal-medium' ); ?></div>
-									<div class="my-post-container-inner">
-										<div class="my-post-author"><?php the_author(); ?></div>
-										<div class="my-post-data">
-											<div class="my-post-title"><?php the_title(); ?></div>
-											<div class="my-post-text">
-												<?php the_excerpt(); ?>
-											</div>
-											<div class="my-post-date"><?php echo get_the_date(); ?></div>
-											<div class="my-clearfix"></div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					<?php
-					endforeach; 
-					wp_reset_postdata();
-					?>
-				</div>
-				<div class="carousel-arrows">
-					<div class="carousel-arrows-inner">
-						<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-						<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 mt-5 mb-2 text-center">
-				<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="my-button">Pokaż wszystkie aktualności</a>
-			</div>
-		</div>
-		<!--end of news on mobile-->
-		<!--news on desktop-->
-		<div class="only-on-md-and-up">
-			<div class="row">
-			<?php
-			global $post;
-			$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
-			$postslist = get_posts( $args );
-			foreach ( $postslist as $post ) :
-			setup_postdata( $post ); ?> 
-				<div class="col-12 col-md-6 col-xl-3 my-post-container">
-					<a href="<?php echo get_permalink(); ?>">
-						<div class="my-post-container-outer">
-							<div class="my-post-photo"><?php echo get_the_post_thumbnail( $page->ID, 'img-horizontal-large' ); ?></div>
-							<div class="my-post-container-inner">
-								<div class="my-post-author"><?php the_author(); ?></div>
-								<div class="my-post-data">
-									<div class="my-post-title"><?php the_title(); ?></div>
-									<div class="my-post-text">
-										<?php the_excerpt(); ?>
-									</div>
-									<div class="my-post-date"><?php echo get_the_date(); ?></div>
-									<div class="my-clearfix"></div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-			<?php
-			endforeach; 
-			wp_reset_postdata();
-			?>
-			</div>
-			<div class="col-12 mt-5 mb-2 text-center">
-				<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="my-button">Pokaż wszystkie aktualności</a>
-			</div>
-		</div>
-		<!--end of news on desktop-->
-	</div>
-</div>
+<?php get_template_part( 'template-parts/news_preview' ); ?>
 <!--end of blog posts-->
 
 <!--our mission section-->
@@ -117,16 +26,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- scientific activity -->
 <div class="section-container scientific-activity">
-	<div class="container-fluid">
+	<!-- <div class="container-fluid"> -->
+		<div class="container">
 		<div class="row my-container">
+			<div class="black-background-box"></div>
 			<div class="col-md-5 science-text">
 				<h2><?php the_field('header_science_section'); ?> </h2>
 				<div class="text-justify"><?php the_field('science_text_mainpage', 87); ?></div>
-				<a href="http://instytutimpib.dev.cube360.pl/oferta/" class="my-button">Sprawdź ofertę dla Twojej firmy</a>
+				<a href="http://instytutimpib.dev.cube360.pl/oferta/" class="black-button">Sprawdź ofertę dla Twojej firmy</a>
 			</div>
-			<div class="col-md-7 science-container">
-				<div class="row justify-content-center">
-					<div class="col-sm-6">
+			<div class="science-container">
+				<div class="row">
+					<div class="col-sm">
 						<a href="http://instytutimpib.dev.cube360.pl/dzialalnosc-naukowa/obszary-badawcze/">
 							<div class="single-science-container single-science-container-research position-relative">
 								<div class="gradient-bg-section-inner"></div>
@@ -135,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm">
 						<a href="http://instytutimpib.dev.cube360.pl/dzialalnosc-naukowa/laboratoria-akredytowane/">
 							<div class="single-science-container single-science-container-lab position-relative">
 								<div class="gradient-bg-section-inner"></div>
@@ -148,6 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</div>
+	<!-- </div> -->
 </div>	
 <!--end of scientific activity-->
 
@@ -156,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!--end of slogan 2 section-->
 
 <!--publishing activity-->
-<div class="section-container publishing-activity pt-2 pb-2">
+<div class="publishing-activity">
 	<div class="container">
 		<h2 class="text-center mb-5"><?php the_field('header_publishing_section'); ?> </h2>
 		
@@ -172,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</p>
 						</div>
 						<div class="read-more text-center">
-							<div class="thin-red-line"></div>
+							<div class="thin-white-line"></div>
 							<p>Czytaj więcej</p>
 						</div>
 					</div>
@@ -188,7 +100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</p>
 						</div>
 						<div class="read-more text-center">
-							<div class="thin-red-line"></div>
+							<div class="thin-white-line"></div>
 							<p>Czytaj więcej</p>
 						</div>
 					</div>
@@ -204,7 +116,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</p>
 						</div>
 						<div class="read-more text-center">
-							<div class="thin-red-line"></div>
+							<div class="thin-white-line"></div>
 							<p>Czytaj więcej</p>
 						</div>
 					</div>
@@ -214,7 +126,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="carousel-arrows">
 				<div class="carousel-arrows-inner">
 					<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-					<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
+					<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
 				</div>
 			</div>
 		</div>

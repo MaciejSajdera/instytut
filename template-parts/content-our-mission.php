@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="parallax section-container slogan-section slogan-section-1 position-relative" id="our-mission-section">
-	<div class="container-fluid navy-bg-section-inner"></div>
+	<div class="container-fluid"></div>
 	<div class="container position-relative">
 		<div class="row">
 			<div class="col-md-7">
@@ -25,9 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 			</div>
 			<div class="col-md-5">
-				<div class=" my-button-container">
-					<a href="http://instytutimpib.dev.cube360.pl/o-nas-2/o-instytucie/" class="my-button">Więcej o nas</a>
-				</div>
+				<!-- <div class=" my-button-container"> -->
+					<a href="http://instytutimpib.dev.cube360.pl/o-nas-2/o-instytucie/" class="green-button">Więcej o nas</a>
+				<!-- </div> -->
 			</div>
 		</div>
 	</div>

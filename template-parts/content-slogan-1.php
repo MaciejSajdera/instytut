@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="parallax section-container slogan-section slogan-section-1" id="slogan-1-section">
-	<div class="container-fluid navy-bg-section-inner"></div>
+	<div class="container-fluid"></div>
 	<div class="container position-relative">
 		<div class="row my-container">
 			<div class="col-md-7">
