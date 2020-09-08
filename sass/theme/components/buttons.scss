@@ -1,7 +1,7 @@
 .black-button {
     background-color: #000;
     border: 2px solid black;
-    padding: .65rem 5rem;
+    padding: .65rem 4rem;
     color: $white;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -40,7 +40,7 @@
 }
 
 
-.button-for-science {
+.button-menu-not-active {
     background-color: transparent;
     border: 2px solid $my-light-green;
         padding: .2rem 3rem;
@@ -53,7 +53,7 @@
     }
 }
 
-.button-for-bussiness {
+.button-menu-active {
     background-color: $my-light-green;
     border: 2px solid $my-light-green;
     padding: .2rem 3rem;

@@ -14,13 +14,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
+
 ?>
 
 <!-- reaserch-->
 <div class="section-container research-section">
 	<?php if (have_rows('research_areas')); ?>
 	<?php $research=1; ?>
-	<?php while (have_rows('research_areas')) : the_row(); ?>
+	<?php while (have_rows('research_areas')) : the_row();
+
+	?>
+
 	<div class="container-fluid research-container">
 		<div class="row my-container justify-content-center">
 			<div class="col-md-6 work-type-container">
@@ -28,7 +32,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="col-md-6 research-right-container">
 				<p class="research-network"><?php the_sub_field('research_network'); ?></p>
-				<a class="my-read-more-button reserch-collapse" data-toggle="collapse" href="#research<?php echo $research; ?>" role="button" aria-expanded="false" aria-controls="research<?php echo $research; ?>">
+				<a class="<?php
+					if ($research % 2 == 0):
+					echo "my-read-more-button-green";
+					else:
+					echo "my-read-more-button-black";
+					endif;
+					?> reserch-collapse" data-toggle="collapse" href="#research<?php echo $research; ?>" role="button" aria-expanded="false" aria-controls="research<?php echo $research; ?>">
 					<span class="text-collapsed">Czytaj więcej</span>
 					<span class="text-expanded">Czytaj mniej</span>
 				</a>
@@ -39,7 +49,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 			<div class="col-12">
-				<a href="http://instytutimpib.dev.cube360.pl/dzialalnosc-naukowa/laboratoria-prob-technologicznych/" class="my-button">Sprawdź nasze Laboratoria</a>
+				<a href="http://instytutimpib.dev.cube360.pl/dzialalnosc-naukowa/laboratoria-prob-technologicznych/" class="<?php
+					if ($research % 2 == 0):
+					echo "green-button";
+					else:
+					echo "black-button";
+					endif;
+					?> my-button">Sprawdź nasze Laboratoria</a>
 			</div>
 			<div class="col-12">
 				<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>

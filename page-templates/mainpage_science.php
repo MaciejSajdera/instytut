@@ -85,7 +85,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="read-more text-center">
 							<div class="thin-white-line"></div>
-							<p>Czytaj więcej</p>
+							<p>Czytaj więcej<i class="fas fa-long-arrow-alt-right"></i></p>
 						</div>
 					</div>
 					</a>
@@ -101,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="read-more text-center">
 							<div class="thin-white-line"></div>
-							<p>Czytaj więcej</p>
+							<p>Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></p>
 						</div>
 					</div>
 					</a>
@@ -117,7 +117,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="read-more text-center">
 							<div class="thin-white-line"></div>
-							<p>Czytaj więcej</p>
+							<p>Czytaj więcej<i class="fas fa-long-arrow-alt-right"></i></p>
 						</div>
 					</div>
 					</a>
@@ -137,14 +137,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <!-- awards-->
-<div class="section-container awards pt-5 pb-4">
+<div class="section-container awards">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-5 awards-text my-half-container">
 				<div class="text-awards">
 					<h2 class="text-center text-md-left"><?php the_field('header_awards_section'); ?> </h2>
 					<div class="text-justify"><p class="not-on-mobile"><?php the_field('awards_text_mainpage', 87); ?></p></div>
-					<a href="http://instytutimpib.dev.cube360.pl/o-nas-2/nagrody-i-wyroznienia/" class="my-button not-on-mobile">Zobacz wszystko</a>
+					<a href="http://instytutimpib.dev.cube360.pl/o-nas-2/nagrody-i-wyroznienia/" class="my-button black-button not-on-mobile">Zobacz wszystko</a>
 				</div>
 			</div>
 			<div class="col-md-7 awards-container">
@@ -168,7 +168,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="carousel-arrows">
 							<div class="carousel-arrows-inner">
 								<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-								<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
+								<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
 							</div>
 						</div>
 					</div>

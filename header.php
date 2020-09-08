@@ -12,6 +12,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $container = get_theme_mod( 'understrap_container_type' );
+
+global $post;
+
+
+$main_page_bussiness_id = 85;
+$main_page_science_id = 87;
+
+$main_page_bussiness_href = get_post_permalink(85);
+$main_page_science_href = get_post_permalink(87);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -42,8 +51,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a href="mailto:sekretariat@impib.pl"><i class="far fa-envelope"></i></a>
 						<a href="https://twitter.com/lukasiewicz_pl?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
 						<a href="https://www.facebook.com/Sie%C4%87-Badawcza-%C5%81UKASIEWICZ-Instytut-IMPiB-1790101597702109/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-						<a href="<?php echo $main_page_bussiness_href; ?>" class="my-button button-for-bussiness">Dla Biznesu</a>
-						<a href="<?php echo $main_page_science_href; ?>" class="my-button button-for-science">Dla Nauki</a>
+						<a href="<?php echo $main_page_bussiness_href; ?>" class="my-button <?php if (get_queried_object_id() == $main_page_bussiness_id || is_front_page() ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Biznesu</a>
+						<a href="<?php echo $main_page_science_href; ?>" class="my-button <?php if (get_queried_object_id() == $main_page_science_id ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Nauki</a>
 					</div>
 				</div>
 

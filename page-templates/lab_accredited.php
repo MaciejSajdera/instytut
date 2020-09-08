@@ -201,7 +201,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button not-on-mobile">Skontaktuj się z nami</a>
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
 				</div>
 			</div>
 		</div>
@@ -391,7 +391,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button not-on-mobile">Skontaktuj się z nami</a>
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
 				</div>
 			</div>
 		</div>
@@ -581,7 +581,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button not-on-mobile">Skontaktuj się z nami</a>
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
 				</div>
 			</div>
 		</div>
@@ -760,7 +760,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row only-on-md-and-up my-container justify-content-center liders-desktop">
 				<?php if (have_rows('reaserach_liders_paints')); ?>
 				<?php while (have_rows('reaserach_liders_paints')) : the_row(); ?>
-				<div class="col-md-2 text-center">
+				<div class="col-md-2 text-center end-of-section">
 					<?php 
 					$photo = get_sub_field('lider_photo');
 					$size = 'img-square'; ?>
@@ -771,7 +771,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<a href="/instytut/kontakt-2" class="my-button not-on-mobile">Skontaktuj się z nami</a>
+					<a href="/instytut/kontakt-2" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
 				</div>
 			</div>
 		</div>

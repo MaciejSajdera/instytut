@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="science-bussiness-text">
 					<h3>Dla Biznesu</h3>
 					<p><?php the_field('short_text_for_business'); ?></p>
-					<a class="my-button green-button" href= <?php echo $main_page_bussiness_href ?>>Wybieram</a>
+					<a class="my-button green-button" href=<?php echo $main_page_bussiness_href ?>>Wybieram</a>
 				</div>
 			
 				

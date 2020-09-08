@@ -42,7 +42,7 @@
 				<div class="carousel-arrows">
 					<div class="carousel-arrows-inner">
 						<div class="my-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-						<div class="my-swiper-button-next"><i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="my-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
 					</div>
 				</div>
 			</div>

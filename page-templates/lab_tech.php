@@ -21,14 +21,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php if (have_rows('lab_tech')); ?>
 	<?php $lab_tech=1; ?>
 	<?php while (have_rows('lab_tech')) : the_row(); ?>
-	<div class="container lab-container">
+	<div class="container-fluid lab-container">
 		<div class="row justify-content-center">
+		  <!-- <div class="my-wrapper"> -->
 			<div class="col-md-6 lab-type-container">
 				<h2 class="work-type"><?php the_sub_field('lab_type'); ?></h2>
 			</div>
 			<div class="col-md-6 lab-network-container">
 				<p class="lab-network"><?php the_sub_field('lab_network'); ?></p>
 			</div>
+		  <!-- </div> -->
+
 			<div class="col-md-6 lab-text-container">
 				<div class="text-justify"><?php the_sub_field('lab_text'); ?></div>
 			</div>
@@ -99,7 +102,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button not-on-mobile">Skontaktuj się z nami</a>
+				<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="<?php
+					if ($lab_tech % 2 == 0):
+					echo "black-button";
+					else:
+					echo "green-button";
+					endif;
+					?> my-button not-on-mobile">Skontaktuj się z nami</a>
 			</div>
 		</div>
 	</div>
