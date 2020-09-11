@@ -18,14 +18,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- reaserch-->
-<div class="section-container research-section">
+<div class="section-container research-section bg-abstract">
 	<?php if (have_rows('research_areas')); ?>
 	<?php $research=1; ?>
 	<?php while (have_rows('research_areas')) : the_row();
 
 	?>
 
-	<div class="container-fluid research-container">
+	<div class="container-fluid research-container bg-abstract">
 		<div class="row my-container justify-content-center">
 			<div class="col-md-6 work-type-container">
 				<h2 class="work-type"><?php the_sub_field('work_type'); ?></h2>

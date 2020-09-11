@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- grants -->
-<div class="section-container grants bg-abstract">
+<div class="section-container grants bg-abstract bg-green">
 	<div class="container">
 		<div class="row text-center grant-row">
 		<?php if (have_rows('grants')); ?>
@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<p class="grant-title"><?php the_sub_field('grant_title'); ?></p>
 						<p class="grant-text"><?php the_sub_field('grant_text'); ?></p>
-						<a href="#" class="my-button">Dowiedz się więcej</a>
+						<a href="#" class="my-button green-button-wtext">Dowiedz się więcej</a>
 					</div>
 				</a>
 			</div>

@@ -17,11 +17,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- lab tech -->
-<div class="section-container lab-section">
+<div class="section-container lab-section bg-abstract bg-black">
 	<?php if (have_rows('lab_tech')); ?>
 	<?php $lab_tech=1; ?>
 	<?php while (have_rows('lab_tech')) : the_row(); ?>
-	<div class="container-fluid lab-container">
+	<div class="container-fluid lab-container bg-abstract">
 		<div class="row justify-content-center">
 		  <!-- <div class="my-wrapper"> -->
 			<div class="col-md-6 lab-type-container">
@@ -32,7 +32,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		  <!-- </div> -->
 
-			<div class="col-md-6 lab-text-container">
+		  <div class="my-wrapper">
+			<div class="lab-text-container">
 				<div class="text-justify"><?php the_sub_field('lab_text'); ?></div>
 			</div>
 			<div class="col-md-6">
@@ -51,6 +52,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 			</div>
+			</div>
+
 			<div class="col-12 mt-5">
 				<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
 			</div>

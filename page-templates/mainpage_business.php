@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!--end of slogan 1 section-->
 
 <!-- offer -->
-<div class="section-container offer">
+<div class="section-container offer bg-abstract">
 	<div class="container-fluid">
 		<div class="row my-container">
 			<div class="col-md-5 offer-text">

@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- lab accredited -->
-<div class="section-container lab-section">
+<div class="section-container lab-section bg-abstract">
 	<!--recycling-->
 	<div class="lab-container">
 		<!--title and pdf recycling-->

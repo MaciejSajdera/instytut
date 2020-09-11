@@ -19,7 +19,7 @@ $i = 0;
 ?>
 
 <!-- projects -->
-<div class="section-container projects">
+<div class="section-container projects bg-abstract">
 	<div class="container-fluid">
 		<?php if( have_rows('projects', 285) ); ?>
 		<?php $count=0 ;?>

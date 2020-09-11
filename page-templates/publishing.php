@@ -17,14 +17,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- publishing -->
-<div class="section-container publishing">
-	<div class="container publishing-info">
+<div class="publishing bg-abstract">
+	<div class="container-fluid publishing-info  bg-black">
 		
 		<!--mobile collapase-->
 		<div class="only-on-mobile publishing-info-mobile">
 
 			<!--elomasters row-->
-			<div class="row mb-4 mt-5">
+			<div class="row mb-4 mt-5" >
 				<div class="col-12">
 					<h2 class="mb-4">Elastomery</h2>
 				</div>
@@ -71,11 +71,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<?php endwhile; ?>
 				</div>
-				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button">Skontaktuj się z nami</a>
+				<div class="col-12 col-button">
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button green-button-wtext">Skontaktuj się z nami</a>
 				</div>
-				<div class="col-12">
-					<a href="#" target="_blank" class="my-button my-button-link">Strona czasopisma</a>
+				<div class="col-12 col-button">
+					<a href="#" target="_blank" class="my-button green-outline-button">Strona czasopisma</a>
 				</div>
 			</div>
 
@@ -128,7 +128,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endwhile; ?>
 				</div>
 				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button">Skontaktuj się z nami</a>
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button green-button-wtext">Skontaktuj się z nami</a>
 				</div>
 			</div>
 
@@ -181,15 +181,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endwhile; ?>
 				</div>
 				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button">Skontaktuj się z nami</a>
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button green-button-wtext">Skontaktuj się z nami</a>
 				</div>
 			</div>
 		</div>
 		<!--end of mobile collpase-->
 		<!--desktop tabs-->
-		<div class="only-on-md-and-up publishing-info-desktop">
+		<div class="only-on-md-and-up publishing-info-desktop" >
 			<!--elastomers row-->
-			<div class="row mb-5" id="elastomery">
+			<div class="row mb-5 my-container" id="elastomery">
 				<div class="col-12 col-md-5">
 					<h2 class="mb-3">Elastomery</h2>
 					<ul class="nav flex-column publishing-info-nav" role="tablist">
@@ -211,14 +211,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 					<div class="row">
 						<div class="col-xl-6">
-							<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button">Skontaktuj się z nami</a>
+							<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button green-button-wtext">Skontaktuj się z nami</a>
 						</div>
 						<div class="col-xl-6">
-							<a href="#" target="_blank" class="my-button my-button-link">Strona czasopisma</a>
+							<a href="#" target="_blank" class="my-button green-outline-button">Strona czasopisma</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-7">
+				<div class="col-12 col-md-7 d-flex justify-content-center align-items-center">
 				<?php if ( have_rows('elastomers')); ?>
 				<?php while(have_rows('elastomers')) : the_row(); ?>
 					<div class="tab-content">
@@ -244,7 +244,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!--end of elastomers row-->
 
 			<!--plastic row-->
-			<div class="row mb-5" id="przetworstwo-tworzyw">
+			<div class="row mb-5 my-container" id="przetworstwo-tworzyw">
 				<div class="col-12 col-md-5">
 					<h2 class="mb-3">Przetwórstwo tworzyw</h2>
 					<ul class="nav flex-column publishing-info-nav" role="tablist">
@@ -266,11 +266,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 					<div class="row">
 						<div class="col-xl-6">
-							<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button">Skontaktuj się z nami</a>
+							<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button green-button-wtext">Skontaktuj się z nami</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-7">
+				<div class="col-12 col-md-7 d-flex justify-content-center align-items-center">
 				<?php if ( have_rows('plastic_processing')); ?>
 				<?php while(have_rows('plastic_processing')) : the_row(); ?>
 					<div class="tab-content">
@@ -296,7 +296,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!--end ofplastic row-->
 
 			<!--paints row-->
-			<div class="row" id="farby-i-lakiery">
+			<div class="row my-container" id="farby-i-lakiery">
 				<div class="col-12 col-md-5">
 					<h2 class="mb-3">Farby i Lakiery</h2>
 					<ul class="nav flex-column publishing-info-nav" role="tablist">
@@ -318,11 +318,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 					<div class="row">
 						<div class="col-xl-6">
-							<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button">Skontaktuj się z nami</a>
+							<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button green-button-wtext">Skontaktuj się z nami</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-7">
+				<div class="col-12 col-md-7 d-flex justify-content-center align-items-center">
 				<?php if ( have_rows('paints')); ?>
 				<?php while(have_rows('paints')) : the_row(); ?>
 					<div class="tab-content">
@@ -351,7 +351,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<!--end of desktop tabs-->
 
 	</div>
-	<div class="container publishings bg-abstract">
+
+	<div class="container-fluid publishings bg-abstract">
 		<div class="row my-container">
 			<div class="col-12">
 				<h2 class="py-4 pb-md-5">Publikacje</h2>
@@ -374,8 +375,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<?php the_sub_field('publishing_house'); ?>
 						</div>
 						<a class="publishing-content-collapse green button" data-toggle="collapse" href="#publishing-content<?php echo $publishing; ?>" role="button" aria-expanded="false" aria-controls="publishing-content<?php echo $publishing; ?>">
-							<span class="text-collapsed">Spis treści</span>
-							<span class="text-expanded">Spis treści</span>
+							<div class="text-collapsed my-read-more-button-black"><span>Spis treści</span></div>
+
 						</a>
 						<div class="publishing-content">
 							<div class="collapse" id="publishing-content<?php echo $publishing; ?>">
@@ -397,7 +398,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if (have_rows('for_authors')) ;?>
 			<?php while (have_rows('for_authors')) : the_row(); ?>
 			<div class="col-12 col-md-6 col-xl-4">
-				<div class="pdf-container bg-vlg">
+				<div class="pdf-container bg-green">
 					<p class="pdf-title"><?php the_sub_field('title'); ?></p>
 					<div class="pdf-bg">
 						<a href="<?php the_sub_field('pdf'); ?>" download title="Pobierz pdf">

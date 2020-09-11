@@ -14,12 +14,48 @@
     }
 }
 
+.black-button-radius {
+    background-color: $black;
+    border: 2px solid $black;
+    border-radius: 100rem;
+    padding: .65rem 4rem;
+    color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+
 .green-button {
     background-color: $my-light-green;
     border: 2px solid $my-light-green;
     border-radius: 100rem;
     padding: .65rem 3rem;
     color: $black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: auto;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $my-light-green;
+    }
+}
+
+.green-button-wtext {
+    background-color: $my-light-green;
+    border: 2px solid $my-light-green;
+    border-radius: 100rem;
+    padding: .65rem 3rem;
+    color: $white;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
@@ -236,6 +272,20 @@
         top: 25%;
         font-family: "FontAwesome";
         @include basic-transition;
+    }
+}
+
+.green-outline-button {
+    background-color: transparent;
+    border: 2px solid $my-light-green;
+        padding: .2rem 3rem;
+    font-size: .8rem;
+    font-weight: 700;
+    color: $my-light-green;
+    &:hover {
+        background-color: $my-light-green;
+        color: $black;
+
     }
 }
 

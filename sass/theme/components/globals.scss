@@ -21,3 +21,20 @@ input:focus::placeholder {
 h2 {
     font-size: 3rem;
 }
+
+.pdf-title {
+
+    @media screen and (max-width: 992px) {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+
+}
+
+.my-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}

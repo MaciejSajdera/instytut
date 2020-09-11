@@ -16,7 +16,7 @@ get_header('');
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!-- about institute 1-->
-<div class="section-container about-institute-1">
+<div class="section-container about-institute-1 bg-abstract">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- end of about institute 1-->
 
 <!--institute history-->
-<div class="section-container institute-history pt-4">
+<div class="section-container institute-history pt-4 bg-abstract">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- end of institute history-->
 
 <!--statut-->
-<div class="section-container statut">
+<div class="section-container statut bg-abstract">
 	<div class="statut-bg">
 		<div class="container">
 			<div class="row">
@@ -99,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- end of statut-->
 
 <!-- about institute 2-->
-<div class="section-container about-institute-2 bg-abstract">
+<div class="section-container about-institute-2  bg-abstract">
 	<div class="container">
 		<div class="row">
 		<div class="col-md-9 col-lg-8 text-about-institute-2 order-md-2">
@@ -122,7 +122,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <!--management-->
-<div class="section-container management-about-institute bg-vlg pt-5 pb-4">
+<div class="section-container management-about-institute  bg-abstract pt-5 pb-4">
 	<div class="container-fluid">
 		<h2 class="text-center mb-5"><?php the_field('header_management', 141); ?></h2>
 		<div class="swiper-container management-carousel" id="management-carousel">

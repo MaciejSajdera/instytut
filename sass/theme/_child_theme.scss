@@ -320,6 +320,22 @@ li.menu-item:before, li.research-option:before {
     background-color: $vlightgrey;
 }
 
+.bg-black {
+    background-color: $black;
+
+    h2, p, li {
+        color: $white;
+    }
+}
+
+.bg-green {
+    background-color: $my-light-green-bg-abstract;
+
+    h2, p, li {
+        color: $black;
+    }
+}
+
 .bg-vlg-85-left {
     background: $vlightgrey;
     @media #{$xxl} {
@@ -333,7 +349,7 @@ li.menu-item:before, li.research-option:before {
     }
 }
 .bg-black-85-left {
-    background: black;
+    background:$black;
     // background-position: 50%;
     @media #{$xxl} {
         background: $vlightgrey;
@@ -413,6 +429,7 @@ li.menu-item:before, li.research-option:before {
             margin-top: 0; 
             padding-bottom: 3rem;
             padding-top: 3rem;
+            background-attachment: fixed;
         }  
     }
     .position-relative {
@@ -1098,52 +1115,62 @@ li.menu-item:before, li.research-option:before {
 .page-template-1_about_institute {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-2.jpg') no-repeat;
+        background-size: cover;
     }
 }
-.page-template-1_institute_structure, .page-template-1_products_normalization, .page-template-grants, .search {
+.page-template-1_institute_structure, .page-template-1_products_normalization, .search {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-1.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-news, .blog, .single, .archive {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-3.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-branches, .page-template-offer {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-4.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-1_awards {
     .header-title-container {
         background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-5.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-1_patents {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-6.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-1_projects, .page-template-lab_accredited {
     .header-title-container {
         background: linear-gradient($my-dark-transparent, $my-dark-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-8.jpg') no-repeat;
+
     }
 }
 .page-template-contact {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-9.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-1_certifications {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
 .page-template-research_areas {
     .header-title-container {
         background: linear-gradient($my-dark-transparent, $my-dark-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
@@ -1151,20 +1178,30 @@ li.menu-item:before, li.research-option:before {
 .page-template-lab_tech, .page-template-workshop_for_business, .page-template-workshop_for_science {
     .header-title-container {
         background: linear-gradient($my-light-green-transparent, $my-light-green-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-7.jpg') no-repeat;
+        background-size: cover;
     }
 }
 .page-template-publishing {
     .header-title-container {
-        background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-11.jpg') no-repeat;
+        background: linear-gradient($my-dark-transparent, $my-dark-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-11.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
 .page-template-career {
     .header-title-container {
         background: linear-gradient($my-dark-transparent, $my-dark-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-11.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
+
+.page-template-grants {
+    .header-title-container {
+        background: linear-gradient($my-dark-transparent, $my-dark-transparent), url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-gorne-10.jpg') no-repeat;
+        background-size: cover;
+    }
+}
 
 
 
@@ -1716,6 +1753,7 @@ li.menu-item:before, li.research-option:before {
     // background-image: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-haslo-2-male.jpg');
     // height: 300px;
     position: relative;
+    background-color: black;
     // @media #{$lg} {
     //     background-image: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/tlo-haslo-2.jpg');
     // }
@@ -1723,6 +1761,7 @@ li.menu-item:before, li.research-option:before {
 .page-template-mainpage_science, .page-template-mainpage_business {
     .slogan-section {
         display: block;
+        background-color: black;
     }
 }
 
@@ -2149,14 +2188,15 @@ li.menu-item:before, li.research-option:before {
         background: $white;
         // padding-bottom: 3rem;
         @media #{$md} {
-            background: rgba(255,255,255,1);
-            background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
-            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(38%, rgba(255,255,255,1)), color-stop(38%, $black), color-stop(100%, $black));
-            background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
-            background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
-            background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
-            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#152656', GradientType=1 );
+            // background: rgba(255,255,255,1);
+            // background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
+            // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(38%, rgba(255,255,255,1)), color-stop(38%, $black), color-stop(100%, $black));
+            // background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
+            // background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
+            // background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
+            // background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, $black 38%, $black 100%);
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38%, rgba(19, 19, 19, 0.95) 38%, rgba(19, 18, 18, 0.95) 100%);
+            // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#152656', GradientType=1 );
 
             margin-top: 8em;
         }
@@ -3391,7 +3431,8 @@ li.menu-item:before, li.research-option:before {
 //projects
 .page-template-1_projects {
     .projects {
-        background-color: $my-light-green;
+        background-color: $my-light-green-bg-abstract;
+        background-attachment: fixed;
         margin-top: 0;
         .container-fluid {
             margin-left: 0;
@@ -3400,6 +3441,8 @@ li.menu-item:before, li.research-option:before {
                 width: 85%;
                 min-height: 350px;
                 display: flex;
+                background-color: transparent;
+                padding-bottom: 0;
                 &:nth-child(even) {
                     background: black;
                     background-position: 50%;
@@ -3948,6 +3991,7 @@ li.menu-item:before, li.research-option:before {
 //grants
 .page-template-grants {
     .grants {
+        background-color: $my-light-green-bg-abstract;
         .grant-box {
             margin-bottom: 2rem;
             .grant-container {
@@ -3959,13 +4003,14 @@ li.menu-item:before, li.research-option:before {
                 min-height: 400px;
                 text-align: center;
                 position: relative;
-                background: $white;
+                background: $black;
                 @include short-transition;
                 @media #{$xs} {
                     max-width: 440px;
                 }
                 p {
                     text-align: center;
+                    color: $white;
                 }
                 .grant-image {
                     background: url('http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/star.png') no-repeat center center;
@@ -4018,8 +4063,9 @@ li.menu-item:before, li.research-option:before {
 .page-template-research_areas  {
     .research-section {
         margin-top: 0;
+        background-color: $my-light-green-bg-abstract;
         .research-container {
-            background-color: $my-light-green;
+            background-color: $my-light-green-bg-abstract;
             padding: 1rem;
             @media #{$md} {
                 padding: 2rem;
@@ -4101,13 +4147,16 @@ li.menu-item:before, li.research-option:before {
     }
 }
 
+
+
 //lab tech page and accredited
 .page-template-lab_tech, .page-template-lab_accredited  {
     .lab-section {
         margin-top: 0;
-        background-color: $my-light-green;
+        background-color: $my-light-green-bg-abstract;
         .lab-container {
             padding: 0 1rem;
+            background-color: transparent;
             @media #{$md} {
                 padding: 2rem;
                 // border-bottom: 1px solid $vlightgrey;
@@ -4152,6 +4201,10 @@ li.menu-item:before, li.research-option:before {
             .lab-text-container {
                 padding-right: 1.4rem;
                 padding-left: 1.4rem;
+
+                li {
+                    padding: 0.7em;
+                }
             }
             .bg-vlg {
                 padding: 1rem;
@@ -4217,19 +4270,25 @@ li.menu-item:before, li.research-option:before {
 .page-template-lab_tech {
 
     .lab-section {
+        background-color: black;
+        padding-top: 0;
+        padding-bottom: 0;
+        
 
         .lab-container {
-            background: $black;
+            padding-top: 3em;
+            background-color: transparent;
             padding-left: 10%!important;
             padding-right: 10%!important;
 
             @media #{$md} {
+            padding-top: 5em;
             padding-left: 17.5%!important;
             padding-right: 17.5%!important;
             }
 
             &:nth-of-type(even) {
-                 background: $my-light-green;
+                 background-color: $my-light-green;
 
                  h2, p, li, li:before {
                     color: $black;
@@ -4372,24 +4431,49 @@ li.menu-item:before, li.research-option:before {
 //publishing page
 .page-template-publishing {
     .publishing {
+        background-color: $black-bg-abstract;
         .publishing-info {
+            padding: 0 0 0 0;
+            background: transparent;
             .publishing-info-mobile {
                 max-width: 440px;
                 margin: auto;
+
+                .row {
+                    margin-right:0; 
+                    margin-left: 0;
+                    padding: 2em;
+                }
+
+                .col-12 {
+                    padding: 0 0 0 0;
+
+                    h2 {
+                        font-size: 2rem;
+                        font-family: $secondary-font;
+                    }
+                }
+
+                .col-button {
+                    padding: 1em 0 1em 0;
+                }
+
                 .publishing-info-collapse {
                     padding-bottom: 1rem;
                     border-bottom: 1px solid $vlightgrey;
                     margin-bottom: 1rem;
                     p {
-                        color: $grey;
+
                         font-size: 1.2rem;
+                        padding-bottom: 0.5rem;
+                        border-bottom: 1px solid #30d530;
                     }
                     p:after {
                         content: '\f078';
-                        color: $grey;
+                        color: $white;
                         float: right;
                         font-family: "FontAwesome";
-                        @include basic-transition;
+                        @include short-transition;
                     }
                     &:hover {
                         @include short-transition;
@@ -4409,11 +4493,15 @@ li.menu-item:before, li.research-option:before {
                             color: $my-light-green;
                         }
                     p:after {
-                        transform: rotate(180deg);
+                        transform: rotate(-90deg);
                     }
                 }
                 .collapse, .collapsing {
+                    // overflow: visible!important;
                     ul {
+                        li {
+                            padding: 0.5em;
+                        }
                         li:before {
                             content: "\f138";
                             padding-right: 10px;
@@ -4423,10 +4511,10 @@ li.menu-item:before, li.research-option:before {
                     }
                 }
                 .my-button {
-                    display: block;
-                    width: 300px;
-                    margin: 2rem auto;
+                    width: 100%;
+                    padding: 0.8rem 0;
                 }
+
                 .my-button-link {
                     border: 1px solid $my-light-green;
                     background-color: $white;
@@ -4435,16 +4523,28 @@ li.menu-item:before, li.research-option:before {
                 }
             }
             .publishing-info-desktop {
+                padding: 4em;
+
+                a {
+                    font-family: $secondary-font;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+
                 .publishing-info-nav {
                     padding-inline-start: 0;
                     margin-bottom: 2rem;
+
                     li {
                     
                         a {
-                            color: $grey;
+                            color: $white;
                             font-size: 1.3rem;
                             padding-bottom: 1rem;
-                            border-bottom: 1px solid $vlightgrey;
+                            border-bottom: 1px solid $my-light-green;
                             padding-left: 0;
                         }
                         a:after {
@@ -4472,7 +4572,6 @@ li.menu-item:before, li.research-option:before {
                 }
                 .my-button {
                     display: block;
-                    width: 90%;
                     margin: 1rem auto;
                     padding: 1rem 0;
                 }
@@ -4483,6 +4582,11 @@ li.menu-item:before, li.research-option:before {
                 }
                 .tab-pane  {
                     ul {
+
+                        li {
+                            padding: 0.5em;
+                        }
+
                         li:before {
                             content: "\f138";
                             padding-right: 10px;
@@ -4496,6 +4600,7 @@ li.menu-item:before, li.research-option:before {
         .publishings {
             padding-top: 2rem;
             padding-bottom: 2rem;
+            background-color: $my-light-green-bg-abstract;
             .publishing-container {
                 max-width: 440px;
                 margin: auto;
@@ -4516,22 +4621,52 @@ li.menu-item:before, li.research-option:before {
                 }
                 .publishing-content-collapse {
                     max-width: 400px;
+                    overflow: hidden;
                 }
                 .publishing-content {
-                    width: 90%;
+                    width: 100%;
                     margin: auto;
-                    padding-left: .6rem;
+                    padding-top: .6rem;
+                    padding-left: 2rem;
                     @media #{$md} {
                         max-width: 400px;
-                        padding-left: 0;
+                    }
+
+                    li:before {
+                        color: $black;
+                        content: '';
                     }
                   
+                }
+            }
+
+            .my-read-more-button-black {
+
+                padding: .65rem 2rem;
+
+                &:hover {
+                    span:after {
+                        color: $black;
+                    }
+                }
+
+                span {
+                    &:after {
+                        color: $my-light-green;
+                    }
                 }
             }
         }
         .pdf {
             padding-top: 2rem;
             padding-bottom: 2rem;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 700;
+                color: $white;
+            }
+
             .pdf-container {
                 max-width: 400px;
                margin: .4rem auto;
@@ -4539,12 +4674,16 @@ li.menu-item:before, li.research-option:before {
                 position: relative;
                 @media #{$md} {
                     max-width: initial;
+                    height: 6em;
                 }
                 .pdf-title {
                     margin-bottom: 0;
+                    font-size: 1rem;
+                    width: 80%;
+                    padding: 0.7em;
                 }
                 .pdf-bg {
-                    background-color: $white;
+                    background-color: $black;
                     padding: .5rem .8rem .3rem .8rem;
                     position: absolute;
                     right: 20px;
@@ -4552,6 +4691,7 @@ li.menu-item:before, li.research-option:before {
                     i {
                         font-size: 1.4rem;
                         line-height: 1.4rem;
+                        color: $my-light-green;
                     }
                 }
             }
