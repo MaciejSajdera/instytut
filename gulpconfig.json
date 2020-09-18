@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "http://instytut.local/",
+    "proxy": "http://instytut20.local/",
     "notify": false
   },
   "browserSyncWatchFiles" : [

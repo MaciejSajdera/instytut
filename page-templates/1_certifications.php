@@ -16,7 +16,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!-- certifications -->
-<div class="section-container certifications">
+<div class="section-container certifications <?php if (get_queried_object_id() == $aboutBizCertID): echo 'bg-abstract'; endif; ?>">
 	<div class="container">
 		<?php if( have_rows('certifications', 223) ); ?>
 		<?php $count=0 ;?>
@@ -29,8 +29,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col-md-6">
 					<p class="subtitle-certification"><?php the_sub_field('subtitle_certification'); ?></p>
 					<a class="my-read-more-button-green" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
-					<span class="text-collapsed">Czytaj więcej</span>
-					<span class="text-expanded">Czytaj mniej</span>
+					<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+					<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 				</a>
 				</div>
 				<div class="col">
@@ -42,12 +42,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row pdf-row justify-content-center text-center bg-vlg my-5 pdf-row">
 			<?php if( have_rows('certification_pdf', 223) ); ?>
 			<?php while( have_rows('certification_pdf', 223) ) : the_row(); ?>
-			<div class="col-12 col-lg-4 bg-vlg pdf-col">
-				<p class="pdf-title"><?php the_sub_field('pdf_name'); ?>
+			<div class="col-12 col-lg-4 pdf-col pdf-title">
+					<p><?php the_sub_field('pdf_name'); ?></p>
 					<a href="<?php the_sub_field('pdf'); ?>" download title="Pobierz pdf">
 						<i class="far fa-file-pdf"></i>
 					</a>
-				</p>
 			</div>
 			<?php endwhile; ?>
 		</div>

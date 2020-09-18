@@ -8,9 +8,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-?>
 
-<div class="parallax section-container contact-section bg-abstract" id="contact-section">
+
+?>
+<div class="parallax section-container contact-section" id="contact-section">
 	<div class="container-fluid navy-bg-section-inner"></div>
 		<div class="row my-container position-relative">
 			<div class="col-12 text-center mb-4">
@@ -22,3 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	
 </div><!-- advantages-container -->
+
+<!-- <?php if
+	 (get_queried_object_id() == $main_page_bussiness_id || $aboutBizID || $aboutBizStructureID || $aboutBizCertID || $aboutBizNormID || $aboutBizAwardsID || $aboutBizPatentsID || $aboutBizProjectsID || $bizOfferID || $bizCoursesID || $bizNewsID || $bizContactID || $bizWrokshopsID) :
+	  echo 'bg-abstract'; endif; ?> -->

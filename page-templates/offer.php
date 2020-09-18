@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- offer -->
-<div class="section-container offer">
+<div class="section-container offer bg-abstract">
 
 	<div class="upper-section-container branches-text">
 		<div class="row">
@@ -30,14 +30,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 
-	<div class="container-fluid branches-links">
+	<div class="container-fluid bg-vlg branches-links">
 		<div class="row my-container">
 			
 			<div class="col-md-6 col-lg-4">
 				<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-przetworstwa-tworzyw-sztucznych">
 					<div class="single-branch-container">
 						<p class="branch-title text-left"><?php the_field('branch_name_1'); ?></p>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 						<div class="background-icon background-icon-1"></div>
 					</div>
 				</a>
@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-przetworstwa-gumy-i-elastomerow">
 					<div class="single-branch-container">
 						<p class="branch-title text-left"><?php the_field('branch_name_2'); ?></p>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 						<div class="background-icon background-icon-2"></div>
 					</div>
 				</a>
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-mechaniczna-dla-przemyslu-przetworstwa-tworzyw-sztucznych-i-gumy">
 					<div class="single-branch-container">
 						<p class="branch-title text-left"><?php the_field('branch_name_3'); ?></p>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 						<div class="background-icon background-icon-3"></div>
 					</div>
 				</a>
@@ -67,7 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="http://instytutimpib.dev.cube360.pl/oferta/branza-farb-i-lakierow-dla-przemyslu-budowlanego-i-chemicznego">
 					<div class="single-branch-container">
 						<p class="branch-title text-left"><?php the_field('branch_name_4'); ?></p>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 						<div class="background-icon background-icon-4"></div>
 					</div>
 				</a>
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="http://instytutimpib.dev.cube360.pl/oferta/ekologia-i-gospodarka-obiegu-zamknietego">
 					<div class="single-branch-container">
 						<p class="branch-title text-left"><?php the_field('branch_name_5'); ?></p>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 						<div class="background-icon background-icon-5"></div>
 					</div>
 				</a>
@@ -87,7 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="http://instytutimpib.dev.cube360.pl/kontakt">
 					<div class="single-branch-container single-branch-contact">
 						<div class="single-branch-contact-overlay">
-							<div class="my-outline-button">Skontaktuj się z nami</div>
+							<div class="my-outline-button"><?php echo the_field('contact_us', 1246) ?></div>
 						</div>
 					</div>
 				</a>
@@ -104,7 +104,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="text-justify"><?php the_field('offer_short_text_2'); ?></div>
 			</div>
 			<div class="col-12 text-center">
-				<a href="http://instytutimpib.dev.cube360.pl/kontakt" class="my-button green-button">Skontaktuj się z nami</a>
+				<a href="http://instytutimpib.dev.cube360.pl/kontakt" class="my-button green-button"><?php echo the_field('contact_us', 1246) ?></a>
 			</div>
 			
 		</div>

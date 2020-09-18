@@ -23,23 +23,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row text-center">
 
 			<div class="col-md-3">
-				<a href="https://www.bip.gov.pl/" target="_blank">
-					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/bip.png">
+				<a href="<?php echo the_field('bip', 1246) ?>" target="_blank">
+					<img src="<?php echo the_field('bip_image_link', 1246) ?>">
 				</a>
 			</div>
 			<div class="col-md-3">
-				<a href="https://www.gov.pl/web/nauka/" target="_blank">
-					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/mnisw.png">
+				<a href="<?php echo the_field('MNSIW', 1246) ?>" target="_blank">
+					<img src="<?php echo the_field('mnisw_image_link', 1246) ?>">
 				</a>
 			</div>
 			<div class="col-md-3">
-				<a href="https://www.rgib.org.pl/" target="_blank">
-					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/rgib.png">
+				<a href="<?php echo the_field('rgib', 1246) ?>" target="_blank">
+					<img src="<?php echo the_field('rgib_image_link', 1246) ?>">
 				</a>
 			</div>
 			<div class="col-md-3">
-				<a href="https://www.gov.pl/web/przedsiebiorczosc-technologia" target="_blank">
-					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/mpit.png">
+				<a href="<?php echo the_field('mpit', 1246) ?>" target="_blank">
+					<img src="<?php echo the_field('mpit_image_link', 1246) ?>">
 				</a>
 			</div>
 

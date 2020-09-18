@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="my-post-container-outer">
 					<div class="my-post-photo"><?php echo get_the_post_thumbnail( $page->ID, 'img-horizontal-medium' ); ?></div>
 					<div class="my-post-container-inner">
-						<div class="my-post-author"><?php the_author(); ?></div>
+						<!-- <div class="my-post-author"><?php the_author(); ?></div> -->
 						<div class="my-post-data">
 							<div class="my-post-title"><?php the_title(); ?></div>
 							<div class="my-post-text">

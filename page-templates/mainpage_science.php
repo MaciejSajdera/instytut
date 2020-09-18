@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-5 science-text">
 				<h2><?php the_field('header_science_section'); ?> </h2>
 				<div class="text-justify"><?php the_field('science_text_mainpage', 87); ?></div>
-				<a href="http://instytutimpib.dev.cube360.pl/oferta/" class="black-button">Sprawdź ofertę dla Twojej firmy</a>
+				<a href="http://instytutimpib.dev.cube360.pl/oferta/" class="black-button"><?php the_field('check_offer', 87); ?></a>
 			</div>
 			<div class="science-container">
 				<div class="row">
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="single-science-container single-science-container-research position-relative">
 								<div class="gradient-bg-section-inner"></div>
 								<p class="science-title text-left"><?php the_field('science_1_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+								<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 							</div>
 						</a>
 					</div>
@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="single-science-container single-science-container-lab position-relative">
 								<div class="gradient-bg-section-inner"></div>
 								<p class="science-title text-left"><?php the_field('science_2_name'); ?></p>
-								<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+								<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 							</div>
 						</a>
 					</div>
@@ -85,7 +85,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="read-more text-center">
 							<div class="thin-white-line"></div>
-							<p>Czytaj więcej<i class="fas fa-long-arrow-alt-right"></i></p>
+							<p><?php echo the_field('read_more', 1246) ?><i class="fas fa-long-arrow-alt-right"></i></p>
 						</div>
 					</div>
 					</a>
@@ -101,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="read-more text-center">
 							<div class="thin-white-line"></div>
-							<p>Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></p>
+							<p><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></p>
 						</div>
 					</div>
 					</a>
@@ -117,7 +117,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="read-more text-center">
 							<div class="thin-white-line"></div>
-							<p>Czytaj więcej<i class="fas fa-long-arrow-alt-right"></i></p>
+							<p><?php echo the_field('read_more', 1246) ?><i class="fas fa-long-arrow-alt-right"></i></p>
 						</div>
 					</div>
 					</a>
@@ -138,13 +138,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- awards-->
 <div class="section-container awards">
-	<div class="container-fluid">
+	<div class="container-fluid bg-green-black-linear">
 		<div class="row">
 			<div class="col-md-5 awards-text my-half-container">
 				<div class="text-awards">
 					<h2 class="text-center text-md-left"><?php the_field('header_awards_section'); ?> </h2>
 					<div class="text-justify"><p class="not-on-mobile"><?php the_field('awards_text_mainpage', 87); ?></p></div>
-					<a href="http://instytutimpib.dev.cube360.pl/o-nas-2/nagrody-i-wyroznienia/" class="my-button black-button not-on-mobile">Zobacz wszystko</a>
+					<a href="http://instytutimpib.dev.cube360.pl/o-nas-2/nagrody-i-wyroznienia/" class="my-button black-button not-on-mobile"><?php echo the_field('check_all', 1246) ?></a>
 				</div>
 			</div>
 			<div class="col-md-7 awards-container">

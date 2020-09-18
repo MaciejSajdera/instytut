@@ -16,9 +16,9 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!-- contact -->
-<div class="section-container contact ">
+<div class="section-container contact  <?php if (get_queried_object_id() == $bizContactID): echo 'bg-abstract'; endif; ?>"> 
 	<!--department Torun-->
-	<div class="container-fluid contact-department-section bg-abstract">
+	<div class="container-fluid contact-department-section">
 		<div class="row my-container">
 			<div class="col-md-8">
 				<h2 class="contact-section-title"><?php the_field('name_torun', 289); ?></h2>
@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<p><?php the_sub_field('phone'); ?></p>
 						<p><?php the_sub_field('second-phone'); ?></p>
 						<p><a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a></p>
-						<a href = "mailto:<?php the_sub_field('email'); ?>" class="my-button">Wyślij wiadomość</a>
+						<a href = "mailto:<?php the_sub_field('email'); ?>" class="my-button"><?php echo the_field('send_message', 1246) ?></a>
 					</div>
 					<?php endwhile; ?>
 				</div>
@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<p><?php the_sub_field('phone'); ?></p>
 					<p><?php the_sub_field('second-phone'); ?></p>
 					<p><a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a></p>
-					<a href = "mailto:<?php the_sub_field('email'); ?>" class="my-button">Wyślij wiadomość</a>
+					<a href = "mailto:<?php the_sub_field('email'); ?>" class="my-button"><?php echo the_field('send_message', 1246) ?></a>
 				</div>
 				<?php endwhile; ?>
 			</div>
@@ -81,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<p><?php the_field('phone_gliwice', 289); ?></p>
 					<p><?php the_field('faks_gliwice', 289); ?></p>
 					<p><a href="mailto:<?php the_field('email_gliwice', 289); ?>"><?php the_field('email_gliwice', 289); ?></a></p>
-					<a href = "mailto:<?php the_field('email_gliwice', 289); ?>" class="my-button">Wyślij wiadomość</a>
+					<a href = "mailto:<?php the_field('email_gliwice', 289); ?>" class="my-button"><?php echo the_field('send_message', 1246) ?></a>
 				</div>
 
 			</div>
@@ -90,7 +90,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!--end of department Gliwice-->
 
 	<!--department Piastow-->
-	<div class="container-fluid contact-department-section bg-abstract">
+	<div class="container-fluid contact-department-section <?php if (get_queried_object_id() == $bizContactID): echo 'bg-abstract'; endif; ?>">
 		<div class="row my-container">
 			<div class="col-md-8">
 				<h2 class="contact-section-title"><?php the_field('name_piastow', 289); ?></h2>
@@ -103,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<p><?php the_field('phone_piastow', 289); ?></p>
 					<p><?php the_field('faks_piastow', 289); ?></p>
 					<p><a href="mailto:<?php the_field('email_piastow', 289); ?>"><?php the_field('email_piastow', 289); ?></a></p>
-					<a href = "mailto:<?php the_field('email_piastow', 289); ?>" class="my-button">Wyślij wiadomość</a>
+					<a href = "mailto:<?php the_field('email_piastow', 289); ?>" class="my-button"><?php echo the_field('send_message', 1246) ?></a>
 				</div>
 			</div>
 		</div>

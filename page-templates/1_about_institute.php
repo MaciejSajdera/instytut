@@ -16,13 +16,13 @@ get_header('');
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!-- about institute 1-->
-<div class="section-container about-institute-1 bg-abstract">
+<div class="section-container about-institute-1 <?php if (get_queried_object_id() == $aboutBizID): echo 'bg-abstract'; endif; ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
 				<h2><?php the_field('header_institute_section', 141); ?></h2>
 				<div class="text-justify"><?php the_field('text_about_institute_1', 141); ?></div>
-				<a href="#" class="green-button">Jak rozpocząć współpracę</a>
+				<a href="#" class="green-button"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 			</div>
 			<div class="col-md-7">
 				<img src="<?php the_field('photo_about_institute_1', 141); ?>">
@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- end of about institute 1-->
 
 <!--institute history-->
-<div class="section-container institute-history pt-4 bg-abstract">
+<div class="section-container institute-history pt-4 <?php if (get_queried_object_id() == $aboutBizID): echo 'bg-abstract'; endif; ?>">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- end of institute history-->
 
 <!--statut-->
-<div class="section-container statut bg-abstract">
+<div class="section-container statut <?php if (get_queried_object_id() == $aboutBizID): echo 'bg-abstract'; endif; ?>">
 	<div class="statut-bg">
 		<div class="container">
 			<div class="row">
@@ -99,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- end of statut-->
 
 <!-- about institute 2-->
-<div class="section-container about-institute-2  bg-abstract">
+<div class="section-container about-institute-2 <?php if (get_queried_object_id() == $aboutBizID): echo 'bg-abstract'; endif; ?>">
 	<div class="container">
 		<div class="row">
 		<div class="col-md-9 col-lg-8 text-about-institute-2 order-md-2">
@@ -122,7 +122,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <!--management-->
-<div class="section-container management-about-institute  bg-abstract pt-5 pb-4">
+<div class="section-container management-about-institute pt-5 pb-4 <?php if (get_queried_object_id() == $aboutBizID): echo 'bg-abstract'; endif; ?>">
 	<div class="container-fluid">
 		<h2 class="text-center mb-5"><?php the_field('header_management', 141); ?></h2>
 		<div class="swiper-container management-carousel" id="management-carousel">
@@ -158,14 +158,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <!--partners 2 -->
-<div class="section-container partners-about-institute bg-abstract">
+<div class="section-container partners-about-institute <?php if (get_queried_object_id() == $aboutBizID): echo 'bg-abstract'; endif; ?>">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="my-half-container">
 					<h2 class="text-center"><?php the_field('header_partners', 141); ?></h2>
 					<div class="text-justify"><?php the_field('text_partners', 141); ?></div>
-					<a href="#" class="my-outline-button-navy">Jak rozpocząć współpracę</a>
+					<a href="#" class="my-outline-button-navy"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 				</div>
 			</div>
 			<div class="col-md-6 map-container">

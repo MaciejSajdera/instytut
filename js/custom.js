@@ -184,3 +184,35 @@ var swiper = new Swiper('#awards-carousel', {
         }
       }
   });
+
+console.log('test1');
+//custom js
+//filtering function for research areas
+
+if (document.body.classList.contains('page-template-research_areas')) {
+
+  document.addEventListener('click', function(e) {
+
+    console.log('test2');
+
+    var researchSections = document.querySelectorAll('.research-container');
+
+    researchSections.forEach(node => {
+  
+      myArray = [...node.classList]
+  
+      myTargetArray = e.target.innerHTML.trim().split(" ");
+  
+      areTheyRelated3 = (arr1, arr2) => {
+        if (arr1.some(item => arr2.includes(item))) {
+          node.classList.remove('hideNode');
+          node.classList.toggle('showNode');
+        } else {
+          node.classList.remove('showNode');
+          node.classList.toggle('hideNode');
+        }
+      }
+      areTheyRelated3(myArray, myTargetArray);
+    })
+  });
+}

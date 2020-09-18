@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- patents -->
-<div class="section-container patents bg-abstract">
+<div class="section-container patents <?php if (get_queried_object_id() == $aboutBizPatentsID): echo 'bg-abstract'; endif; ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -29,8 +29,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php while( have_rows('patents', 268) ) : the_row(); ?>
 				
 					<div class="patent-container">
-						<p class="year"><?php the_sub_field('year'); ?><span> Urząd Patentowy RP udzielił na rzecz Instytutu patenty na wynalazki:</span></p>
-						<a class="patents-collapse not-on-md" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">Wynalazki <i class="fas fa-chevron-down"></i></a>
+						<p class="year"><?php the_sub_field('year'); ?><span> <?php echo the_field('patents_office', 268)?></span></p>
+						<a class="patents-collapse not-on-md" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>"> <?php echo the_field('inventions', 268)?><i class="fas fa-chevron-down"></i></a>
 						<div class="collapse not-collapse-md" id="number<?php echo $count; ?>">
 							<?php the_sub_field('inventions', 268); ?>
 						</div>

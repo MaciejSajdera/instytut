@@ -39,7 +39,7 @@ $main_page_science_href = get_post_permalink(87);
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-		<div class="container-fluid my-navigation-conatiner">
+		<div class="container-fluid my-navigation-container">
 			<div class="row my-navigation-row">
 				<div class="col-2 col-lg-10 col-xl-8 not-on-mobile-and-tablet order-md-3 button-container text-right">
 
@@ -48,11 +48,17 @@ $main_page_science_href = get_post_permalink(87);
 						</div>
 
 					<div class="inner-button-container">
-						<a href="mailto:sekretariat@impib.pl"><i class="far fa-envelope"></i></a>
-						<a href="https://twitter.com/lukasiewicz_pl?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a href="https://www.facebook.com/Sie%C4%87-Badawcza-%C5%81UKASIEWICZ-Instytut-IMPiB-1790101597702109/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-						<a href="<?php echo $main_page_bussiness_href; ?>" class="my-button <?php if (get_queried_object_id() == $main_page_bussiness_id || is_front_page() ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Biznesu</a>
-						<a href="<?php echo $main_page_science_href; ?>" class="my-button <?php if (get_queried_object_id() == $main_page_science_id ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Nauki</a>
+						
+	
+
+					<!-- <span><?php do_action('wpml_add_language_selector'); ?></span> -->
+
+
+						<a href="mailto: <?php echo the_field('mail_in_menus', 1246) ?>"><i class="far fa-envelope"></i></a>
+						<a href="<?php echo the_field('twitter', 1246) ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="<?php echo the_field('facebook', 1246) ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="<?php echo $main_page_bussiness_href; ?>" class="biz-button my-button <?php if (get_queried_object_id() == $main_page_bussiness_id || is_front_page() ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Biznesu</a>
+						<a href="<?php echo $main_page_science_href; ?>" class="sci-button my-button <?php if (get_queried_object_id() == $main_page_science_id ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Nauki</a>
 					</div>
 				</div>
 
@@ -67,8 +73,10 @@ $main_page_science_href = get_post_permalink(87);
 						</div>
 					<div class="nav-container">
 						<nav class="navbar navbar-expand-lg">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-							<i class="fas fa-bars"></i>
+						<button class="navbar-toggler menu-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+							<span class="hamburger__container" tabindex="-1">
+    						<span class="hamburger__bars"></span>
+				  			</span>
 						</button>
 						</nav><!-- .site-navigation -->
 					</div>
@@ -105,10 +113,10 @@ $main_page_science_href = get_post_permalink(87);
 				</div>
 			</div><!-- .row end -->
 			<!-- The WordPress Menu goes here -->
-			<div id="navbarNavDropdown" class="my-collapse-container">
+			<div id="navbarNavDropdown" class="my-collapse-container <?php if (get_queried_object_id() == $main_page_bussiness_id || is_front_page() ): echo 'mobile-nav-biz'; else: echo 'mobile-nav-sci'; endif; ?>">
 				<div class="button-container-small">
-					<a href="<?php echo $main_page_bussiness_href; ?>" class="my-button button-for-bussiness">Dla Biznesu</a>
-					<a href="<?php echo $main_page_science_href; ?>" class="my-button button-for-science">Dla Nauki</a>
+				<a href="<?php echo $main_page_bussiness_href; ?>" class="biz-button my-button <?php if (get_queried_object_id() == $main_page_bussiness_id || is_front_page() ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Biznesu</a>
+						<a href="<?php echo $main_page_science_href; ?>" class="sci-button my-button <?php if (get_queried_object_id() == $main_page_science_id ): echo 'button-menu-active'; else: echo 'button-menu-not-active'; endif; ?>">Dla Nauki</a>
 				</div>
 			<?php wp_nav_menu(
 						array(
@@ -124,9 +132,9 @@ $main_page_science_href = get_post_permalink(87);
 					); ?>
 				<div class="icons-button-container-small">
 					<div class="social-button-container-small">
-						<a href="mailto:sekretariat@impib.pl"><i class="far fa-envelope"></i></a>
-						<a href="https://twitter.com/lukasiewicz_pl?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a href="https://www.facebook.com/Sie%C4%87-Badawcza-%C5%81UKASIEWICZ-Instytut-IMPiB-1790101597702109/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="mailto: <?php echo the_field('mail_in_menus', 1246) ?>"><i class="far fa-envelope"></i></a>
+						<a href="<?php echo the_field('twitter', 1246) ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="<?php echo the_field('facebook', 1246) ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
 					</div>
 					<form class="my-search-form" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 						<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
@@ -144,10 +152,43 @@ $main_page_science_href = get_post_permalink(87);
 	</div><!-- .conatiner end -->
 </div><!-- #wrapper-navbar end -->
 
+<?php
+$page_id = get_queried_object_id();
+
+$page_biz_id = get_queried_object_id('page-template-mainpage_business');
+
+if (wp_is_mobile()) :
+	$mainBannerBiz = get_field("banner_mobile_1", $main_page_bussiness_id);
+	$mainBannerSci = get_field("banner_mobile_2", $main_page_science_id);
+else :
+	$mainBannerBiz = get_field("banner_desktop_1", $main_page_bussiness_id);
+	$mainBannerSci = get_field("banner_desktop_2", $main_page_science_id);
+endif;
+
+
+if (get_queried_object_id() == $main_page_bussiness_id) :
+	$mainBanner = $mainBannerBiz;
+endif;
+
+if (get_queried_object_id() == $main_page_bussiness_id) :
+	$mainBannerSci = $mainBannerSci;
+endif;
+
+
+?>
+
 <div class="container-fluid header-title-container position-relative">
+
+	<style>
+		.header-title-container {
+
+			background:url(<?php echo $mainBannerBiz;?>) no-repeat;
+			background-size: cover;
+		}
+	</style>
 	<!-- <div class="gradient-bg-section-inner"></div> -->
 	<?php if ( is_front_page()) : ?>
-		<div class="my-entry-header position-relative">
+		<div class="my-entry-header">
 			<h1 class="my-entry-title"><?php the_title(); ?></h1>
 		</div>
 		<?php elseif (is_search()) : ?>
@@ -155,7 +196,7 @@ $main_page_science_href = get_post_permalink(87);
 			<h1 class="my-entry-title">Wyniki wyszukiwania</h1>
 		</div>
 		<?php else : ?>
-		<div class="my-entry-header position-relative">
+		<div class="my-entry-header">
 			<h1 class="my-entry-title"><?php wp_title( '', true, 'right' ); ?></h1>
 		</div>
 	<?php endif; ?>	

@@ -33,18 +33,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="background-icon"></div>
 					</a>
 					<div class="collapse" id="number<?php echo $count; ?>">
-						<p class="job-text-title">Opis stanowiska</p>
+					  <div class="wrapper">
+						<p class="job-text-title"><?php echo the_field('job_title', 413) ?></p>
 						<div class="position-text text-justify"><?php the_sub_field('position_text'); ?></div>
-						<p class="job-text-title">Wymagania</p>
+						<p class="job-text-title"><?php echo the_field('job_requirements', 413) ?></p>
 						<div class="requirements text-justify"><?php the_sub_field('requirements'); ?></div>
-						<a href="mailto:sekretariat@impib.pl" class="my-button">Aplikuj na stanowisko</a>
+						<a href="mailto:sekretariat@impib.pl" class="my-button green-button"><?php echo the_field('send_application', 413) ?></a>
+					  </div>
 					</div>
 				</div>
 			<?php $count++; ?>
 			<?php endwhile; ?>
 		</div>
 	</div>
-	<div class="container-fluid my-5 bg-abstract">
+	<div class="container-fluid practices">
 		<div class="row my-container">
 			<div class="col-12">
 				<h2 class="pb-5"><?php the_field('header_trening'); ?></h2>
@@ -62,11 +64,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="background-icon"></div>
 					</a>
 					<div class="collapse" id="training<?php echo $count; ?>">
-						<p class="job-text-title">Opis stanowiska</p>
+					  <div class="wrapper">
+						<p class="job-text-title"><?php echo the_field('job_title', 413) ?></p>
 						<div class="position-text text-justify"><?php the_sub_field('position_text'); ?></div>
-						<p class="job-text-title">Wymagania</p>
+						<p class="job-text-title"><?php echo the_field('job_requirements', 413) ?></p>
 						<div class="requirements text-justify"><?php the_sub_field('requirements'); ?></div>
-						<a href="mailto:sekretariat@impib.pl" class="my-button">Aplikuj na stanowisko</a>
+						<a href="mailto:sekretariat@impib.pl" class="my-button black-button"><?php echo the_field('send_application', 413) ?></a>
+					  </div>
 					</div>
 				</div>
 			<?php $count++; ?>

@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- lab accredited -->
-<div class="section-container lab-section bg-abstract">
+<div class="section-container lab-section">
 	<!--recycling-->
 	<div class="lab-container">
 		<!--title and pdf recycling-->
@@ -67,8 +67,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="text-justify"><?php the_sub_field('long_lab_text'); ?></div>
 								</div>
 								<a class="read-more-collapse" data-toggle="collapse" href="#number_recycling<?php echo $recycling_research; ?>" role="button" aria-expanded="false" aria-controls="number_recycling<?php echo $recycling_research; ?>">
-								<span class="text-collapsed">Czytaj więcej</span>
-								<span class="text-expanded">Czytaj mniej</span>
+								<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+								<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 								</a>
 								<div class="text-center bg-vlg photo-1 mt-5">
 									<?php 
@@ -82,12 +82,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; ?>
 					</div>
 					<a class="carousel-control-prev" href="#carousel-research-recycling" role="button" data-slide="prev">
-						<i class="fas fa-arrow-left"></i>
-					<span class="sr-only">Previous</span>
+						<i class="fas fa-long-arrow-alt-left"></i>
+					<span class="sr-only"><?php the_field('previous', 251); ?></span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-recycling" role="button" data-slide="next">
 						<i class="fas fa-long-arrow-alt-right"></i>
-					<span class="sr-only">Next</span>
+					<span class="sr-only"><?php the_field('next', 251); ?></span>
 					</a>
 				</div>
 			</div>
@@ -96,7 +96,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!--description recycling desktop-->
 			<div class="row justify-content-center only-on-md-and-up display-flex">
 				<div class="col-12 col-md-2 text-center">
-					<p>Wybierz<br/>badania</p>
+					<p><?php the_field('choose', 641); ?><br/><?php the_field('research', 641); ?></p>
 					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/wybierz.png">
 				</div>
 				<?php if (have_rows('research_desc_recycling')); ?>
@@ -128,13 +128,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<?php 
 									$photo = get_sub_field('lab_photo_1');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo, $size ); ?>
 								</div>
 								<div class="col-md-12 col-lg-6 not-on-mobile text-center bg-vlg photo-2">
 									<?php 
 									$photo_2 = get_sub_field('lab_photo_2');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo_2, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo_2, $size ); ?>
 								</div>
 							</div>
 						</div>
@@ -151,7 +151,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 mt-5">
-					<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
+					<h2 class="text-center mb-4"><?php the_field('leaders_research', 641); ?></h2>
 				</div>
 			</div>
 			
@@ -181,8 +181,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-12">
 					<a class="liders-collapse" data-toggle="collapse" href="#liders_recycling" role="button" aria-expanded="false" aria-controls="liders_recycling">
-						<span class="text-collapsed">Pokaż wszystkich liderów</span>
-						<span class="text-expanded">Ukryj wszystkich liderów</span>
+						<span class="text-collapsed"><?php the_field('show_all_leaders', 641); ?></span>
+						<span class="text-expanded"><?php the_field('hide_all_leaders', 641); ?></span>
 					</a>
 				</div>
 			</div>
@@ -200,8 +200,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; ?>
 			</div>
 			<div class="row">
-				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
+				<div class="col-12 my-wrapper">
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile"><?php echo the_field('contact_us', 1246) ?></a>
 				</div>
 			</div>
 		</div>
@@ -257,8 +257,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="text-justify"><?php the_sub_field('long_lab_text'); ?></div>
 								</div>
 								<a class="read-more-collapse" data-toggle="collapse" href="#number_plastic<?php echo $plastic_research; ?>" role="button" aria-expanded="false" aria-controls="number_plastic<?php echo $plastic_research; ?>">
-								<span class="text-collapsed">Czytaj więcej</span>
-								<span class="text-expanded">Czytaj mniej</span>
+								<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+								<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 								</a>
 								<div class="text-center bg-vlg photo-1 mt-5">
 									<?php 
@@ -272,12 +272,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; ?>
 					</div>
 					<a class="carousel-control-prev" href="#carousel-research-plastic" role="button" data-slide="prev">
-						<i class="fas fa-arrow-left"></i>
-					<span class="sr-only">Previous</span>
+						<i class="fas fa-long-arrow-alt-left"></i>
+					<span class="sr-only"><?php the_field('previous', 251); ?></span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-plastic" role="button" data-slide="next">
 						<i class="fas fa-long-arrow-alt-right"></i>
-					<span class="sr-only">Next</span>
+					<span class="sr-only"><?php the_field('next', 251); ?></span>
 					</a>
 				</div>
 			</div>
@@ -286,7 +286,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!--description plastic desktop-->
 			<div class="row justify-content-center only-on-md-and-up display-flex">
 				<div class="col-12 col-md-2 text-center">
-					<p>Wybierz<br/>badania</p>
+					<p><?php the_field('choose', 641); ?><br/><?php the_field('research', 641); ?></p>
 					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/wybierz.png">
 				</div>
 				<?php if (have_rows('research_desc_plastic')); ?>
@@ -318,13 +318,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<?php 
 									$photo = get_sub_field('lab_photo_1');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo, $size ); ?>
 								</div>
 								<div class="col-md-12 col-lg-6 not-on-mobile text-center bg-vlg photo-2">
 									<?php 
 									$photo_2 = get_sub_field('lab_photo_2');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo_2, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo_2, $size ); ?>
 								</div>
 							</div>
 						</div>
@@ -341,7 +341,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 mt-5">
-					<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
+					<h2 class="text-center mb-4"><?php the_field('leaders_research', 641); ?></h2>
 				</div>
 			</div>
 			
@@ -371,8 +371,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-12">
 					<a class="liders-collapse" data-toggle="collapse" href="#liders_plastic" role="button" aria-expanded="false" aria-controls="liders_plastic">
-						<span class="text-collapsed">Pokaż wszystkich liderów</span>
-						<span class="text-expanded">Ukryj wszystkich liderów</span>
+						<span class="text-collapsed"><?php the_field('show_all_leaders', 641); ?></span>
+						<span class="text-expanded"><?php the_field('hide_all_leaders', 641); ?></span>
 					</a>
 				</div>
 			</div>
@@ -390,8 +390,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; ?>
 			</div>
 			<div class="row">
-				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
+				<div class="col-12 my-wrapper">
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile"><?php echo the_field('contact_us', 1246) ?></a>
 				</div>
 			</div>
 		</div>
@@ -447,8 +447,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="text-justify"><?php the_sub_field('long_lab_text'); ?></div>
 								</div>
 								<a class="read-more-collapse" data-toggle="collapse" href="#number_elastomers<?php echo $elastomers_research; ?>" role="button" aria-expanded="false" aria-controls="number_elastomers<?php echo $elastomers_research; ?>">
-								<span class="text-collapsed">Czytaj więcej</span>
-								<span class="text-expanded">Czytaj mniej</span>
+								<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+								<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 								</a>
 								<div class="text-center bg-vlg photo-1 mt-5">
 									<?php 
@@ -462,12 +462,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; ?>
 					</div>
 					<a class="carousel-control-prev" href="#carousel-research-elastomers" role="button" data-slide="prev">
-						<i class="fas fa-arrow-left"></i>
-					<span class="sr-only">Previous</span>
+						<i class="fas fa-long-arrow-alt-left"></i>
+					<span class="sr-only"><?php the_field('previous', 251); ?></span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-elastomers" role="button" data-slide="next">
 						<i class="fas fa-long-arrow-alt-right"></i>
-					<span class="sr-only">Next</span>
+					<span class="sr-only"><?php the_field('next', 251); ?></span>
 					</a>
 				</div>
 			</div>
@@ -476,7 +476,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!--description elastomers desktop-->
 			<div class="row justify-content-center only-on-md-and-up display-flex">
 				<div class="col-12 col-md-2 text-center">
-					<p>Wybierz<br/>badania</p>
+					<p><?php the_field('choose', 641); ?><br/><?php the_field('research', 641); ?></p>
 					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/wybierz.png">
 				</div>
 				<?php if (have_rows('research_desc_elastomers')); ?>
@@ -531,7 +531,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 mt-5">
-					<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
+					<h2 class="text-center mb-4"><?php the_field('leaders_research', 641); ?></h2>
 				</div>
 			</div>
 			
@@ -561,8 +561,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-12">
 					<a class="liders-collapse" data-toggle="collapse" href="#liders_elastomers" role="button" aria-expanded="false" aria-controls="liders_elastomers">
-						<span class="text-collapsed">Pokaż wszystkich liderów</span>
-						<span class="text-expanded">Ukryj wszystkich liderów</span>
+						<span class="text-collapsed"><?php the_field('show_all_leaders', 641); ?></span>
+						<span class="text-expanded"><?php the_field('hide_all_leaders', 641); ?></span>
 					</a>
 				</div>
 			</div>
@@ -580,8 +580,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; ?>
 			</div>
 			<div class="row">
-				<div class="col-12">
-					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
+				<div class="col-12 my-wrapper">
+					<a href="http://instytutimpib.dev.cube360.pl/kontakt-2/" class="my-button black-button not-on-mobile"><?php echo the_field('contact_us', 1246) ?></a>
 				</div>
 			</div>
 		</div>
@@ -637,14 +637,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="text-justify"><?php the_sub_field('long_lab_text'); ?></div>
 								</div>
 								<a class="read-more-collapse" data-toggle="collapse" href="#number_paints<?php echo $paints_research; ?>" role="button" aria-expanded="false" aria-controls="number_paints<?php echo $paints_research; ?>">
-								<span class="text-collapsed">Czytaj więcej</span>
-								<span class="text-expanded">Czytaj mniej</span>
+								<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+								<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 								</a>
 								<div class="text-center bg-vlg photo-1 mt-5">
 									<?php 
 									$photo = get_sub_field('lab_photo_1');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo, $size ); ?>
 								</div>
 							</div>
 						</div>
@@ -652,12 +652,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php endwhile; ?>
 					</div>
 					<a class="carousel-control-prev" href="#carousel-research-paints" role="button" data-slide="prev">
-						<i class="fas fa-arrow-left"></i>
-					<span class="sr-only">Previous</span>
+						<i class="fas fa-long-arrow-alt-left"></i>
+					<span class="sr-only"><?php the_field('previous', 251); ?></span>
 					</a>
 					<a class="carousel-control-next" href="#carousel-research-paints" role="button" data-slide="next">
 						<i class="fas fa-long-arrow-alt-right"></i>
-					<span class="sr-only">Next</span>
+					<span class="sr-only"><?php the_field('next', 251); ?></span>
 					</a>
 				</div>
 			</div>
@@ -666,7 +666,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!--description paints desktop-->
 			<div class="row justify-content-center only-on-md-and-up display-flex">
 				<div class="col-12 col-md-2 text-center">
-					<p>Wybierz<br/>badania</p>
+					<p><?php the_field('choose', 641); ?><br/><?php the_field('research', 641); ?></p>
 					<img src="http://instytutimpib.dev.cube360.pl/wp-content/uploads/2019/06/wybierz.png">
 				</div>
 				<?php if (have_rows('research_desc_paints')); ?>
@@ -698,13 +698,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<?php 
 									$photo = get_sub_field('lab_photo_1');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo, $size ); ?>
 								</div>
 								<div class="col-md-12 col-lg-6 not-on-mobile text-center bg-vlg photo-2">
 									<?php 
 									$photo_2 = get_sub_field('lab_photo_2');
 									$size = 'img-vertical-small'; ?>
-									<div><?php echo wp_get_attachment_image( $photo_2, $size ); ?></div>
+									<?php echo wp_get_attachment_image( $photo_2, $size ); ?>
 								</div>
 							</div>
 						</div>
@@ -721,7 +721,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 mt-5">
-					<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
+					<h2 class="text-center mb-4"><?php the_field('leaders_research', 641); ?></h2>
 				</div>
 			</div>
 			
@@ -751,8 +751,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-12">
 					<a class="liders-collapse" data-toggle="collapse" href="#liders_paints" role="button" aria-expanded="false" aria-controls="liders_paints">
-						<span class="text-collapsed">Pokaż wszystkich liderów</span>
-						<span class="text-expanded">Ukryj wszystkich liderów</span>
+						<span class="text-collapsed"><?php the_field('show_all_leaders', 641); ?></span>
+						<span class="text-expanded"><?php the_field('hide_all_leaders', 641); ?></span>
 					</a>
 				</div>
 			</div>
@@ -770,15 +770,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endwhile; ?>
 			</div>
 			<div class="row">
-				<div class="col-12">
-					<a href="/instytut/kontakt-2" class="my-button black-button not-on-mobile">Skontaktuj się z nami</a>
+				<div class="col-12 my-wrapper">
+					<a href="/instytut/kontakt-2" class="my-button black-button not-on-mobile"><?php echo the_field('contact_us', 1246) ?></a>
 				</div>
 			</div>
 		</div>
 		<!--end of liders paints-->
 	</div>
 	<!--end of paints-->
-
 
 </div>
 <!-- end of lab accredited -->

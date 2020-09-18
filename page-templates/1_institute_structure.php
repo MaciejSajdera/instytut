@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- department-->
-<div class="section-container departments">
+<div class="section-container departments <?php if (get_queried_object_id() == $aboutBizStructureID): echo 'bg-abstract'; endif; ?>">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 col-xl-3">
@@ -43,12 +43,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- department-->
 
 <!-- science council -->
-<div class="section-container bg-abstract">
+<div class="section-container <?php if (get_queried_object_id() == $aboutBizStructureID): echo 'bg-abstract'; endif; ?>">
 	<div class="container science-council">
 		<div class="row">
 			<div class="col-12 col-lg-4 science-council-title">
 				<h2><?php the_field('header_science_council', 186); ?></h2>
-				<p>Kadencja Rady Naukowej: od 17 sierpnia 2017 r. do 16 sierpnia 2021 r.</p>
+				<p><?php the_field('council_term', 186); ?></p>
 			</div>
 			<?php if (have_rows('science_council', 186)) ;?>
 		

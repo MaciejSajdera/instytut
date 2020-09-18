@@ -11159,154 +11159,154 @@ li.menu-item:before, li.research-option:before {
       display: inline-block; } }
 
 @media only screen and (min-width: 768px) {
-  .my-navigation-conatiner {
+  .my-navigation-container {
     padding: 0; } }
 
-.my-navigation-conatiner .my-navigation-row {
+.my-navigation-container .my-navigation-row {
   margin-left: 0;
   margin-right: 0; }
-  .my-navigation-conatiner .my-navigation-row .my-navigation-bar {
+  .my-navigation-container .my-navigation-row .my-navigation-bar {
     padding-left: 0;
     padding-right: 0; }
 
-.my-navigation-conatiner .logo-container {
+.my-navigation-container .logo-container {
   display: table;
   height: 90px; }
   @media only screen and (min-width: 480px) {
-    .my-navigation-conatiner .logo-container {
+    .my-navigation-container .logo-container {
       height: 120px; } }
   @media only screen and (min-width: 992px) {
-    .my-navigation-conatiner .logo-container {
+    .my-navigation-container .logo-container {
       height: 70px; } }
   @media only screen and (min-width: 1200px) {
-    .my-navigation-conatiner .logo-container {
+    .my-navigation-container .logo-container {
       margin-left: auto; } }
-  .my-navigation-conatiner .logo-container a {
+  .my-navigation-container .logo-container a {
     display: table-cell;
     vertical-align: middle; }
     @media only screen and (min-width: 480px) {
-      .my-navigation-conatiner .logo-container a img {
+      .my-navigation-container .logo-container a img {
         max-height: 90px;
         width: auto; } }
     @media only screen and (min-width: 768px) {
-      .my-navigation-conatiner .logo-container a img {
+      .my-navigation-container .logo-container a img {
         max-height: 70px;
         width: auto;
         padding: .6rem; } }
 
-.my-navigation-conatiner .logo-text {
+.my-navigation-container .logo-text {
   font-size: .7rem;
   line-height: 1rem;
   padding-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    .my-navigation-conatiner .logo-text {
+    .my-navigation-container .logo-text {
       padding-top: 1.5rem; } }
 
-.my-navigation-conatiner .nav-container {
+.my-navigation-container .nav-container {
   display: table;
   height: 90px;
   margin: auto; }
   @media only screen and (min-width: 480px) {
-    .my-navigation-conatiner .nav-container {
+    .my-navigation-container .nav-container {
       height: 120px; } }
-  .my-navigation-conatiner .nav-container nav {
+  .my-navigation-container .nav-container nav {
     display: table-cell;
     vertical-align: middle;
     padding: 0; }
-    .my-navigation-conatiner .nav-container nav button {
+    .my-navigation-container .nav-container nav button {
       outline: none;
       border: none; }
-      .my-navigation-conatiner .nav-container nav button i {
+      .my-navigation-container .nav-container nav button i {
         color: #222D4E; }
         @media only screen and (min-width: 480px) {
-          .my-navigation-conatiner .nav-container nav button i {
+          .my-navigation-container .nav-container nav button i {
             font-size: 1.5rem; } }
 
-.my-navigation-conatiner .button-container-small {
+.my-navigation-container .button-container-small {
   width: 300px;
   margin: auto; }
-  .my-navigation-conatiner .button-container-small .my-button {
+  .my-navigation-container .button-container-small .my-button {
     display: inline-block;
     padding: 0;
     margin: 0;
     height: 40px;
     width: 49%;
     line-height: 40px; }
-  .my-navigation-conatiner .button-container-small .button-for-bussiness {
+  .my-navigation-container .button-container-small .button-for-bussiness {
     background-color: #AF1A33; }
-    .my-navigation-conatiner .button-container-small .button-for-bussiness:hover {
+    .my-navigation-container .button-container-small .button-for-bussiness:hover {
       background-color: #831326;
       color: #fff; }
-  .my-navigation-conatiner .button-container-small .button-for-science {
+  .my-navigation-container .button-container-small .button-for-science {
     background-color: #222D4E; }
-    .my-navigation-conatiner .button-container-small .button-for-science:hover {
+    .my-navigation-container .button-container-small .button-for-science:hover {
       background-color: #13192a;
       color: #fff; }
 
-.my-navigation-conatiner .icons-button-container-small .my-search-form {
+.my-navigation-container .icons-button-container-small .my-search-form {
   display: block;
   padding-right: 1rem;
   width: 300px;
   margin: auto;
   margin-top: 1.6rem; }
 
-.my-navigation-conatiner .icons-button-container-small .social-button-container-small {
+.my-navigation-container .icons-button-container-small .social-button-container-small {
   width: 100%;
   margin: auto;
   margin-top: 1.4rem;
   padding: 1rem;
   background: #fff; }
-  .my-navigation-conatiner .icons-button-container-small .social-button-container-small a {
+  .my-navigation-container .icons-button-container-small .social-button-container-small a {
     display: inline-block;
     width: 32%;
     text-align: center;
     color: #222D4E;
     transition: all .25s linear; }
-    .my-navigation-conatiner .icons-button-container-small .social-button-container-small a:hover {
+    .my-navigation-container .icons-button-container-small .social-button-container-small a:hover {
       color: #AF1A33; }
 
 @media only screen and (min-width: 992px) {
-  .my-navigation-conatiner .button-container {
+  .my-navigation-container .button-container {
     display: table;
     height: 70px; }
-    .my-navigation-conatiner .button-container .inner-button-container {
+    .my-navigation-container .button-container .inner-button-container {
       display: table-cell;
       vertical-align: middle; }
-      .my-navigation-conatiner .button-container .inner-button-container a {
+      .my-navigation-container .button-container .inner-button-container a {
         display: inline-block;
         margin: .5rem; }
-        .my-navigation-conatiner .button-container .inner-button-container a i {
+        .my-navigation-container .button-container .inner-button-container a i {
           color: #222D4E;
           transition: all .25s linear; }
-          .my-navigation-conatiner .button-container .inner-button-container a i:hover {
+          .my-navigation-container .button-container .inner-button-container a i:hover {
             color: #AF1A33; } }
       @media only screen and (min-width: 992px) and (min-width: 992px) {
-        .my-navigation-conatiner .button-container .inner-button-container a {
+        .my-navigation-container .button-container .inner-button-container a {
           margin: 1rem; } }
 
 @media only screen and (min-width: 992px) {
-      .my-navigation-conatiner .button-container .inner-button-container .button-for-bussiness {
+      .my-navigation-container .button-container .inner-button-container .button-for-bussiness {
         background-color: #AF1A33; }
-        .my-navigation-conatiner .button-container .inner-button-container .button-for-bussiness:hover {
+        .my-navigation-container .button-container .inner-button-container .button-for-bussiness:hover {
           background-color: #831326;
           color: #fff; }
-      .my-navigation-conatiner .button-container .inner-button-container .button-for-science {
+      .my-navigation-container .button-container .inner-button-container .button-for-science {
         background-color: #222D4E; }
-        .my-navigation-conatiner .button-container .inner-button-container .button-for-science:hover {
+        .my-navigation-container .button-container .inner-button-container .button-for-science:hover {
           background-color: #13192a;
           color: #fff; } }
 
 @media only screen and (min-width: 1200px) {
-  .my-navigation-conatiner .button-container {
+  .my-navigation-container .button-container {
     max-width: 81%;
     flex: 0 0 81%; } }
 
 @media only screen and (min-width: 1440px) {
-  .my-navigation-conatiner .button-container {
+  .my-navigation-container .button-container {
     max-width: 66%;
     flex: 0 0 66%; } }
 
-.my-navigation-conatiner .my-collapse-container {
+.my-navigation-container .my-collapse-container {
   position: absolute;
   width: 100%;
   height: 90%;
@@ -11316,22 +11316,22 @@ li.menu-item:before, li.research-option:before {
   bottom: 0px;
   background-color: rgba(34, 45, 78, 0.1);
   transition: all .25s linear; }
-  .my-navigation-conatiner .my-collapse-container ul {
+  .my-navigation-container .my-collapse-container ul {
     width: 300px;
     margin: auto;
     margin-top: 20px; }
     @media only screen and (min-width: 480px) {
-      .my-navigation-conatiner .my-collapse-container ul {
+      .my-navigation-container .my-collapse-container ul {
         width: 350px; } }
     @media only screen and (min-width: 576px) {
-      .my-navigation-conatiner .my-collapse-container ul li {
+      .my-navigation-container .my-collapse-container ul li {
         width: 350px; } }
     @media only screen and (min-width: 992px) {
-      .my-navigation-conatiner .my-collapse-container ul li {
+      .my-navigation-container .my-collapse-container ul li {
         width: 450px; } }
-    .my-navigation-conatiner .my-collapse-container ul li .nav-link {
+    .my-navigation-container .my-collapse-container ul li .nav-link {
       padding-left: .5rem; }
-    .my-navigation-conatiner .my-collapse-container ul li a {
+    .my-navigation-container .my-collapse-container ul li a {
       color: #222D4E;
       font-weight: 700;
       display: block;
@@ -11339,22 +11339,22 @@ li.menu-item:before, li.research-option:before {
       text-align: center;
       padding: .5rem;
       transition: all .25s linear; }
-      .my-navigation-conatiner .my-collapse-container ul li a:hover {
+      .my-navigation-container .my-collapse-container ul li a:hover {
         color: #222D4E;
         background-color: #fff; }
       @media only screen and (min-width: 576px) {
-        .my-navigation-conatiner .my-collapse-container ul li a {
+        .my-navigation-container .my-collapse-container ul li a {
           font-size: 1rem; } }
       @media only screen and (min-width: 992px) {
-        .my-navigation-conatiner .my-collapse-container ul li a {
+        .my-navigation-container .my-collapse-container ul li a {
           font-size: 1.8rem; } }
     @media only screen and (min-width: 576px) {
-      .my-navigation-conatiner .my-collapse-container ul li .dropdown-toggle::after {
+      .my-navigation-container .my-collapse-container ul li .dropdown-toggle::after {
         margin-top: .6rem; } }
     @media only screen and (min-width: 992px) {
-      .my-navigation-conatiner .my-collapse-container ul li .dropdown-toggle::after {
+      .my-navigation-container .my-collapse-container ul li .dropdown-toggle::after {
         margin-top: 1rem; } }
-    .my-navigation-conatiner .my-collapse-container ul li ul.dropdown-menu.show {
+    .my-navigation-container .my-collapse-container ul li ul.dropdown-menu.show {
       margin-left: 0;
       -webkit-margin-start: 0px;
               margin-inline-start: 0px;
@@ -11363,24 +11363,24 @@ li.menu-item:before, li.research-option:before {
       border: none;
       border-radius: 0;
       width: 100%; }
-      .my-navigation-conatiner .my-collapse-container ul li ul.dropdown-menu.show li a {
+      .my-navigation-container .my-collapse-container ul li ul.dropdown-menu.show li a {
         font-size: .8rem;
         font-weight: 400;
         color: #222D4E;
         border-radius: 0;
         transition: all .25s linear; }
-        .my-navigation-conatiner .my-collapse-container ul li ul.dropdown-menu.show li a:hover {
+        .my-navigation-container .my-collapse-container ul li ul.dropdown-menu.show li a:hover {
           color: #222D4E; }
         @media only screen and (min-width: 576px) {
-          .my-navigation-conatiner .my-collapse-container ul li ul.dropdown-menu.show li a {
+          .my-navigation-container .my-collapse-container ul li ul.dropdown-menu.show li a {
             font-size: 1rem;
             font-weight: 700; } }
         @media only screen and (min-width: 992px) {
-          .my-navigation-conatiner .my-collapse-container ul li ul.dropdown-menu.show li a {
+          .my-navigation-container .my-collapse-container ul li ul.dropdown-menu.show li a {
             font-size: 1.8rem;
             width: 510px; } }
 
-.my-navigation-conatiner .my-collapse-container.show {
+.my-navigation-container .my-collapse-container.show {
   position: absolute;
   width: 100%;
   height: 600px;
@@ -11392,20 +11392,20 @@ li.menu-item:before, li.research-option:before {
   transition: all .25s linear;
   z-index: 100; }
   @media only screen and (min-width: 480px) {
-    .my-navigation-conatiner .my-collapse-container.show {
+    .my-navigation-container .my-collapse-container.show {
       top: 120px; } }
   @media only screen and (min-width: 768px) {
-    .my-navigation-conatiner .my-collapse-container.show {
+    .my-navigation-container .my-collapse-container.show {
       top: 110px; } }
 
 @media only screen and (min-width: 992px) {
-  .my-navigation-conatiner .navbar {
+  .my-navigation-container .navbar {
     background-color: #F8F8F8;
     height: 80px; } }
 
-.my-navigation-conatiner .navbar-collapse ul li {
+.my-navigation-container .navbar-collapse ul li {
   transition: all .25s linear; }
-  .my-navigation-conatiner .navbar-collapse ul li a.nav-link {
+  .my-navigation-container .navbar-collapse ul li a.nav-link {
     text-transform: uppercase;
     font-weight: 700;
     opacity: 1;
@@ -11414,20 +11414,20 @@ li.menu-item:before, li.research-option:before {
     font-size: .7rem;
     padding-left: 0.2rem; }
     @media only screen and (min-width: 1200px) {
-      .my-navigation-conatiner .navbar-collapse ul li a.nav-link {
+      .my-navigation-container .navbar-collapse ul li a.nav-link {
         font-size: .85rem;
         padding-left: .5rem; } }
-    .my-navigation-conatiner .navbar-collapse ul li a.nav-link:hover {
+    .my-navigation-container .navbar-collapse ul li a.nav-link:hover {
       transition: all .25s linear;
       color: #AF1A33; }
-  .my-navigation-conatiner .navbar-collapse ul li ul {
+  .my-navigation-container .navbar-collapse ul li ul {
     background-color: #F8F8F8;
     border-radius: 0;
     border: none; }
-    .my-navigation-conatiner .navbar-collapse ul li ul a {
+    .my-navigation-container .navbar-collapse ul li ul a {
       color: #222D4E;
       transition: all .25s linear; }
-      .my-navigation-conatiner .navbar-collapse ul li ul a:hover, .my-navigation-conatiner .navbar-collapse ul li ul a:active {
+      .my-navigation-container .navbar-collapse ul li ul a:hover, .my-navigation-container .navbar-collapse ul li ul a:active {
         background-color: #fff;
         transition: all .25s linear;
         border: none;

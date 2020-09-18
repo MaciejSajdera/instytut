@@ -19,7 +19,7 @@ $i = 0;
 ?>
 
 <!-- projects -->
-<div class="section-container projects bg-abstract">
+<div class="section-container projects <?php if (get_queried_object_id() == $aboutBizProjectsID): echo 'bg-abstract'; endif; ?>">
 	<div class="container-fluid">
 		<?php if( have_rows('projects', 285) ); ?>
 		<?php $count=0 ;?>
@@ -45,12 +45,12 @@ $i = 0;
 					endif;
 					?> data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
 
-					<span class="text-collapsed">Opis projektu</span>
-					<span class="text-expanded">Opis projektu</span>
+					<span class="text-collapsed"><?php echo the_field('project_description', 285) ?></span>
+					<span class="text-expanded"><?php echo the_field('project_description', 285) ?></span>
 				</a>
 				</div>
 				<div class="col">
-					<div class="collapse" id="number<?php echo $count; ?>">
+					<div class="collapse collapse-text-container" id="number<?php echo $count; ?>">
 						<p class="subtitle-project"><?php the_sub_field('subtitle_project'); ?></p>
 						<div class="text-justify"><p class="text-project"><?php the_sub_field('text_project'); ?></p></div>
 					</div>

@@ -1,40 +1,40 @@
 .page-template-firstpage  {
 
-    // #menu-item-176 {
-    //     display: none;
-    // }
+    #menu-item-176 {
+        display: none;
+    }
 
-    // #menu-item-177 {
-    //     display: none;
-    // }
+    #menu-item-177 {
+        display: none;
+    }
 
-    // #menu-item-454 {
-    //     display: none;
-    // }
+    #menu-item-454 {
+        display: none;
+    }
 
-    // #menu-item-515 {
-    //     display: none;
-    // }
+    #menu-item-515 {
+        display: none;
+    }
 
-    // #menu-item-431 {
-    //     display: none;
-    // }
+    #menu-item-431 {
+        display: none;
+    }
 
-    // #menu-item-430 {
-    //     display: none;
-    // }
+    #menu-item-430 {
+        display: none;
+    }
 
-    // #menu-item-613 {
-    //     display: none;
-    // }
+    #menu-item-613 {
+        display: none;
+    }
 
-    // #menu-item-798 {
-    //     display: none;
-    // }
+    #menu-item-798 {
+        display: none;
+    }
 
-    // #menu-item-334 {
-    //     display: none;
-    // }
+    #menu-item-334 {
+        display: none;
+    }
 
     // .my-search-form {
     //     display: none;
@@ -56,13 +56,200 @@
     .science-photo {
         padding:0;
     }
-
-    .science-bussiness-photo {
-        margin: 0;
-    }
     
+    .my-navigation-container .my-collapse-container ul {
+
+        .menu-item-176 {
+            display: none;
+        }
+    
+        .menu-item-177 {
+            display: none;
+        }
+    
+        .menu-item-454 {
+            display: none;
+        }
+    
+        .menu-item-515 {
+            display: none;
+        }
+    
+        .menu-item-431 {
+            display: none;
+        }
+    
+        .menu-item-430 {
+            display: none;
+        }
+    
+        .menu-item-613 {
+            display: none;
+        }
+    
+        .menu-item-798 {
+            display: none;
+        }
+    
+        .menu-item-334 {
+            display: none;
+        }
+    }
 }
 
-.page-template-mainpage_business {
+.page-template-mainpage_business, .page-template-branches, .mobile-nav-biz, .search, .blog, .page-template-offer, .page-id-20, .page-id-22, .page-id-24, .page-id-26, .page-id-384, .page-id-44 , .page-id-115, .page-id-117, .page-id-119, .page-id-121, .page-id-609 {
+
+    .biz-button {
+        background-color: #30d530;
+        color: black;
+    }
+
+    #menu-item-176 {
+        display: none;
+    }
+
+    #menu-item-177 {
+        display: none;
+    }
+
+    #menu-item-454 {
+        display: none;
+    }
+
+    #menu-item-515 {
+        display: none;
+    }
+
+    #menu-item-431 {
+        display: none;
+    }
+
+    #menu-item-430 {
+        display: none;
+    }
+
+    #menu-item-613 {
+        display: none;
+    }
+
+    #menu-item-798 {
+        display: none;
+    }
+
+    #menu-item-334 {
+        display: none;
+    }
+
+    .my-navigation-container .my-collapse-container ul {
+
+        .menu-item-176 {
+            display: none;
+        }
+    
+        .menu-item-177 {
+            display: none;
+        }
+    
+        .menu-item-454 {
+            display: none;
+        }
+    
+        .menu-item-515 {
+            display: none;
+        }
+    
+        .menu-item-431 {
+            display: none;
+        }
+    
+        .menu-item-430 {
+            display: none;
+        }
+    
+        .menu-item-613 {
+            display: none;
+        }
+    
+        .menu-item-798 {
+            display: none;
+        }
+    
+        .menu-item-334 {
+            display: none;
+        }
+
+
+        li {
+
+            height: 40px;
+
+            @media screen and (min-height: 640px) {
+                height: 50px;
+            }
+        }
+
+    }
+
+}
+
+.page-template-mainpage_science, .mobile-nav-sci, .page-id-795, .page-id-330, .page-id-127, .page-id-129, .page-id-131, .page-id-133, .page-id-135, .page-id-137, .page-id-139, .page-id-390, .page-id-508, .page-id-413, .page-id-611, .page-id-450, .page-id-641, .page-id-477 {
+
+    .sci-button {
+        background-color: #30d530;
+        color: black;
+    }
+
+    #menu-item-332 {
+        display: none;
+    }
+
+    #menu-item-797 {
+        display: none;
+    }
+
+    #menu-item-614 {
+        display: none;
+    }
+
+    #menu-item-346 {
+        display: none;
+    }
+
+    #menu-item-168 {
+        display: none;
+    }
+    
+    #menu-item-167 {
+        display: none;
+    }
+
+    .my-navigation-container .my-collapse-container ul {
+
+
+        .menu-item-332 {
+            display: none;
+        }
+    
+        .menu-item-797 {
+            display: none;
+        }
+    
+        .menu-item-614 {
+            display: none;
+        }
+    
+        .menu-item-346 {
+            display: none;
+        }
+    
+        .menu-item-168 {
+            display: none;
+        }
+        
+        .menu-item-167 {
+            display: none;
+        }
+
+    }
 
 }

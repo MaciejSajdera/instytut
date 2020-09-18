@@ -17,11 +17,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- lab tech -->
-<div class="section-container lab-section bg-abstract bg-black">
+<div class="section-container lab-section bg-black">
 	<?php if (have_rows('lab_tech')); ?>
 	<?php $lab_tech=1; ?>
 	<?php while (have_rows('lab_tech')) : the_row(); ?>
-	<div class="container-fluid lab-container bg-abstract">
+	<div class="container-fluid lab-container">
 		<div class="row justify-content-center">
 		  <!-- <div class="my-wrapper"> -->
 			<div class="col-md-6 lab-type-container">
@@ -42,20 +42,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php 
 						$photo = get_sub_field('lab_photo_1');
 						$size = 'img-almost-square'; ?>
-						<div><?php echo wp_get_attachment_image( $photo, $size ); ?></div>
+						<?php echo wp_get_attachment_image( $photo, $size ); ?>
 					</div>
 					<div class="col-md-12 col-lg-6 not-on-mobile text-center bg-vlg photo-2">
 						<?php 
 						$photo_2 = get_sub_field('lab_photo_2');
 						$size = 'img-almost-square'; ?>
-						<div><?php echo wp_get_attachment_image( $photo_2, $size ); ?></div>
+						<?php echo wp_get_attachment_image( $photo_2, $size ); ?>
 					</div>
 				</div>
 			</div>
 			</div>
 
 			<div class="col-12 mt-5">
-				<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
+				<h2 class="text-center mb-4"><?php the_field('leaders_research', 641); ?></h2>
 			</div>
 		</div>
 		<div class="row only-on-mobile justify-content-center liders-mobile">
@@ -72,8 +72,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="col-12">
 				<a class="liders-collapse" data-toggle="collapse" href="#liders<?php echo $lab_tech; ?>" role="button" aria-expanded="false" aria-controls="liders<?php echo $lab_tech; ?>">
-					<span class="text-collapsed">Pokaż wszytskich liderów</span>
-					<span class="text-expanded">Ukryj wszystkich liderów</span>
+					<span class="text-collapsed"><?php the_field('show_all_leaders', 641); ?></span>
+					<span class="text-expanded"><?php the_field('hide_all_leaders', 641); ?></span>
 				</a>
 			</div>
 			<div class="collapse" id="liders<?php echo $lab_tech; ?>">
@@ -111,7 +111,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					else:
 					echo "green-button";
 					endif;
-					?> my-button not-on-mobile">Skontaktuj się z nami</a>
+					?> my-button not-on-mobile"><?php echo the_field('contact_us', 1246) ?></a>
 			</div>
 		</div>
 	</div>

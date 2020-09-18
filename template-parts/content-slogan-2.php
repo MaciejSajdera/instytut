@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div class="parallax section-container slogan-section slogan-section-2 bg-abstract" id="slogan-2-section">
+<div class="parallax section-container slogan-section slogan-section-2" id="slogan-2-section">
 	<div class="container-fluid navy-bg-section-inner"></div>
 	<div class="container position-relative">
 		<div class="row my-container">

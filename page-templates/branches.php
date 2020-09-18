@@ -18,8 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- end of branches section -->
 <div class="section-container departments-section">
-	<div class="container branch-main-container">
-		<div class="row">
+	<div class="container branch-main-container bg-abstract">
+		<div class="row container">
 			<div class="col-lg-6 branch-text-1">
 				<div class="text-justify"><p><?php the_field('branch_text_1'); ?></p></div>
 			</div>
@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="text-justify"><p><?php the_field('branch_text_2'); ?></p></div>
 			</div>
 			<div class="col-12">
-				<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+				<a href="#" class="my-button green-button"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 			</div>
 		</div>
 	</div>
@@ -41,18 +41,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php if (have_rows('branch_departments')); ?>
 	<?php $count=1; ?>
 	<?php while(have_rows('branch_departments')) :the_row(); ?>
-	<div class="container-fluid branch-departments" id="branch<?php echo $count; ?>">
+	<div class="container-fluid branch-departments bg-abstract" id="branch<?php echo $count; ?>">
 		<div class="row my-container">
 			<div class="col-md-6 col-lg-8 department-text">
 				<h2><?php the_sub_field('department_title'); ?></h2>
-				<div class="text-justify"><p><?php the_sub_field('department_text_short'); ?></p></div>
+				<div class="text-justify mb-5"><p><?php the_sub_field('department_text_short'); ?></p></div>
 				
 				<div class="collapse" id="number<?php echo $count; ?>">
 					<div class="text-justify"><?php the_sub_field('department_text_long'); ?></div>
 				</div>
-				<a class="my-read-more-button-red" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
-					<span class="text-collapsed">Czytaj więcej</span>
-					<span class="text-expanded">Czytaj mnniej</span>
+				<a class="my-read-more-button-green" data-toggle="collapse" href="#number<?php echo $count; ?>" role="button" aria-expanded="false" aria-controls="number<?php echo $count; ?>">
+					<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+					<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 				</a>
 			</div>
 			<div class="col-md-6 col-lg-4 department-photo text-center">
@@ -104,15 +104,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="parallax branches-check-also">
 		<div class="navy-bg-section-inner"></div>
 		<div class="container">
-			<div class="row text-center">
+			<div class="row text-center my-wrapper-row">
 				<div class="col-md-4 col-lg-6">
-					<h2>Sprawdź też:</h2>
+					<h2><?php echo the_field('check_also', 1246) ?></h2>
 				</div>
 				<div class="col-md-4 col-lg-3">
-					<a href="#" class="my-button">Opinie i ekspertyzy</a>
+					<a href="#" class="my-button green-button"><?php echo the_field("opinions", 28) ?></a>
 				</div>
 				<div class="col-md-4 col-lg-3">
-					<a href="http://instytutimpib.dev.cube360.pl/doradztwo-i-szkolenia/" class="my-button my-button-white">Doradztwo i szkolenia</a>
+					<a href="http://instytutimpib.dev.cube360.pl/doradztwo-i-szkolenia/" class="my-outline-button-white"><?php echo the_field("consultancy", 28) ?></a>
 				</div>
 			</div>
 		</div>
@@ -131,7 +131,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="branch-container branch-1-container position-relative">
 							<div class="gradient-bg-section-inner"></div>
 							<p class="branch-title text-left"><?php the_field('branch_1_name'); ?></p>
-							<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+							<a href="#" class="my-button my-square-button-green"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 						</div>
 					</a>
 				</div>
@@ -140,7 +140,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="branch-container branch-2-container position-relative">
 							<div class="gradient-bg-section-inner"></div>
 							<p class="branch-title text-left"><?php the_field('branch_2_name'); ?></p>
-							<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+							<a href="#" class="my-button my-square-button-green"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 						</div>
 					</a>
 				</div>
@@ -149,7 +149,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="branch-container branch-3-container">
 							<div class="gradient-bg-section-inner"></div>
 							<p class="branch-title text-left"><?php the_field('branch_3_name'); ?></p>
-							<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+							<a href="#" class="my-button my-square-button-green"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 						</div>
 					</a>
 				</div>
@@ -158,7 +158,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="branch-container branch-4-container">
 							<div class="gradient-bg-section-inner"></div>
 							<p class="branch-title text-left"><?php the_field('branch_4_name'); ?></p>
-							<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+							<a href="#" class="my-button my-square-button-green"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 						</div>
 					</a>
 				</div>
@@ -167,7 +167,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="branch-container branch-5-container">
 							<div class="gradient-bg-section-inner"></div>
 							<p class="branch-title text-left"><?php the_field('branch_5_name'); ?></p>
-							<a href="#" class="my-button">Jak rozpocząć współpracę</a>
+							<a href="#" class="my-button my-square-button-green"><?php echo the_field('how_to_start_a_partnership', 1246) ?></a>
 						</div>
 					</a>
 				</div>

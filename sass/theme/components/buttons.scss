@@ -18,8 +18,26 @@
     background-color: $black;
     border: 2px solid $black;
     border-radius: 100rem;
-    padding: .65rem 4rem;
+    padding: .65rem 3rem;
     color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: auto;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+
+.black-button-radius-gtext {
+    background-color: $black;
+    border: 2px solid $black;
+    border-radius: 100rem;
+    padding: .65rem 5rem;
+    color: $my-light-green;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 0.8rem;
@@ -146,6 +164,97 @@
     }
 }
 
+.my-outline-button-white {
+    display: inline-block;
+    padding: .6rem 2.6rem;
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    @include short-transition;
+    text-align: center;
+    line-height: 1.3;
+    &:hover {
+        text-decoration: none;
+        color: $black;
+        background-color: $white;
+    }
+}
+
+.my-outline-button-black {
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    border: 2px solid $black;
+    color: $black;
+    text-align: center;
+    line-height: 1.3;
+    font-size: .8rem;
+    font-family: $primary-font-bold;
+    width: 45%;
+    margin: auto;
+    margin-top: 1em;
+    min-width: 250px;
+    cursor: pointer;
+    
+    @include short-transition;
+
+    @media screen and (min-width: 860px) {
+        font-size: 1.3rem;
+        padding: 0.75rem 1rem;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $my-light-green;
+        background-color: $black;
+    }
+}
+
+.black-button-radius-gtext {
+    background-color: $black;
+    border: 2px solid $black;
+    border-radius: 100rem;
+    padding: 1rem 1rem;
+    color: $my-light-green;
+    font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
+    line-height: 1.3;
+    font-family: $primary-font-bold;
+    width: 45%;
+    margin: auto;
+    margin-top: 1em;
+    min-width: 250px;
+    cursor: pointer;
+
+    @include short-transition;
+
+    @media screen and (min-width: 860px) {
+        font-size: 1.3rem;
+        padding: 0.75rem 1rem;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+
+.my-square-button-green {
+    display: inline-block;
+    padding: .6rem 2.6rem;
+    background-color: $my-light-green;
+    border: 1px solid transparent;
+    color: $white;
+    @include short-transition;
+    text-align: center;
+    line-height: 1.3;
+    &:hover {
+        text-decoration: none;
+        color: $my-light-green;
+        background-color: $white;
+    }
+}
+
 .my-read-more-button {
     padding: .6rem 2.6rem;
     background-color: white;
@@ -209,6 +318,10 @@
     &:hover {
         background-color: transparent;
         color: $my-light-green;
+
+        span:after {
+            color: $my-light-green;
+        }
     }
 
     span:after {
@@ -218,7 +331,11 @@
         right: 5%;
         top: 25%;
         font-family: "FontAwesome";
-        @include basic-transition;
+        @include short-transition;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: .65rem 3rem;
     }
 }
 
@@ -231,7 +348,6 @@
 }
 .my-read-more-button-green[aria-expanded=true] {
     background-color: transparent;
-    color: $black;
     span {
         color: $black;
     }
@@ -242,6 +358,63 @@
         transform: rotate(180deg);
     }
 }
+
+.my-read-more-button-green-bg-black {
+    background-color: $my-light-green;
+    border: 2px solid $my-light-green;
+    border-radius: 100rem;
+    padding: .65rem 5rem;
+    color: $black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: relative;
+
+    @include short-transition;
+    &:hover {
+        background-color: transparent;
+        color: $my-light-green;
+
+        span:after {
+            color: $my-light-green;
+        }
+    }
+
+    span:after {
+        content: '\f078';
+        color: $black;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+        font-family: "FontAwesome";
+        @include short-transition;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: .65rem 4rem;
+    }
+}
+
+.my-read-more-button-green-bg-black[aria-expanded=false] .text-expanded {
+    display: none;
+    @include short-transition;
+}
+.my-read-more-button-green-bg-black[aria-expanded=true] .text-collapsed {
+    display: none;
+}
+.my-read-more-button-green-bg-black[aria-expanded=true] {
+    background-color: transparent;
+    span {
+        color: $my-light-green;
+    }
+    span:after {
+        color: $my-light-green;
+    }
+    span:after {
+        transform: rotate(180deg);
+    }
+}
+
 
 .my-read-more-button-black {
     background-color: #000;
@@ -272,6 +445,24 @@
         top: 25%;
         font-family: "FontAwesome";
         @include basic-transition;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: .65rem 3rem;
+    }
+}
+
+.green-outline-button {
+    background-color: transparent;
+    border: 2px solid $my-light-green;
+        padding: .2rem 3rem;
+    font-size: .8rem;
+    font-weight: 700;
+    color: $my-light-green;
+    &:hover {
+        background-color: $my-light-green;
+        color: $black;
+
     }
 }
 

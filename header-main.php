@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-<div class="container-fluid my-navigation-conatiner">
+<div class="container-fluid my-navigation-container">
 	<div class="row my-navigation-row">
 		<div class="col-2 col-lg-10 col-xl-8 order-md-3 button-container text-right not-on-mobile-and-tablet">
 			<div class="inner-button-container">
@@ -38,10 +38,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
 				<div class="input-group">
 					<input class="field form-control" id="s" name="s" type="text"
-						placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
+						placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" placeholder="<?php the_search_query(); ?>">
 					<span class="input-group-append">
 						<input class="submit my-search-form-icon" id="searchsubmit" name="submit" type="submit"
-						value="&#xf002;">
+						placeholder="&#xf002;">
 					</span>
 				</div>
 			</form>
@@ -119,10 +119,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
 						<div class="input-group">
 							<input class="field form-control" id="s" name="s" type="text"
-								placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
+								placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" placeholder="<?php the_search_query(); ?>">
 							<span class="input-group-append">
 								<input class="submit my-search-form-icon" id="searchsubmit" name="submit" type="submit"
-								value="&#xf002;">
+								placeholder="&#xf002;">
 							</span>
 						</div>
 					</form>

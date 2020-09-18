@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="my-post-container-outer">
 						<div class="my-post-photo"><?php echo get_the_post_thumbnail( $page->ID, 'img-horizontal-large' ); ?></div>
 						<div class="my-post-container-inner">
-							<div class="my-post-author"><?php the_author(); ?></div>
+							<!-- <div class="my-post-author"><?php the_author(); ?></div> -->
 							<div class="my-post-data">
 								<div class="my-post-title"><?php the_title(); ?></div>
 								<div class="my-post-text">
@@ -78,7 +78,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		wp_reset_postdata();
 		?>
 		<div class="col-12 mt-5 mb-2 text-center">
-			<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="my-button">Pokaż więcej</a>
+			<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="green-button">Pokaż więcej</a>
 		</div>
 		</div>
 	</div>

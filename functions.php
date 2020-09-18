@@ -70,3 +70,54 @@ add_filter('widget_text', 'do_shortcode');
 
 $main_page_bussiness_href = get_post_permalink(85);
 $main_page_science_href = get_post_permalink(87);
+
+$bizMainPageID = 85;
+$sciMainPageID = 87;
+
+$aboutBizID = 20;
+$aboutBizStructureID = 22;
+$aboutBizCertID = 24;
+$aboutBizNormID = 115;
+$aboutBizAwardsID = 117;
+$aboutBizPatentsID = 119;
+$aboutBizProjectsID = 121;
+$bizOfferID = 28;
+$bizCoursesID = 609;
+$bizNewsID = 26;
+$bizContactID = 44;
+
+$bizWrokshopsID = 611;
+
+
+// $aboutBiz = get_post_permalink(20);
+// $aboutBizStructure = get_post_permalink(22);
+// $aboutBizCert = get_post_permalink(24);
+// $aboutBizNorm = get_post_permalink(115);
+// $aboutBizAwards = get_post_permalink(117);
+// $aboutBizPatents = get_post_permalink(119);
+// $aboutBizProjects = get_post_permalink(121);
+// $bizOffer = get_post_permalink(28);
+// $bizCourses = get_post_permalink(609);
+// $bizNews = get_post_permalink(26);
+// $bizContact = get_post_permalink(44);
+
+
+// $aboutSci = get_post_permalink(125);
+// $sciDzial = get_post_permalink(452);
+
+
+
+
+// .page-id-795, .page-id-20, .page-id-22, .page-id-24, .page-id-44 , .page-id-115, .page-id-117, .page-id-119, .page-id-121, .page-id-609 {
+
+function get_page_id_by_template( $template ) {
+    $args = [
+        'post_type'  => 'page',
+        'fields'     => 'ids',
+        'nopaging'   => true,
+        'meta_key'   => '_wp_page_template',
+        'meta_value' => $template
+    ];
+    $pages = get_posts( $args );
+    return $pages;
+}

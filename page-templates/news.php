@@ -16,7 +16,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!--blog posts-->
-<div class="section-container my-blog-posts">
+<div class="section-container my-blog-posts <?php if (get_queried_object_id() == $bizNewsID): echo 'bg-abstract'; endif; ?>">
 	<div class="container my-posts-container">
 		<div class="blog-grid">
 		<?php
@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		wp_reset_postdata();
 		?>
 		<div class="text-center">
-			<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="green-button">Pokaż wszystkie aktualności</a>
+			<a href="http://instytutimpib.dev.cube360.pl/wszystkie-aktualnosci/" class="green-button"><?php echo the_field('show_all_news', 775) ?></a>
 		</div>
 		</div>
 	</div>
@@ -60,13 +60,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <!--news section-->
-<div class="section-container news">
+<div class="section-container news <?php if (get_queried_object_id() == $bizNewsID): echo 'bg-abstract'; endif; ?>">
 	<!--statemnts-->
 	<div class="container-fluid statements bg-vlg-60-right mt-5">
 		<div class="row my-container ">
 			<div class="col-12 col-md-4 order-md-3">
 				<h2 class="text-center text-md-left py-4"><?php the_field('header_statements', 775); ?></h2>
-				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button not-on-mobile">Pokaż wszystkie komunikaty</a>
+				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button not-on-mobile"><?php echo the_field('show_all_statements', 775) ?></a>
 			</div>
 			<?php if (have_rows('statements', 775)); ?>
 			<?php while (have_rows('statements', 775)) : the_row(); ?>
@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="notice-container">
 						<p class="notice-title"><?php the_sub_field('statement_title'); ?></p>
 						<div>
-						<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+						<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 						<span class="notice-date"><?php the_sub_field('statement_date'); ?></span>
 						</div>
 						<div class="background-icon"></div>
@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 	<div class="only-on-mobile">
-		<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button">Pokaż wszystkie komunikaty</a>
+		<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button"><?php echo the_field('show_all_statements', 775) ?></a>
 	</div>
 	<!-- end of statements-->
 
@@ -96,10 +96,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-12 col-md-4">
 				<h2 class="text-center text-md-left pt-4 pb-md-3"><?php the_field('header_auctions', 773); ?></h2>
 				<ul class="nav nav-tabs" role="tablist">
-					<li><a class="active" href="#auctions_without_statute" role="tab" data-toggle="tab">Zamówienia realizowane bez stosowania przepisów ustawy PZP <i class="fas fa-long-arrow-alt-right"></i></a></li>
-					<li><a href="#auctions_with_statute" role="tab" data-toggle="tab">Zamówienia realizowane zgodnie z przepisami ustawy PZP <i class="fas fa-long-arrow-alt-right"></i></a></li>
+					<li><a class="active" href="#auctions_without_statute" role="tab" data-toggle="tab"><?php echo the_field('orders_without_pzp', 775) ?> <i class="fas fa-long-arrow-alt-right"></i></a></li>
+					<li><a href="#auctions_with_statute" role="tab" data-toggle="tab"><?php echo the_field('orders_with_pzp', 775) ?> <i class="fas fa-long-arrow-alt-right"></i></a></li>
 				</ul>
-				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button not-on-mobile">Pokaż wszystkie przetargi</a>
+				<a href="http://www.bip.impib.pl/aktualnosci/ogloszenia-1" target="_blank" class="green-button not-on-mobile"><?php echo the_field('show_all_contracts', 775) ?></a>
 			</div>
 			<div class="col-12 col-md-8">
 				<div class="tab-content">
@@ -112,7 +112,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<div class="notice-container">
 											<p class="notice-title"><?php the_sub_field('auction_title'); ?></p>
 											<div>
-											<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+											<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 											<span class="notice-date"><?php the_sub_field('auction_date'); ?></span>
 											</div>
 											<div class="background-icon"></div>
@@ -131,7 +131,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<div class="notice-container">
 											<p class="notice-title"><?php the_sub_field('auction_title'); ?></p>
 											<div>
-											<div class="read-more-text">Czytaj więcej <i class="fas fa-long-arrow-alt-right"></i></div>
+											<div class="read-more-text"><?php echo the_field('read_more', 1246) ?> <i class="fas fa-long-arrow-alt-right"></i></div>
 											<span class="notice-date"><?php the_sub_field('auction_date'); ?></span>
 											</div>
 											<div class="background-icon"></div>
@@ -146,7 +146,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 	<div class="only-on-mobile">
-		<a href="http://www.bip.impib.pl/aktualnosci/zamowienia-bez-stosowania-przepisow-ustawy-pzp" target="_blank" class="green-button">Pokaż wszystkie przetargi</a>
+		<a href="http://www.bip.impib.pl/aktualnosci/zamowienia-bez-stosowania-przepisow-ustawy-pzp" target="_blank" class="green-button"><?php echo the_field('show_all_contracts', 775) ?></a>
 	</div>
 	<!--end of auctions-->
 </div>

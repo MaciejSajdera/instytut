@@ -14,18 +14,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
-
+$research_type = the_sub_field('research_area_type'); 
 ?>
 
+<div class="r-areas-container">
+	<div class="container r-areas-container">
+		<div class="my-button black-button-radius-gtext research-option">
+			<?php echo the_field('button_research_area_1', 450) ?>
+		</div>
+		<div class="my-button my-outline-button-black research-option">
+		<?php echo the_field('button_research_area_2', 450) ?>
+		</div>
+	</div>
+</div>
+
 <!-- reaserch-->
-<div class="section-container research-section bg-abstract">
+<div class="section-container research-section">
+	
 	<?php if (have_rows('research_areas')); ?>
 	<?php $research=1; ?>
 	<?php while (have_rows('research_areas')) : the_row();
-
 	?>
 
-	<div class="container-fluid research-container bg-abstract">
+	<div class="container-fluid research-container <?php echo the_sub_field('research_area_type');  ?>">
+		<span class="researchAreaType tets"><?php echo the_sub_field('research_area_type');  ?></span>
 		<div class="row my-container justify-content-center">
 			<div class="col-md-6 work-type-container">
 				<h2 class="work-type"><?php the_sub_field('work_type'); ?></h2>
@@ -39,8 +51,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					echo "my-read-more-button-black";
 					endif;
 					?> reserch-collapse" data-toggle="collapse" href="#research<?php echo $research; ?>" role="button" aria-expanded="false" aria-controls="research<?php echo $research; ?>">
-					<span class="text-collapsed">Czytaj więcej</span>
-					<span class="text-expanded">Czytaj mniej</span>
+					<span class="text-collapsed"><?php echo the_field('read_more', 1246) ?></span>
+					<span class="text-expanded"><?php echo the_field('read_less', 1246) ?></span>
 				</a>
 			</div>
 			<div class="col-12 work-text">
@@ -55,10 +67,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					else:
 					echo "black-button";
 					endif;
-					?> my-button">Sprawdź nasze Laboratoria</a>
+					?> my-button"><?php echo the_field('check_our_laboratories', 450) ?></a>
 			</div>
 			<div class="col-12">
-				<h2 class="text-center mb-4">Liderzy Obszarów Naukowo - Badawczych</h2>
+				<h2 class="text-center mb-4"><?php the_field('leaders_research', 641); ?></h2>
 			</div>
 		</div>
 		<div class="row only-on-mobile justify-content-center liders-mobile">
@@ -75,8 +87,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="col-12">
 				<a class="liders-collapse" data-toggle="collapse" href="#liders<?php echo $research; ?>" role="button" aria-expanded="false" aria-controls="liders<?php echo $research; ?>">
-					<span class="text-collapsed">Pokaż wszytskich liderów</span>
-					<span class="text-expanded">Ukryj wszystkich liderów</span>
+					<span class="text-collapsed"><?php the_field('show_all_leaders', 641); ?></span>
+					<span class="text-expanded"><?php the_field('hide_all_leaders', 641); ?></span>
 				</a>
 			</div>
 			<div class="collapse" id="liders<?php echo $research; ?>">
@@ -107,6 +119,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	
 	</div>
+
 <?php $research++; ?>
 <?php endwhile; ?>
 </div>

@@ -17,12 +17,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- normalization -->
-<div class="section-container normalization bg-abstract">
+<div class="section-container normalization <?php if (get_queried_object_id() == $aboutBizNormID): echo 'bg-abstract'; endif; ?>">
 	<div class="container top-content">
 		<div class="row">
 			<div class="col-12">
 				<div class="text-justify"><?php the_field('text_normalization_1', 233); ?></div>
-				<a class="not-on-md" data-toggle="collapse" href="#normalization-more-1" role="button" aria-expanded="false" aria-controls="normalization-more-1">Czytaj więcej <i class="fas fa-chevron-down"></i></a>
+				<a class="not-on-md" data-toggle="collapse" href="#normalization-more-1" role="button" aria-expanded="false" aria-controls="normalization-more-1"><?php echo the_field('read_more', 1246)?> <i class="fas fa-chevron-down"></i></a>
 				<div class="collapse not-collapse-md" id="normalization-more-1">
 					<div class="text-justify"><?php the_field('text_normalization_2', 233); ?></div>
 				</div>
@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="col-md-8 col-xl-9">
 				<div class="text-justify"><?php the_field('text_normalization_3', 233); ?></div>
-				<a class="not-on-md" data-toggle="collapse" href="#normalization-more-2" role="button" aria-expanded="false" aria-controls="normalization-more-2">Czytaj więcej <i class="fas fa-chevron-down"></i></a>
+				<a class="not-on-md" data-toggle="collapse" href="#normalization-more-2" role="button" aria-expanded="false" aria-controls="normalization-more-2"><?php echo the_field('read_more', 1246)?> <i class="fas fa-chevron-down"></i></a>
 				<div class="collapse not-collapse-md" id="normalization-more-2">
 					<div class="text-justify"><?php the_field('text_normalization_4', 233); ?></div>
 				</div>
@@ -52,17 +52,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="col-12 col-lg-4">
 				<a href="#" class="kt">
-					<p>KT nr 140 ds. Rur, Kształtek i Armatury z Tworzyw Sztucznych<i class="fas fa-long-arrow-alt-right"></i></p>
+					<p><?php echo the_field('kt_1', 233) ?><i class="fas fa-long-arrow-alt-right"></i></p>
 				</a>
 			</div>
 			<div class="col-12 col-lg-4">
 				<a href="#" class="kt">
-					<p>KT nr 168 ds. Wyrobów z Tworzyw Sztucznych<i class="fas fa-long-arrow-alt-right"></i></p>
+					<p><?php echo the_field('kt_2', 233) ?><i class="fas fa-long-arrow-alt-right"></i></p>
 				</a>
 			</div>
 			<div class="col-12 col-lg-4">
 				<a href="#" class="kt">
-					<p>KT nr 175 ds. Farb i Lakierów<i class="fas fa-long-arrow-alt-right"></i></p>
+					<p><?php echo the_field('kt_3', 233) ?><i class="fas fa-long-arrow-alt-right"></i></p>
 				</a>
 			</div>
 		</div>

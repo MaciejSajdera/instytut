@@ -21,11 +21,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row text-center">
 			<div class="col">
 				<ul class="nav nav-tabs" role="tablist">
-					<li><a class="active" href="#torun" role="tab" data-toggle="tab">Toruń</a></li>
+					<li><a class="active" href="#torun" role="tab" data-toggle="tab"><?php the_field('city_1', 251); ?></a></li>
 					<!-- <li>/</li> -->
-					<li><a href="#gliwice" role="tab" data-toggle="tab">Gliwice</a></li>
+					<li><a href="#gliwice" role="tab" data-toggle="tab"><?php the_field('city_2', 251); ?></a></li>
 					<!-- <li>/</li> -->
-					<li><a href="#piastow" role="tab" data-toggle="tab">Piastów</a></li>
+					<li><a href="#piastow" role="tab" data-toggle="tab"><?php the_field('city_2', 251); ?></a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,11 +58,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div><!-- end of carousel-inner-->
 				<a class="carousel-control-prev" href="#carousel-awards-torun" role="button" data-slide="prev">
 				<i class="fas fa-arrow-left"></i>
-				<span class="sr-only">Previous</span>
+				<span class="sr-only"><?php the_field('previous', 251); ?></span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-torun" role="button" data-slide="next">
 				<i class="fas fa-arrow-right"></i>
-				<span class="sr-only">Next</span>
+				<span class="sr-only"><?php the_field('next', 251); ?></span>
 			</a>
 			</div><!-- end of carousel-->
 		</div><!-- end of tab-pane torun-->
@@ -92,11 +92,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div><!-- end of carousel-inner-->
 				<a class="carousel-control-prev" href="#carousel-awards-gliwice" role="button" data-slide="prev">
 				<i class="fas fa-arrow-left"></i>
-				<span class="sr-only">Previous</span>
+				<span class="sr-only"><?php the_field('previous', 251); ?></span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-gliwice" role="button" data-slide="next">
 				<i class="fas fa-long-arrow-alt-right"></i>
-				<span class="sr-only">Next</span>
+				<span class="sr-only"><?php the_field('next', 251); ?></span>
 			</a>
 			</div><!-- end of carousel-->
 		</div><!-- end of tab-pane gliwice-->
@@ -126,11 +126,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div><!-- end of carousel-inner-->
 				<a class="carousel-control-prev" href="#carousel-awards-piastow" role="button" data-slide="prev">
 				<i class="fas fa-arrow-left"></i>
-				<span class="sr-only">Previous</span>
+				<span class="sr-only"><?php the_field('previous', 251); ?></span>
 				</a>
 				<a class="carousel-control-next text-faded" href="#carousel-awards-piastow" role="button" data-slide="next">
 				<i class="fas fa-long-arrow-alt-right"></i>
-				<span class="sr-only">Next</span>
+				<span class="sr-only"><?php the_field('next', 251); ?></span>
 			</a>
 			</div><!-- end of carousel-->
 		</div><!-- end of tab-pane piastow-->
@@ -138,20 +138,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!--end of content on mobile-->
 
 <!--content on tablet and desktop-->
-<div class="section-container awards only-on-md-and-up bg-abstract">
-	<div class="container">
+<div class="section-container awards only-on-md-and-up <?php if (get_queried_object_id() == $aboutBizAwardsID): echo 'bg-abstract'; endif; ?>">
+	<!-- <div class="container">
 		<div class="row text-center">
 			<div class="col">
 				<ul class="nav nav-tabs" role="tablist">
-					<li><a class="active" href="#torun-desktop" role="tab" data-toggle="tab">Toruń</a></li>
-					<!-- <li>/</li> -->
-					<li><a href="#gliwice-desktop" role="tab" data-toggle="tab">Gliwice</a></li>
-					<!-- <li>/</li> -->
-					<li><a href="#piastow-desktop" role="tab" data-toggle="tab">Piastów</a></li>
+					<li><a class="active" href="#torun-desktop" role="tab" data-toggle="tab"><?php the_field('city_1', 251); ?></a></li>
+
+					<li><a href="#gliwice-desktop" role="tab" data-toggle="tab"><?php the_field('city_2', 251); ?></a></li>
+
+					<li><a href="#piastow-desktop" role="tab" data-toggle="tab"><?php the_field('city_3', 251); ?></a></li>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="tab-content">
 		<div class="tab-pane active" id="torun-desktop">
 			<div class="container">
@@ -173,7 +173,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 		</div><!-- end of tab-pane-->
-		<div class="tab-pane" id="gliwice-desktop">
+		<div class="tab-pane active" id="gliwice-desktop">
 			<div class="container">
 				<div class="row text-center award-row">
 				<?php if (have_rows('awards_gliwice', 251)); ?>
@@ -192,7 +192,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 		</div><!-- end of tab-pane-->
-		<div class="tab-pane" id="piastow-desktop">
+		<div class="tab-pane active" id="piastow-desktop">
 			<div class="container">
 				<div class="row text-center award-row">
 				<?php if (have_rows('awards_piastow', 251)); ?>

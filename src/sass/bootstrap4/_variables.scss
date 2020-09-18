@@ -37,7 +37,7 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$my-light-green:     #dc3545 !default;
+$red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
@@ -51,7 +51,7 @@ $colors: map-merge(
     "indigo":     $indigo,
     "purple":     $purple,
     "pink":       $pink,
-    "red":        $my-light-green,
+    "red":        $red,
     "orange":     $orange,
     "yellow":     $yellow,
     "green":      $green,
@@ -69,7 +69,7 @@ $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $my-light-green !default;
+$danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
@@ -834,7 +834,7 @@ $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           transparent !default;
+$card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
